@@ -1,0 +1,44 @@
+Aileron/rudder/elevator/throttle/ mixer for PX4FMU
+=======================================================
+Modified mixer file for Bormatec Maja. 
+Alierons map to main out 1 and 2
+Elevators to main outs 3 and 4 (allows you to trim the elevators separatly).
+Rudder on main out 5 
+Motor on main out 6 
+
+
+Aileron mixer (roll + flaperon)
+---------------------------------
+
+M: 2
+S: 0 0  10000  10000      0 -10000  10000
+S: 0 4  10000  10000      0 -10000  10000
+
+M: 2
+S: 0 0  10000  10000      0 -10000  10000
+S: 0 4 -10000 -10000      0 -10000  10000
+
+Elevator mixer
+------------
+Two scalers total (output, roll).
+
+M: 1
+S: 0 1  -10000  -10000      0 -10000  10000
+
+M: 1
+S: 0 1  -10000  -10000      0 -10000  10000
+
+Rudder mixer
+------------
+Two scalers total (output, yaw).
+
+M: 1
+S: 0 2  10000  10000      0 -10000  10000
+
+Motor speed mixer
+-----------------
+Two scalers total (output, thrust).
+
+
+M: 1
+S: 0 3      0  20000 -10000 -10000  10000

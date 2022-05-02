@@ -1,0 +1,101 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[affil-it]{authblk}
+
+
+%
+%This is a LaTeX document for organizing the Related Work on the 3-D Printed UAS project
+%
+% To compile this into a .pdf simply run 'pdflatex 3DUAS_RelatedWork.tex' on the command line.
+% To automatically generate the bibliography, then run 'bibtex 3DUAS_RelatedWork' and then repeat the command 'pdflatex 3DUAS_RelatedWork.tex' twice.
+%
+
+\usepackage{amsmath}
+%\usepackage{times}
+%\usepackage{mathtime} 
+\usepackage{pslatex} %regular times font/smaller courier font
+\usepackage{amssymb}
+\usepackage{alltt}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{mathrsfs} %for \mathscr{} 
+\usepackage{multicol}
+\usepackage{capt-of}
+\usepackage[toc,page]{appendix}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{color}
+
+\lstset{frame=tb,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+%\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}{Corollary}
+\newtheorem{lem}{Lemma}
+\newtheorem{defin}{Definition}
+%Use like this: \begin{lem}\label{...}  .... \end{lem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Figure Magic
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{gastex} % pictures on steroids
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\renewcommand{\topfraction}{.95} %figures can take up at most 95% of the page before being alone
+\renewcommand{\bottomfraction}{.99} %figures can take up at most 99% of the page before being alone
+\renewcommand{\textfraction}{.1} %at most this this % of page will be text before making figure-only page
+
+%%%%%%%%%%%
+% Block Quotes       %
+%%%%%%%%%%%
+\newenvironment{blockquote}{
+  \par
+  \medskip
+  \leftskip=4em\rightskip=2em
+  \noindent\ignorespaces}{
+  \par\medskip}
+
+%for code listings
+%\usepackage{listings}
+%\usepackage{courier}
+
+
+
+
+\begin{document}
+
+
+
+
+\section{Project Overview}
+The Laboratory for Temporal Logic (LTL) in Aerospace at the University of Cincinnati is designing a new, free-and-open-source, easy-manufacture (i.e. 3-D printable with COTS components) Unmanned Aerial System (UAS). The UAS will be designed specifically to maximally support System Health Management (SHM) capabilities needed to safely create intelligent, autonomous UAS.
+
+\section{Initial Design Estimates}
+This section is a collaboration of tables and graphs which illustrate some initial 2-D flight characteristics for different airfoils.  This information will be used in order to make a decision for which airfoil will be used on the 3-D printable UAS.  This 3-D printable UAS will fly at relatively low Reynold's numbers.  The analysis in this section is performed using the open-source software XFLR5.  All airfoils have been analyzed for a range of Reynold's numbers, as well as a range of angle of attack.  The Reynold's numbers for this analysis have been ranged from 2,000 to 333,000, based on the historical flight regime for typical small UASs.  This gives a range of speeds from 15 m/s to 25 m/s. The angle of attack has been ranged from 0 degrees to 15 degrees which is a reasonable range of AOA for this flight regime and allows us to visualize the stall AOA for all Reynold's numbers.
+
+\subsection{SD7003}
+This airfoil is a commonly used glider airfoil. Max thickness location is further forward than typical glider airfoils.
+
+
+
+
+
+
+\end{document}

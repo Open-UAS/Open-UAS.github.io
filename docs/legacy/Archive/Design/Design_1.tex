@@ -1,0 +1,74 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+
+\title{Design 1}
+\author{Catherine Sener}
+\date{January 2019}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\chapter{Introduction}
+\section{Requirements}
+\begin{itemize}
+    \item Configurable: Wings can be changed
+    \subitem The fuselage was designed such that the wing slots are square. The point of the square wing slots was to make it easy to change the wing design. With each new design the fuselage could be reused, and a new wing mount would have to be made. The wing mounts would be able to fit easily in the square slots and Velcro would be utilized to hold the wings in place as well as the inside shape of the fuselage cut. 
+    \item Can break down and moved easily
+    \subitem In order to make the UAS easily movable, it can be broken down. The tail can come off by removing the carbon fiber rod from the fuselage. The fuselage can be split in half, which also allows ease of changing electronics. The wings can also come off.
+    \item Simple assembly
+    Just like it is easy to be broken down the UAS is also easily assembled. The wing mounts pop in place are held by strapping the two halves of the fuselage together. The tail easily slides into the fuselage and is held in place by straps.
+    \item Does not require a runway
+    \subitem Runways are pricey to reserve and are not always available where you want to launch, so it is easier if the UAS does not require a runway and can be hand launched. This is why the UAS has a weight limit of 25 lb, absolute maximum. With current electronics and shell it weighs about 10 lbs. If at its absolute maximum weight of 25 lb, it will require a launch system in order to take off. This will be a slingshot like structure. A bungee cord attached to a ramp at an angle would be armed and be able to launch the UAS at it's required speed in order to generate lift. 
+    \item Can be manufactured by hobbyist
+    \subitem Options were explored to let the UAS be created by hobbyist. This is hwy it was made out of accessible materials such as foam, balsa, monokote, and 3D printed materials. While it is not he cheapest to manufacture, it is possible to do at home with tools that are accessible to the general public.
+    \item Can withstand a crash landing
+    \subitem The UAS does not have any landing gear to conserve weight since it also does not require a runway to take off. This means that while landing, the UAS will have to be "crashed landed" in a field or a bush or a net. Therefore, the UAS must be able to withstand multiple crash landings and be easily repairable. 
+\end{itemize}
+\chapter{Design}
+\section{Structure}
+The requirements of the UAS had some structural challenges. The structure had to be aerodynamically efficient for something that weighed under 5 lbs and could carry an electrical payload of about 10 lbs. The fuselage space had to be able to hold at least 2 batteries approximately 2 X 6 X 1.5 in each, a motor, a raspberry pi, and a few other configurable electronic options while being able to house wires efficiently and still have enough room to proved cooling air to the batteries. The inside of the fuselage had to be easily accessible, the wings and the motor could be replaced, and we plan on crash landing the UAS which meant its underbelly had to be thick enough to withstand in pact.
+\\
+\subsection{Fuselage}
+To meet requirements, the fuselage was made to be a large cylinder with a flat thick belly. its outside diameter is approximately 7in large, and has a length of about 12in. For a long time it was debated weather or not to put ski like skids on the bottom of the fuselage for extra height on landing to protect the propeller from the ground and provide an extra crush zone. This idea was turned down due to the extra drag it would produce.
+\\
+\\For easy access the fuselage is cut in half. Hinges will be added to one side while latches will be added to the other so the fuselage can be opened like a box when electrical equipment needs to be changed.
+\\
+\\The generic rectangle cut out on the fuselage is meant for the configurable wings. The idea is that every time we want to change the wings these rectangular blocks can be cut out of foam and manually shaped to the shape of our airfoil.
+\\
+\\The motor mount on the front is currently designed for just one motor in particular with an inch diameter. Theoretically what would be done for different motors would be to make the hole larger, and then come up with a separate mounting block for smaller motors while larger ones would fit perfectly into the nose of the UAS.
+\subsection{Wings}
+\subsection{Tail}
+\section{Material}
+As far as materials go I believe our initial selection was a mistake. We planned on using EPS and XPS foam for most of our structure. While this material is very light it is also not too strong. Another error we made was trying to hotwire EPS foam as well. The hotwire severed and then melted the low budget foam back together practically making it useless. 
+\\
+\\For the wing section we were originally going to use foam as well. However, since the hotwire failed to cut the proper airfoil shape we decided to do a rib design instead. The balsa wood pieces were cut from 1/8th in thickness. These pieces were cut from a CNC machine which caused some of the pieces to split and all pieces needed to be sanded down and smoothed. Looking back it would have probably been better to lazer cut the pieces of balsa in order to get a clean and precise cut. 
+\\
+\\Once the airfoil cut outs were complete for the wings, the pieces were glued to a wooden rod at the leading edge, and a carbon fiber rod at the trailing edge. In order to get the flaps to work, they were glued to the carbon fiber rod while the full airfoil cut outs were not glued to the carbon fiber rod. This made it so the rod would rotate freely threw the airfoil but pivot the flaps.
+\\
+\\Monokote was used to cover the airfoil ribs and retain the correct shape. Again, in order to allow the flaps to move correctly they were monokoted separately from the wings to allow freedom of movement.
+\\
+\\A similar strategy to the wing section was originally applied to the tail section. However, the pieces were so small they could not be cut out of balsa wood. Thanks to the Aerostruder nozzle for our 3D printer, we were able to print out the horizontal and vertical tail sections with little to no trouble. Some pieces still required to be filed down in order to fit on the carbon fiber rods properly.
+
+\section{Manufacturing}
+\begin{itemize}
+    \item 3D printing components
+    \item CNC the balsa wood airfoils
+    \item Outsourced foam cutting to ISU lab
+\end{itemize}
+\chapter{Pros/cons}
+\textbf{Pros}
+\begin{itemize}
+    \item Configurable, wings can be changed.
+    \item Electronics are accessible
+    \item Design can be taken apart and transported easily
+\end{itemize}
+\textbf{Cons}
+\begin{itemize}
+    \item Connecting joints are not structurally stable.
+    \item fuselage is bulky and causes unnecessary turbulence.
+\end{itemize}
+
+
+\end{document}

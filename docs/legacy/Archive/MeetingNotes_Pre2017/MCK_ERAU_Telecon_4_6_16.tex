@@ -1,0 +1,139 @@
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lecture Specific Information to Fill Out
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\LectureTitle}{McKenzie ERAU Teleconference Notes}
+%\newcommand{\LectureDate}{\today}
+\newcommand{\LectureDate}{April\ 6,\ 2016}
+\newcommand{\LatexerName}{LTL}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{setspace}
+\usepackage{Tabbing}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{extramarks}
+\usepackage{chngpage}
+\usepackage{soul,color}
+\usepackage{graphicx,float,wrapfig}
+\usepackage{afterpage}
+\usepackage{abstract}
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\pagestyle{fancy}
+\lhead{\LatexerName}
+\chead{\LectureTitle}
+\rhead{\LectureDate}
+\lfoot{\lastxmark}
+\cfoot{}
+\rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+
+\begin{document}
+\begin{spacing}{1.1}
+\newpage
+
+\begin{itemize}
+	\item 3D Printers
+	\begin{itemize}
+		\item DO NOT USE MAKERBOT
+		\begin{itemize}
+			\item nozzle breaks often, replacing parts is a hassle
+		\end{itemize}
+		\item RepRap
+		\begin{itemize}
+			\item Great community, open source, good for tinkering
+		\end{itemize}
+		\item Makers Toolworks Mendel Max
+		\item SeeMe CNC Orion Delta
+		\item LulzBot
+		\begin{itemize}
+			\item Best bang for your buck, one of the best printers on the market
+		\end{itemize}
+		\item Ultimaker
+	\end{itemize}
+	\item Printing Materials
+	\begin{itemize}
+		\item PLA
+		\begin{itemize}
+			\item Depends on manufacturer; poor quality control can lead to variable filament diameter, which affects extrusion rate
+			\item Stiff, lightweight, easy to print
+			\item Will snap, especially in between layers
+		\end{itemize}
+		\item Polycarbonate
+		\begin{itemize}
+			\item Will not break, layers essentially disappear into each other, but difficult to print
+		\end{itemize}
+		\item Nylon
+		\begin{itemize}
+			\item Very bendy, super strong
+		\end{itemize}
+		\item Layer adhesion does pose a challenge, as it makes printed materials weak. Orienting a part so that forces acting on it in the air will not cause failure in between layers is important
+	\end{itemize}
+	\item Battery
+	\begin{itemize}
+		\item Use highest voltage possible - pick motor that works with it
+		\item Choose after complete payload design
+		\item Just need regulators and speed controllers
+		\begin{itemize}
+			\item Castle Speed Controllers - Castle Link can be used to reprogram anywhere anytime
+			\item BECS
+		\end{itemize}
+	\end{itemize}
+	\item Motor
+	\begin{itemize}
+		\item Overbuild, overprop
+		\item Big speed controller
+		\item Motors to consider: NEU, Hacker, Axi, Hyperion
+		\item Go with an outrunner, don't make it a pusher
+		\item RC groups will have motor recommendations
+	\end{itemize}
+	\item Props
+	\begin{itemize}
+		\item Fixed props
+		\item Wood is good, but composites last longer
+		\item carbon fill carbon resin
+		\item Props to consider: Graupner, Aeronaut, Zinger
+	\end{itemize}
+	\item Design Ideas
+	\begin{itemize}
+		\item 3D print ribs and cover wings with fabric
+		\begin{itemize}
+			\item Notes from Aerocats
+			\begin{itemize}
+				\item Balsa, basswood, used for frame and spars
+				\item Wings are covered in MonoKote or UltraCote which is essentially a heat shrink heavy duty Saran wrap
+				\item MonoKote - adhesive on one side, manufactured by Top Flite
+				\item UltraCote - same as MonoKote, manufactured by Horizon
+				\item These wraps seem easy to apply and very affordable, according to Mark Fellows they are both incredibly strong, as the Aerocats planes carry ~30lb payloads
+			\end{itemize}
+		\end{itemize}
+		\item Foam wings with carbon fibber spars
+		\begin{itemize}
+			\item Print airfoil guide for hot wire
+			\item Make wings modular, able to use different wings
+		\end{itemize}
+		\item Camera payload
+		\begin{itemize}
+			\item Global shutter - All pixels at once
+			\item Rolling shutter - one line at a time, not good with camera movement
+			\item Determine when to take pictures, minimize vibrations
+		\end{itemize}
+		\item Hand launch
+		\begin{itemize}
+			\item Statically stable aircraft
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+\end{spacing}
+\end{document}

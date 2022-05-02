@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--This file was written by TinyCAD 3.00.03 Production Release
+If you wish to view this file go to https://www.tinycad.net to
+download the executable.-->
+<TinyCADSheets>
+	<TinyCAD>
+		<NAME>Sheet 1</NAME>
+		<DETAILS>
+			<Size width='1485' height='1050'/>
+			<GUIDES horiz='7' vert='5'/>
+			<TITLE></TITLE>
+			<AUTHOR></AUTHOR>
+			<REVISION>1.0</REVISION>
+			<DOCNUMBER></DOCNUMBER>
+			<ORGANISATION></ORGANISATION>
+			<SHEETS>1 of 1</SHEETS>
+			<SHOWS>1</SHOWS>
+			<DATE></DATE>
+			<GRID spacing='50.00000' snap='1'/>
+		</DETAILS>
+		<FONT id='1'>
+			<HEIGHT>-10</HEIGHT>
+			<WIDTH>0</WIDTH>
+			<WEIGHT>400</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='3'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>400</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='4'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='5'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='6'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='7'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='8'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='9'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='10'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='11'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='12'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='13'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='14'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='15'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='16'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='17'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='18'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='19'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='20'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='21'>
+			<HEIGHT>-19</HEIGHT>
+			<WIDTH>10</WIDTH>
+			<WEIGHT>900</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial Black</FACENAME>
+		</FONT>
+		<FONT id='22'>
+			<HEIGHT>-19</HEIGHT>
+			<WIDTH>10</WIDTH>
+			<WEIGHT>900</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial Black</FACENAME>
+		</FONT>
+		<FONT id='23'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='24'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='25'>
+			<HEIGHT>-15</HEIGHT>
+			<WIDTH>7</WIDTH>
+			<WEIGHT>400</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='26'>
+			<HEIGHT>-15</HEIGHT>
+			<WIDTH>7</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='27'>
+			<HEIGHT>-15</HEIGHT>
+			<WIDTH>7</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='28'>
+			<HEIGHT>-15</HEIGHT>
+			<WIDTH>7</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='29'>
+			<HEIGHT>-16</HEIGHT>
+			<WIDTH>8</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='30'>
+			<HEIGHT>-16</HEIGHT>
+			<WIDTH>8</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='31'>
+			<HEIGHT>-15</HEIGHT>
+			<WIDTH>7</WIDTH>
+			<WEIGHT>700</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='32'>
+			<HEIGHT>-15</HEIGHT>
+			<WIDTH>8</WIDTH>
+			<WEIGHT>900</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial Black</FACENAME>
+		</FONT>
+		<STYLE id='2'>
+			<STYLE>0</STYLE>
+			<COLOR>000000</COLOR>
+			<THICKNESS>3</THICKNESS>
+		</STYLE>
+		<STYLE id='4'>
+			<STYLE>0</STYLE>
+			<COLOR>000000</COLOR>
+			<THICKNESS>3</THICKNESS>
+		</STYLE>
+		<STYLE id='5'>
+			<STYLE>0</STYLE>
+			<COLOR>000000</COLOR>
+			<THICKNESS>5</THICKNESS>
+		</STYLE>
+		<STYLE id='6'>
+			<STYLE>0</STYLE>
+			<COLOR>0000FF</COLOR>
+			<THICKNESS>5</THICKNESS>
+		</STYLE>
+		<STYLE id='7'>
+			<STYLE>0</STYLE>
+			<COLOR>FF8000</COLOR>
+			<THICKNESS>5</THICKNESS>
+		</STYLE>
+		<STYLE id='8'>
+			<STYLE>0</STYLE>
+			<COLOR>0000FF</COLOR>
+			<THICKNESS>3</THICKNESS>
+		</STYLE>
+		<STYLE id='9'>
+			<STYLE>0</STYLE>
+			<COLOR>808000</COLOR>
+			<THICKNESS>5</THICKNESS>
+		</STYLE>
+		<STYLE id='11'>
+			<STYLE>0</STYLE>
+			<COLOR>000000</COLOR>
+			<THICKNESS>3</THICKNESS>
+		</STYLE>
+		<STYLE id='17'>
+			<STYLE>0</STYLE>
+			<COLOR>FF0000</COLOR>
+			<THICKNESS>1</THICKNESS>
+		</STYLE>
+		<STYLE id='20'>
+			<STYLE>0</STYLE>
+			<COLOR>000000</COLOR>
+			<THICKNESS>3</THICKNESS>
+		</STYLE>
+		<STYLE id='21'>
+			<STYLE>0</STYLE>
+			<COLOR>000000</COLOR>
+			<THICKNESS>6</THICKNESS>
+		</STYLE>
+		<STYLE id='22'>
+			<STYLE>0</STYLE>
+			<COLOR>FF0000</COLOR>
+			<THICKNESS>1</THICKNESS>
+		</STYLE>
+		<FILL id='0'>
+			<INDEX>-1</INDEX>
+			<COLOR>000000</COLOR>
+		</FILL>
+		<FILL id='2'>
+			<INDEX>0</INDEX>
+			<COLOR>DEBCBC</COLOR>
+		</FILL>
+		<FILL id='3'>
+			<INDEX>0</INDEX>
+			<COLOR>C0C0C0</COLOR>
+		</FILL>
+		<FILL id='4'>
+			<INDEX>0</INDEX>
+			<COLOR>C0C0C0</COLOR>
+		</FILL>
+		<FILL id='6'>
+			<INDEX>0</INDEX>
+			<COLOR>AFFFFF</COLOR>
+		</FILL>
+		<FILL id='7'>
+			<INDEX>0</INDEX>
+			<COLOR>AFFFFF</COLOR>
+		</FILL>
+		<FILL id='8'>
+			<INDEX>0</INDEX>
+			<COLOR>AFFFFF</COLOR>
+		</FILL>
+		<SYMBOLDEF id='1'>
+			<NAME type='0'>Pixhawk4</NAME>
+			<REF type='2'>U?</REF>
+			<DESCRIPTION>Pixhawk4</DESCRIPTION>
+			<PPP>1</PPP>
+			<GUID></GUID>
+			<FIELD>
+				<NAME>$$SPICE_PROLOG_PRIORITY</NAME>
+				<DEFAULT>5</DEFAULT>
+				<FT>000002</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<FIELD>
+				<NAME>$$SPICE_EPILOG_PRIORITY</NAME>
+				<DEFAULT>5</DEFAULT>
+				<FT>000002</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<FIELD>
+				<NAME>Package</NAME>
+				<DEFAULT>package name for PCB layout</DEFAULT>
+				<FT>000001</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<REF_POINT power='0' part='0' pos='130.00000,136.00000'/>
+			<TinyCAD>
+				<RECTANGLE a='64.00000,38.00000' b='130.00000,136.00000' style='20' fill='2'/>
+				<POLYGON pos='92.00000,42.00000' style='21' fill='3' polygon='1'>
+					<POINT pos='6.00000,0.00000' arc='0'/>
+					<POINT pos='0.00000,14.00000' arc='0'/>
+					<POINT pos='6.00000,12.00000' arc='0'/>
+					<POINT pos='12.00000,14.00000' arc='0'/>
+					<POINT pos='6.00000,0.00000' arc='0'/>
+				</POLYGON>
+				<RECTANGLE a='70.00000,46.00000' b='82.00000,50.00000' style='20' fill='3'/>
+				<RECTANGLE a='70.00000,72.00000' b='80.00000,76.00000' style='20' fill='3'/>
+				<RECTANGLE a='70.00000,58.00000' b='82.00000,62.00000' style='20' fill='3'/>
+				<RECTANGLE a='90.00000,72.00000' b='102.00000,76.00000' style='20' fill='3'/>
+				<RECTANGLE a='112.00000,72.00000' b='124.00000,76.00000' style='20' fill='3'/>
+				<RECTANGLE a='90.00000,84.00000' b='102.00000,88.00000' style='20' fill='4'/>
+				<RECTANGLE a='112.00000,84.00000' b='124.00000,88.00000' style='20' fill='3'/>
+				<RECTANGLE a='108.00000,94.00000' b='124.00000,98.00000' style='20' fill='3'/>
+				<RECTANGLE a='104.00000,104.00000' b='124.00000,108.00000' style='20' fill='3'/>
+				<RECTANGLE a='70.00000,84.00000' b='80.00000,88.00000' style='20' fill='3'/>
+				<RECTANGLE a='70.00000,94.00000' b='80.00000,98.00000' style='20' fill='3'/>
+				<RECTANGLE a='90.00000,94.00000' b='100.00000,98.00000' style='20' fill='3'/>
+				<RECTANGLE a='70.00000,104.00000' b='80.00000,108.00000' style='20' fill='3'/>
+				<RECTANGLE a='88.00000,104.00000' b='98.00000,108.00000' style='20' fill='3'/>
+				<RECTANGLE a='90.00000,114.00000' b='106.00000,118.00000' style='20' fill='3'/>
+				<RECTANGLE a='70.00000,124.00000' b='90.00000,128.00000' style='20' fill='3'/>
+				<RECTANGLE a='104.00000,124.00000' b='124.00000,128.00000' style='20' fill='3'/>
+				<LABEL pos='70.00000,46.00000' direction='3' font='4' color='000000' style='0'>POWER1</LABEL>
+				<LABEL pos='70.00000,58.00000' direction='3' font='5' color='000000' style='0'>POWER2</LABEL>
+				<LABEL pos='70.00000,72.00000' direction='3' font='6' color='000000' style='0'>USB</LABEL>
+				<LABEL pos='90.00000,72.00000' direction='3' font='7' color='000000' style='0'>TELEM1</LABEL>
+				<LABEL pos='110.00000,72.00000' direction='3' font='8' color='000000' style='0'>UART&amp;I2C B</LABEL>
+				<LABEL pos='70.00000,84.00000' direction='3' font='9' color='000000' style='0'>CAN1</LABEL>
+				<LABEL pos='70.00000,94.00000' direction='3' font='14' color='000000' style='0'>CAN2</LABEL>
+				<LABEL pos='90.00000,84.00000' direction='3' font='10' color='000000' style='0'>TELEM2</LABEL>
+				<LABEL pos='108.00000,84.00000' direction='3' font='11' color='000000' style='0'>DSM/SBUS RC</LABEL>
+				<LABEL pos='90.00000,94.00000' direction='3' font='13' color='000000' style='0'>I2C A</LABEL>
+				<LABEL pos='108.00000,94.00000' direction='3' font='12' color='000000' style='0'>CAP &amp; ADC IN</LABEL>
+				<LABEL pos='104.00000,104.00000' direction='3' font='17' color='000000' style='0'>GPS MODULE</LABEL>
+				<LABEL pos='88.00000,104.00000' direction='3' font='16' color='000000' style='0'>PPM RC</LABEL>
+				<LABEL pos='70.00000,104.00000' direction='3' font='15' color='000000' style='0'>SBUS OUT</LABEL>
+				<LABEL pos='90.00000,114.00000' direction='3' font='18' color='000000' style='0'>SPI</LABEL>
+				<LABEL pos='70.00000,124.00000' direction='3' font='20' color='000000' style='0'>I/O PWM OUT</LABEL>
+				<LABEL pos='104.00000,124.00000' direction='3' font='19' color='000000' style='0'>FMU PWM OUT</LABEL>
+				<TEXT pos='88.00000,136.00000' direction='3' font='21' color='000000'>Pixhawk4</TEXT>
+			</TinyCAD>
+		</SYMBOLDEF>
+		<SYMBOLDEF id='2'>
+			<NAME type='0'>GPS Module</NAME>
+			<REF type='0'>Holybro Pixhawk 4 Neo-M8N GPS</REF>
+			<DESCRIPTION>Pixhawk4 GPS Module</DESCRIPTION>
+			<PPP>1</PPP>
+			<GUID></GUID>
+			<FIELD>
+				<NAME>$$SPICE_PROLOG_PRIORITY</NAME>
+				<DEFAULT>5</DEFAULT>
+				<FT>000002</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<FIELD>
+				<NAME>$$SPICE_EPILOG_PRIORITY</NAME>
+				<DEFAULT>5</DEFAULT>
+				<FT>000002</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<FIELD>
+				<NAME>Package</NAME>
+				<DEFAULT>package name for PCB layout</DEFAULT>
+				<FT>000001</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<REF_POINT power='0' part='0' pos='86.00000,62.00000'/>
+			<TinyCAD>
+				<ELLIPSE a='50.00000,28.00000' b='86.00000,62.00000' style='20' fill='3'/>
+				<POLYGON pos='64.00000,32.00000' style='21' fill='0' polygon='0'>
+					<POINT pos='4.00000,0.00000' arc='0'/>
+					<POINT pos='0.00000,10.00000' arc='0'/>
+					<POINT pos='4.00000,8.00000' arc='0'/>
+					<POINT pos='8.00000,10.00000' arc='0'/>
+					<POINT pos='4.00000,0.00000' arc='0'/>
+				</POLYGON>
+				<TEXT pos='56.00000,52.00000' direction='3' font='21' color='000000'>Pixhawk4</TEXT>
+				<TEXT pos='56.00000,56.00000' direction='3' font='22' color='000000'>GPS Module</TEXT>
+			</TinyCAD>
+		</SYMBOLDEF>
+		<OPTIONS>
+			<GRID>1</GRID>
+			<UNITS>0</UNITS>
+			<COLOR_WIRE>FF0000</COLOR_WIRE>
+			<COLOR_BUS>0000FF</COLOR_BUS>
+			<COLOR_JUNCTION>000000</COLOR_JUNCTION>
+			<COLOR_NOCONNECT>000000</COLOR_NOCONNECT>
+			<COLOR_LABEL>208000</COLOR_LABEL>
+			<COLOR_POWER>000000</COLOR_POWER>
+			<COLOR_PIN>4040C0</COLOR_PIN>
+			<COLOR_HIDDEN_PIN>208020</COLOR_HIDDEN_PIN>
+			<COLOR_BACKGROUND>FFFFFF</COLOR_BACKGROUND>
+			<COLOR_NOTETEXT_FILL>AFFFFF</COLOR_NOTETEXT_FILL>
+			<COLOR_NOTETEXT_LINE>FF0000</COLOR_NOTETEXT_LINE>
+			<COLOR_NOTETEXT_TEXT>FF0000</COLOR_NOTETEXT_TEXT>
+		</OPTIONS>
+		<SYMBOL id='1' pos='168.00000,120.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+			<FIELD type='2' description='Ref' value='U?' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='0' description='Name' value='Pixhawk4' show='0' pos='1.00000,-96.00000'/>
+			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='1' description='Package' value='package name for PCB layout' show='0' pos='1.00000,-93.60000'/>
+		</SYMBOL>
+		<BUS style='9' a='166.00000,84.00000' b='260.00000,84.00000'/>
+		<BUS style='9' a='260.00000,84.00000' b='260.00000,74.00000'/>
+		<BUS style='9' a='132.00000,104.00000' b='128.00000,108.00000'/>
+		<BUS style='9' a='138.00000,78.00000' b='142.00000,74.00000'/>
+		<BUS style='9' a='142.00000,74.00000' b='186.00000,74.00000'/>
+		<BUS style='7' a='226.00000,113.00000' b='226.00000,124.00000'/>
+		<BUS style='7' a='226.00000,124.00000' b='252.00000,124.00000'/>
+		<BUS style='7' a='219.00000,113.00000' b='219.00000,130.00000'/>
+		<BUS style='7' a='219.00000,130.00000' b='252.00000,130.00000'/>
+		<BUS style='7' a='212.00000,113.00000' b='212.00000,136.00000'/>
+		<BUS style='7' a='212.00000,136.00000' b='252.00000,136.00000'/>
+		<BUS style='7' a='205.00000,113.00000' b='205.00000,142.00000'/>
+		<BUS style='7' a='205.00000,142.00000' b='252.00000,142.00000'/>
+		<TEXT pos='237.16000,123.00000' direction='3' font='23' color='000000'>Left Aileron</TEXT>
+		<TEXT pos='235.40000,129.00000' direction='3' font='23' color='000000'>Right Aileron</TEXT>
+		<TEXT pos='242.28000,141.00000' direction='3' font='23' color='000000'>Rudder</TEXT>
+		<TEXT pos='241.12000,135.00000' direction='3' font='23' color='000000'>Elevator</TEXT>
+		<TEXT pos='182.24000,134.00000' direction='3' font='23' color='000000'>Motor ESC</TEXT>
+		<TEXT pos='58.00000,32.00000' direction='3' font='30' color='000000'>11V Battery</TEXT>
+		<TEXT pos='44.00000,56.00000' direction='3' font='29' color='000000'>PDB</TEXT>
+		<BUS style='5' a='56.00000,24.00000' b='44.00000,24.00000'/>
+		<BUS style='5' a='44.00000,24.00000' b='44.00000,48.00000'/>
+		<BUS style='6' a='56.00000,26.00000' b='46.00000,26.00000'/>
+		<BUS style='6' a='46.00000,26.00000' b='46.00000,48.00000'/>
+		<BUS style='8' a='54.00000,50.00000' b='90.00000,50.00000'/>
+		<BUS style='8' a='90.00000,50.00000' b='90.00000,36.00000'/>
+		<BUS style='4' a='54.00000,52.00000' b='92.00000,52.00000'/>
+		<BUS style='4' a='92.00000,52.00000' b='92.00000,38.00000'/>
+		<BUS style='4' a='92.00000,38.00000' b='116.00000,38.00000'/>
+		<BUS style='4' a='116.00000,38.00000' b='116.00000,32.00000'/>
+		<BUS style='8' a='90.00000,36.00000' b='114.00000,36.00000'/>
+		<BUS style='8' a='114.00000,36.00000' b='114.00000,32.00000'/>
+		<RECTANGLE a='56.00000,20.00000' b='90.00000,34.00000' style='20' fill='0'/>
+		<RECTANGLE a='42.00000,48.00000' b='54.00000,58.00000' style='20' fill='0'/>
+		<LABEL pos='50.00000,40.00000' direction='0' font='24' color='208000' style='0'>11V</LABEL>
+		<LABEL pos='80.00000,50.00000' direction='2' font='24' color='208000' style='0'>5V</LABEL>
+		<BUS style='6' a='26.00000,98.00000' b='36.00000,98.00000'/>
+		<BUS style='5' a='24.00000,66.00000' b='24.00000,90.00000'/>
+		<BUS style='6' a='26.00000,98.00000' b='26.00000,56.00000'/>
+		<BUS style='6' a='26.00000,56.00000' b='42.00000,56.00000'/>
+		<BUS style='5' a='24.00000,90.00000' b='24.00000,106.00000'/>
+		<BUS style='5' a='24.00000,106.00000' b='36.00000,106.00000'/>
+		<BUS style='5' a='24.00000,66.00000' b='24.00000,54.00000'/>
+		<BUS style='5' a='24.00000,54.00000' b='42.00000,54.00000'/>
+		<LABEL pos='30.00000,76.00000' direction='1' font='24' color='208000' style='0'>11V</LABEL>
+		<BUS style='9' a='162.00000,88.00000' b='166.00000,84.00000'/>
+		<BUS style='9' a='132.00000,104.00000' b='172.00000,104.00000'/>
+		<SYMBOL id='2' pos='278.00000,74.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+			<FIELD type='0' description='Ref' value='Holybro Pixhawk 4 Neo-M8N GPS' show='0' pos='1.00000,-29.60000'/>
+			<FIELD type='0' description='Name' value='GPS Module' show='0' pos='1.00000,-32.00000'/>
+			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='1' description='Package' value='package name for PCB layout' show='0' pos='1.00000,-27.20000'/>
+		</SYMBOL>
+		<RECTANGLE a='92.00000,62.00000' b='80.00000,82.00000' style='20' fill='0'/>
+		<TEXT pos='82.00000,74.00000' direction='3' font='28' color='000000'>Motor</TEXT>
+		<BUS style='6' a='86.00000,100.00000' b='86.00000,82.00000'/>
+		<BUS style='6' a='90.00000,104.00000' b='90.00000,82.00000'/>
+		<BUS style='6' a='90.00000,104.00000' b='66.00000,104.00000'/>
+		<BUS style='6' a='86.00000,100.00000' b='66.00000,100.00000'/>
+		<BUS style='9' a='162.00000,70.00000' b='182.00000,70.00000'/>
+		<BUS style='9' a='182.00000,70.00000' b='202.00000,70.00000'/>
+		<BUS style='9' a='140.00000,56.00000' b='144.00000,52.00000'/>
+		<BUS style='9' a='144.00000,52.00000' b='182.00000,52.00000'/>
+		<RECTANGLE a='182.00000,48.00000' b='222.00000,56.00000' style='11' fill='0'/>
+		<TEXT pos='186.00000,54.00000' direction='3' font='27' color='000000'>Telemetry Transciever</TEXT>
+		<RECTANGLE a='208.00000,60.00000' b='238.00000,68.00000' style='20' fill='0'/>
+		<TEXT pos='212.00000,66.00000' direction='3' font='26' color='000000'>RC Transceiver</TEXT>
+		<NOTE_TEXT a='120.00000,122.00000' b='156.00000,130.00000' direction='3' style='22' fill='7' font='3' color='FF0000' border_style='1'>ESC/BEC gives power to the Servo Rail through PWM</NOTE_TEXT>
+		<RECTANGLE a='36.00000,94.00000' b='66.00000,110.00000' style='20' fill='0'/>
+		<TEXT pos='44.00000,104.00000' direction='3' font='31' color='000000'>ESC/BEC</TEXT>
+		<BUS style='9' a='220.00000,28.00000' b='232.00000,28.00000'/>
+		<BUS style='7' a='220.00000,34.00000' b='232.00000,34.00000'/>
+		<BUS style='2' a='180.00000,34.00000' b='192.00000,34.00000'/>
+		<BUS style='5' a='200.00000,28.00000' b='212.00000,28.00000'/>
+		<BUS style='6' a='212.00000,34.00000' b='200.00000,34.00000'/>
+		<BUS style='8' a='180.00000,28.00000' b='192.00000,28.00000'/>
+		<TEXT pos='180.00000,28.00000' direction='3' font='25' color='000000'>5V</TEXT>
+		<TEXT pos='200.00000,34.00000' direction='3' font='25' color='000000'>11V</TEXT>
+		<TEXT pos='200.00000,28.00000' direction='3' font='25' color='000000'>GND</TEXT>
+		<TEXT pos='180.00000,34.00000' direction='3' font='25' color='000000'>GND</TEXT>
+		<TEXT pos='220.00000,34.00000' direction='3' font='25' color='000000'>PWM</TEXT>
+		<TEXT pos='220.00000,28.00000' direction='3' font='25' color='000000'>Other</TEXT>
+		<RECTANGLE a='176.00000,16.00000' b='240.00000,38.00000' style='20' fill='0'/>
+		<TEXT pos='178.00000,22.00000' direction='3' font='32' color='000000'>Key</TEXT>
+		<TEXT pos='178.13308,111.94391' direction='0' font='3' color='000000'>OUT8</TEXT>
+		<TEXT pos='220.00000,112.00000' direction='0' font='3' color='000000'>OUT2</TEXT>
+		<TEXT pos='213.00000,112.00000' direction='0' font='3' color='000000'>OUT3</TEXT>
+		<TEXT pos='206.00000,112.00000' direction='0' font='3' color='000000'>OUT4</TEXT>
+		<TEXT pos='199.00000,112.00000' direction='0' font='3' color='000000'>OUT5</TEXT>
+		<TEXT pos='192.00000,112.00000' direction='0' font='3' color='000000'>OUT6</TEXT>
+		<TEXT pos='185.00000,112.00000' direction='0' font='3' color='000000'>OUT7</TEXT>
+		<TEXT pos='227.00000,112.00000' direction='0' font='3' color='000000'>OUT1</TEXT>
+		<TEXT pos='194.23669,101.92308' direction='3' font='26' color='000000'>Servo Rail</TEXT>
+		<RECTANGLE a='206.00000,72.00000' b='240.00000,80.00000' style='20' fill='0'/>
+		<TEXT pos='212.00000,78.00000' direction='3' font='26' color='000000'>Airspeed Sensor</TEXT>
+		<NOTE_TEXT a='233.00000,97.00000' b='259.00000,112.00000' direction='3' style='17' fill='8' font='3' color='FF0000' border_style='1'>These signals go to the respective servos on the OpenUAS</NOTE_TEXT>
+		<BUS style='5' a='82.00000,82.00000' b='82.00000,96.00000'/>
+		<BUS style='5' a='82.00000,96.00000' b='66.00000,96.00000'/>
+		<NOTE_TEXT a='50.00000,66.00000' b='68.00000,82.00000' direction='3' style='22' fill='6' font='3' color='FF0000' border_style='1'>If wires plugged into motor incorrectly, the motor will spins backwards</NOTE_TEXT>
+		<BUS style='7' a='66.00000,108.00000' b='90.00000,108.00000'/>
+		<BUS style='7' a='90.00000,108.00000' b='90.00000,135.00000'/>
+		<BUS style='7' a='90.00000,135.00000' b='198.00000,135.00000'/>
+		<RECTANGLE a='229.00000,113.00000' b='173.00000,97.00000' style='20' fill='0'/>
+		<BUS style='9' a='186.00000,74.00000' b='186.00000,78.00000'/>
+		<BUS style='9' a='186.00000,78.00000' b='206.00000,78.00000'/>
+		<BUS style='9' a='202.00000,70.00000' b='202.00000,64.00000'/>
+		<BUS style='9' a='202.00000,64.00000' b='208.00000,64.00000'/>
+		<BUS style='9' a='140.00000,68.00000' b='144.00000,64.00000'/>
+		<BUS style='9' a='144.00000,64.00000' b='174.00000,64.00000'/>
+		<RECTANGLE a='174.00000,60.00000' b='188.00000,68.00000' style='11' fill='0'/>
+		<TEXT pos='178.00000,66.00000' direction='3' font='26' color='000000'>Lidar</TEXT>
+		<BUS style='7' a='198.00000,135.00000' b='198.00000,113.00000'/>
+	</TinyCAD>
+</TinyCADSheets>

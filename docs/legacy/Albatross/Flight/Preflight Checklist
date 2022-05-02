@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage[margin=.5in]{geometry}
+
+\begin{document}
+\title{Albatross UAS Preflight Checklist}
+\author{Madison Harrington}
+\maketitle
+
+\section{Items needed:}
+
+\begin{itemize}
+\item FAA documents
+\item Remote pilot certificate
+\item Aircraft registration (identifier on UAS)
+\item Authorization or waiver for flight
+\item Tool box 
+\item Tool kit and electrical tape
+\item Extra screws and battery
+\item Dremel (in case of crashes) 
+\item Scissors and gloves
+\end{itemize}
+
+\section{Checks:}
+
+\begin{itemize}
+\item Weather: Ames, IA 515-233-2611 (automated)
+\item Primary considerations
+\item Ice conditions, wind, visibility
+\item Weight and Balance calculated
+\end{itemize}
+
+\section{Structure: }
+
+\begin{itemize}
+\item All screw attachments
+\item Ailerons and flaps intact
+\item Rear pieces intact
+\item Wheels secure and in good condition
+\item Generally: damage check of the entire structure
+\end{itemize}
+
+\section{Electronics:}
+
+\begin{itemize}
+\item Securely attached inside the nose
+\item Communicating with sensors and controls
+\item Test ailerons, flaps, rear controls and steering (if applicable)
+\item Sufficient battery charge for flight
+\end{itemize}
+
+\end{document}

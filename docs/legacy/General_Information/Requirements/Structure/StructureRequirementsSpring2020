@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+	\title{Structure Requirements (Rough Draft)}
+	
+	\author{Abigail Gries, Nicholas Hendrickson}
+	\maketitle
+	
+	\textit{This document will describe the structures requirements for the Iowa State University Open UAS project.}
+	\begin{enumerate}
+		
+		\section{Wings}
+		
+		\item The wings shall be able to withstand drafts of up to 50 knots.\\
+		\item The wingspan shall be 5 feet.\\
+		\item At a zero AOA wings shall produce equal weight to lift.\\
+		\item The wing loading factor shall not exceed 2 pounds per square foot.\\
+		\item The wings shall have flaperons as control surfaces.\\
+		\item The wings shall be attached to the frame of the UAS by ??\\
+		\item The wings shall be either made from foam core with composite shell. \\
+		\item The wings shall have at least ??? degrees of dihedral. \\
+		
+	\end{enumerate}
+		
+	\begin{enumerate}
+		
+		\section{Fuselage}
+		
+		\item The fuselage shall house the required electronic equipment.\\
+		\item The inside of fuselage shall cushion and protect components.\\
+		\item The electronic equipment inside the fuselage shall be secured with Velcro or something similar.\\
+		\item The fuselage shall contain custom 3D printed storage containers for components.\\
+		\item The inside of fuselage shall be accessible without significant deconstruction or special tools.\\
+		\item The fuselage shall be able to withstand minimum impact of 2G.\\
+	
+	\end{enumerate}
+
+	\begin{enumerate}
+		
+		\section{Empennage}
+			
+		\item The empennage shall be a traditional tail style with vertical and horizontal stabilizers.\\
+		\item The tail shall have a rudder.\\
+		\item The tail shall have an elevator.\\
+		
+	\end{enumerate}
+
+	\begin{enumerate}
+		
+		\section{Materials}
+		
+		\item The 3D printed components shall be produced by the LulzBot Taz 6 3D printer.\\
+		\item The 3D printed structural components shall use ABS filament.\\
+		\item The non-structural 3D printed components shall use PLA filament.\\
+		\item The foam used in the design shall be XPS foam.\\
+		\item The materials shall be accessible by general public.\\
+		\item Alternate materials and printers shall be listed for hobbyists' use.\\
+		\item All control surfaces shall use either nylon or CA hinges. \\
+
+	\end{enumerate}		
+
+	\begin{enumerate}
+		
+		\section{General}
+		
+		\item All components shall be placed such that the center of gravity is stable.\\
+		\item All connection points shall be able to withstand minimum impact of 2G.\\
+		\item All components shall be modeled and documented in SolidWorks.\\
+		\item The weight of the total structural frame without electrical components shall not exceed 2.5 lbs.\\
+		\item Design decisions shall be documented in LaTeX and Git.\\
+		\item There shall be at least three design tiers to choose from, dependent on budget and material accessibility concerns.\\
+
+		
+		
+	\end{enumerate}
+	
+\end{document}

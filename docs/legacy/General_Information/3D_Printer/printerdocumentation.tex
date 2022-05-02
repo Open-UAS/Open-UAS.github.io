@@ -1,0 +1,86 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{gensymb}
+\usepackage{hyperref}
+
+\begin{document}
+
+\title{\textbf{3D Printer Documentation and Guide}}
+\author{Abigail Gries, Catherine Sener}
+\maketitle
+
+This document is meant to serve as both documentation of techniques used and problems faced by the OpenUAS team, as well as a beginner's guide to 3D printing for future team members and the public. The OpenUAS team uses the LulzBot Taz 6 3D printer. This document is not meant to replace the LulzBot manual, but to serve as supplemental instruction and a quick reference for printing with the Taz 6. Some of the information in this document may also pertain to other 3D printers, but not all, so care should be taken when applying this information to other models of 3D printers. 
+
+\section{Common Issues and Troubleshooting}
+
+Over the past several months of using the Taz 6, the OpenUAS team has discovered some interesting quirks displayed by this printer. This section will describe some frequent issues the team has faced and how to resolve them.
+
+\subsection{Printer freezes mid print and won't continue}
+
+In this situation, the printer will start the printing process just fine, and sometime before the print is complete, the printer will just pause and won't continue to create the component. The computer will usually say that the printer is still connected and printing when it is clearly not. This issue could from a bad USB connection, an outdated version of Cura, the computer falling asleep, etc. To resolve this issue, first abort the print through the Cura interface on the computer. Then, shut the printer off, wait for several seconds, and finally turn it back on again. Do not attempt to move the extruder before turning the printer off. Wait until the bed temperature reaches the appropriate temperature before removing the unfinished component from the bed. 
+\\
+\\Additionally, before starting the print over again, check that the version of Cura is updated. If the version of Cura is updated and the printer continues to freeze, update all software on the computer. There has recently been a memory leak issue cause by multiple programs including the LulzBot version of Cura for Ubunt. If the print continues to freeze print off of a computer that uses the LulzBot version of Cura for Windows.
+
+\subsection{Z-axis becomes uneven}
+
+This issue occurs when one of the two motors controlling the z-axis slips causing one side to rise while the other does not. This will produce a horrible grinding sound, and the z-axis will be visibly uneven. Although the team does not know what specifically causes this, we believe that it stems from a software issue after the "abort print" feature is used. This issue can be solved relatively easily, but the steps most be done in the correct order or else serious damage could be done to the printer. First, turn the printer off as quickly as possible. Wait several seconds before turning it back on again. Then, using the controls on the printer itself, move the z-axis up in 1 mm increments only. Slowly do this until the printer is level again. It will be obvious when it is level again because the grinding noise will stop and the two sides will move up simultaneously. DO NOT try to "home" (control on printer that sends it to the starting position) the extruder before the z-axis is level again. 
+
+\subsection{Printed component is difficult to remove from bed}
+
+Most filaments require a certain bed temperature and bed prep procedure in order to successfully remove the printed component from the bed. These instructions are listed elsewhere in this document, but this section explains what to do if these procedures were not followed and the piece is stuck. To resolve this issue, first check that the bed is cooled to the right temperature. If it is not, heat the bed up again to the correct temperature using the Cura interface. The appropriate temperatures can be found in Section  . Next, use the large blue knife included in the LulzBot tool kit to pry the piece off the bed. It works best if you find the thinest section of the printed component and start to pry from there. Do not be afraid to use force in removing the components as they can be tricky to remove, especially if the bed is prepped incorrectly. 
+
+\subsection{Printer Connection Issues}
+
+If the Cura software cannot connect to the printer, there are a few potential fixes. The 1st fix is to ensure that the printer is on and connected to the computer tower BEFORE Cura is open. The 2nd issue is the log in account you are using has the dial-out function locked. To add the dial-function, you must first be an administrator on your account. Then you need to type the following sequence of commands into the command terminal. Once this process is complete you may need to reboot the computer and start the Cura setup process again.
+
+sudo usermod -a -G tty \$USER
+
+sudo usermod -a -G dialout \$USER
+
+\subsection{Printed component is not sticking to bed}
+
+The default build plate adhesion setting in Cura is to print with a "skirt" around the print. This skirt does not secure the print to the bed; it only begins the filament extrusion so that the extruder is ready when it begins printing the component. If the print is having issues adhering to the bed, it may be helpful to select "brim" as the build plate adhesion setting. The extruder will lay a thin sheet of filament attached to and around the component to help secure the print to the bed. 
+\\
+\\Additionally, verify that the proper bed prep is performed before printing (see section 2). When printing with PLA, be sure to apply the glue stick to the bed before every single print. It may be tempting to only do it once for every couple of prints, but this may lead to print adhesion issues. 
+
+\section{Filaments}
+
+The LulzBot Taz 6 is compatible with a variety of different filaments. Each filament has a unique set of nozzle temperatures, bed temperatures, and bed prep procedures that must be used in order to produce a successful print. Usually, the CURA software will instruct the printer to heat the nozzle and bed to the right temperature based on the selected material assigned within the program. However, it is good practice to know what these temperatures are to ensure that the printer is functioning correctly. Additionally, bed prep must be performed before every new print. This section will describe each filament type used by the OpenUAS team, the correct operating temperatures for the specific filament type AND brand (this may vary between brands, be careful), and the correct bed prep procedures.
+
+\subsection*{PLA}
+
+PLA stands for polylactic acid. This is one of the most basic 3D printing filaments so most beginners use this type. The OpenUAS team uses this filament for components that are not structural in nature. Typically, things such as mounts, electrical components housing, and test components are printed using PLA. PLA is not very flexible or strong, but it light and does not require much printer preparation. \\\\
+\textbf{Extruder temperature: 205 \degree C}\\
+\textbf{Bed temperature: 60 \degree C}\\
+\textbf{Part removal: 50 \degree C}\\\\
+Bed prep: Before printing, cover the PEI glass bed with a coating of glue. Elmer's purple glue sticks will work just fine. \\\\
+Note: temperatures and bed prep used for PolyLite PLA.
+
+\subsection*{ABS}
+
+ABS stands for Acrylonitrile Butadiene Styrene. This is also a very common printing filament, however, it requires a heated printing bed and more setup than PLA. For these reasons, it is not considered a "beginner's" filament. It also costs more than PLA, so the OpenUAS team uses this filament for components that are structural in nature. ABS printed components are typically stronger and more flexible than PLA printed components.\\\\
+\textbf{Extruder temperature: 240 - 245 \degree C}\\
+\textbf{Bed temperature: 95 \degree C}\\
+\textbf{Part removal: 50 \degree C}\\\\
+Bed prep: Before printing with ABS, be sure to follow these steps. First, wipe the PEI glass bed down with a wet paper towel to remove any glue buildup on the surface. Then, spray a mixture of soapy water onto the printing surface. Cover this area with a layer of Kapton tape. Secure the tape to the bottom side of the printer and scrape any excess water out from under the tape. Apply a layer of purple glue stick to the tape. Check that the bed is heating up to the right temperature. \\\\
+Note: temperatures and bed prep used for ABS by IC3D.
+
+\section{Cura}
+
+\subsection{Windows}
+
+\subsubsection{Updating Firmware}
+
+If new printer firmware is needed, an icon will pop onto the bottom of the Cura application after the "print" button is pushed. It is important to update the firmware as soon as possible because it might help resolve current issues with the printer. 
+\\
+\\To begin this update, certain values must first be recorded from the printer. Using the LCD controller on the printer itself, go to Configuration$>$Advanced Settings$>$Steps/mm. Record all values listed on this screen. Next, when the printer is connected to Cura through the USB, select the "Console" button under the monitor tab. In the screen that pops up, type M851 and enter. Record the Z offset value that is listed. After both the Steps/mm and Z offset values are recorded, go to Settings $>$ Manage Printers $>$ Upgrade Firmware in Cura. Select Automatically upgrade firmware. After the update is completed, be sure to double check the Steps/mm and Z-offset. If they are different than what was recorded before the update, change the back to the recorded value. The Steps/mm can easily be changed using the LCD controller on the printer. To update the Z offset value, type M851 Z-x.xx, where x.xx is the value recorded earlier for the Z offset, into the Console window. The printer's firmware is now updated!
+\\
+\\The following links explain the same steps above:\\
+\url{https://www.lulzbot.com/learn/tutorials/Z-axis-offset#get-offset}\\
+\url{https://www.lulzbot.com/learn/tutorials/firmware-flashing-through-cura#get-esteps}\\
+\url{https://www.youtube.com/watch?v=ADUsg7XZOEE}
+
+\subsection{Linux}
+
+
+\end{document}

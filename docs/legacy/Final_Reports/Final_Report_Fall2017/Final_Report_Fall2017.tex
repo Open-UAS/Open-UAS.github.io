@@ -1,0 +1,277 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lstautogobble}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{changepage}
+\usepackage{listings}
+\usepackage{amsthm}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+%Command to change name of table of contents
+\renewcommand*\contentsname{Table of Contents}
+
+%Command to start sections on new pages
+\newcommand{\sectionbreak}{\clearpage}
+
+%Create a new "Unlabeled section" that will be added to toc but not printed
+\newcommand{\unlabeledsection}[1]{%
+ \clearpage
+  \par\refstepcounter{section}% Increase section counter
+  \sectionmark{#1}% Add section mark (header)
+  \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}% Add section to ToC
+  }
+  
+\emergencystretch=1em
+
+\title{OpenUAS:\\First Semester Progress Report }
+\begin{document}
+
+
+%%TITLE PAGE%%
+\maketitle
+
+\newpage
+
+%%TEAM PAGE%%
+\begin{center}
+\Large \textbf{The OpenUAS Team}
+
+\vspace{1cm}
+
+\large{
+Abigail Gries\footnote[1]{ISU Department of Aerospace Engineering}\\ Logan Gross\footnotemark[1]\\ Alex Harpenau\footnotemark[1]\\ Madison Harrington\footnotemark[1]\\ Mandy Kewitsch\footnotemark[1]\\ Catherine Sener\footnotemark[1]\\ Josh Wallin\footnote[2]{ISU Department of Electrical and Computer Engineering}
+}\par
+
+\end{center}
+
+\newpage
+
+%%TABLE OF CONTENTS%%
+
+\tableofcontents
+
+%%PROJECT OVERVIEW%%
+\section{Project Overview}
+
+\subsection{Purpose}
+Currently, there are no open-source unmanned aerial systems (UAS) which are fixed-wing and conceptually accessible available to the general public. There are some similar UAS which are available, but they must be purchased and are not open-source. OpenUAS is producing an open-source, commercial off-the-shelf (COTS) UAS that can be used for recreational and research purposes, and it will only consist of components available to the general public, including open-source software.
+
+\subsection{Scope}
+In order to develop an open-source, COTS UAS for recreational and research purposes that is free and available to the general public, a list of objectives, deliverables, and constraints were identified at the conception of the project. The following section will provide an overview of these lists.
+
+\subsection{Objectives}
+\begin{enumerate}
+\item Create an open-source, COTS UAS for short recreational and research flights
+\item Provide full documentation of the conception, design, and testing of all systems
+\item The UAS should not require a runway for takeoff or landing
+\item The piloting of the UAS shall be accessible to hobbyists
+\item The UAS shall be made of ``affordable" components
+\item UAS components should be reconfigurable and support additional components
+\end{enumerate}
+
+\subsection{Deliverables}
+\begin{enumerate}
+\item A functioning design and prototype of a UAS
+\item A ground launch system for takeoff
+\item Relevant tools for piloting the UAS from the ground
+\item Extensive documentation of the development process
+\item Extensive documentation on proper use and safety
+\end{enumerate}
+
+\subsection{Constraints}
+\begin{enumerate}
+\item COTS components
+\item Affordable components
+\item Easily duplicated components (e.g. all 3D printed parts can be reasonably produced by hobbyists)
+\item All components should be reasonably safe (e.g. battery)
+\item Design and testing completed within 1 academic year
+\end{enumerate}
+
+%%BACKGROUND%%
+\section{Background}
+
+\subsection{Related Work}
+
+%%PROJECT DOCUMENTATION%%
+\section{Project Documentation}
+
+Varying forms of documentation were developed in order to assist with tracking the vision, objectives, high-level project plan, meeting documents to capture insight and actions needed, and so forth. The documentation is intended to not only support the systems engineering aspect of the project, but also serve an educational purpose by assisting future users who would like insight into what efforts and decisions were made to bring OpenUAS from a concept to a reality.
+
+\begin{enumerate}
+\item \textbf{Tollgate} \\Tollgates show what team member has primary responsibility for completing certain tasks, how team members / subsystems are cross-functional and share responsibility with completion of tasks, and also track what deliverables are associated with each objective. The Tollgates were set up to indicate the completion of major milestones, or ?phases?. Project Kick-Off has been completed, and Conceptual Design Review is currently being focused on as the semester reaches a close. Later, the Preliminary Design Review and Systems Design Review phases will be completed.
+Tollgates become very helpful as a design begins to develop and ?take shape?, as it becomes a high-level review of what work has been accomplished. Each Tollgate has a list of ?Deliverables?--objectives that would show the project is ready to move to the next phase once all are completed. In order to show the deliverable is completed, ?objective evidence? is provided. (Example: ?Initiate Requirements? is a deliverable, and a requirements document would be the objective evidence.) The team must be in consensus that each deliverable has been met appropriately and that the project is on track to meet its objectives and purpose.
+\item \textbf{Running Action Item List} \\The Running Action Item List (RAIL) is to be updated regularly with tasks as they come up. This is attached to the overall Tollgate document. Action items can be assigned to individuals or to the team, with an expected completion date.
+The RAIL is not to be considered the same as ?Deliverables? and ?Objective Evidence? from the Tollgate document, although it should be noted that the objective evidence is often worked on as an action item. Many times, action items are assigned after team meetings to help ensure progress continues to be made.
+\item \textbf{Project Charter}\\ This is a ?one-pager? intended to help provide a broad overview of the project. The Project Charter lays out the team, the scope of the project, the purpose, and so forth. Additionally, the project objectives, deliverables, and constraints that were mentioned earlier in this paper come from the Project Charter as it maintains the vision and intent of the OpenUAS project.
+\item \textbf{Requirements}\\ The requirements document is currently a ?living? document that is still in progress. It includes the overall system requirements, as well as subsystem requirements. The requirements document helps guide the team in design decisions, but also has undergone multiple reviews, including one major peer review, to ensure that they are reasonable, feasible, and assist in meeting the overall project objectives. They are being updated to reflect the ?Easy Approach to Requirements Syntax? (EARS) format, which involves providing precise language and rationale. The revisions are maintained on GitHub.
+\item \textbf{Weekly Meeting Agenda \& Minutes}\\Each week, Meeting Minutes are held to capture what discussion and decisions occurred. The tasks of leading the meeting and taking meeting minutes are rotated through the team. The one leading the meeting will set the agenda for that meeting?s primary discussion points, and the meeting minutes are taken in ?real-time? on the shared Google Drive. Afterward, the meeting minutes are then cleaned up and formatted into the meeting minute document kept on GitHub.
+\item \textbf{Project Plan}\\ The Project Plan is a long-term, high-level calendar broken down by month and then broken down weekly with goals and deliverables. This document is maintained on GitHub. Every few weeks the team will make a plan for the next few months.
+\item \textbf{Requirements}\\ The requirements document is an extensive, volatile artifact that has been developed since the beginning of the project. Originally, our primary requirements were high-level, and directly traceable to the overall project goals. Now, as we begin to make decisions about what our design will look like, the requirements have evolved to become more detailed. For the sake of making requirements easier to read and understand, we chose to use the EARS \cite{Terzakis2013} requirements syntax.
+\end{enumerate}
+
+\section{Related Work}
+\noindent Currently, there are very few comparable fixed-wing UAS. The United States uses UAS such as the RQ-14A Dragon Eye and RQ-11B Raven in its military. Although these UAS are similar in size and weight to the OpenUAS team's target design, the technology and capabilities of these systems are much more advanced, and as such, the budget well exceeds the team?s overall budget.\\
+
+\noindent The University of Virginia created the Razor, a small fixed-wing UAS for the Department of Defense. This UAS has a flying wing design and utilizes an Android phone as the main processor. The Razor is of similar size, weight, and performance of the team?s target design. One main difference in this system is that it is entirely 3D printed. The team plans on utilizing 3D printing, but not to the extent of the Razor design.\\
+
+\noindent The Albatross is a commercial UAS produced by Applied Aeronautics. Although this aircraft is slightly larger than the team's target design, its performance and low-cost are comparable to the team's goals. This UAS is described in more detail later in the paper, as the team purchased and is beginning to study this design. \\
+
+
+%%LAB SETUP AND ORGANIZATION%%
+\section{Lab Set-Up \& Organization}
+\noindent The lab provided this semester began with no equipment. Throughout the semester, orders had been placed for tools and other items needed in order to ensure a work space that has all tools needed for successful progression of this project. Because we are working within a large organization, special documentation and communication must be done in order to acquire the parts needed for the lab. This includes confirmation of successful retrieval of parts and checking if damage was done to them. If damage is found, proceeding with the proper return process and notifications so everyone knows how parts are moving about. \\
+
+\noindent In order to organize and track many of the lab?s tools, inspiration was taken from toolbox kits. In order to maintain a visual inventory of smaller tools that could go missing or be misplaced, foam was ordered and will be sized into drawers through the lab. Each drawer will be categorized in a way that makes sense, and tools or items that fit within that category will have their shape cut into the foam. This allows an individual to open a drawer and see at any moment what tools or items are available (or may be missing), it also ensures the tools or items are kept in a spot where they are protected from damage (or kept from damaging other items).\\
+
+\noindent In order to work with simulations, run flight software, and test certain electronic components, the team needed computers. Dr. Rozier,  the Principal Investigator of the project, ordered and set up four computers using Linux operating systems.These computer would then be used by all teams using the lab. Since then, the team has converted one computer to be used mostly for the UAS project, 3D printing, and battery charging, while using another for communication with members remotely. Another computer is restricted due to projects being done on it, and the fourth is open for all team. The 3D printing computer will be moved once proper cables are put in place for internet connection, and will remain separated from the other three in order to better streamline movement within the lab. It will also sit directly across from the sink in order to move 3D printed parts over for cleaning and processing. \\
+
+\noindent One large purchase made for the lab was the purchase of the 3D printer. The team considered several different options before purchasing the LulzBot Taz 6 3D printer. The decision to purchase this specific printer was made for several different reasons. The primary reasons were: it has one of the largest print volumes for its cost, it was recommended by faculty at Embry-Riddle Aeronautical University, one of the team members had already worked with this model, and there were many positives reviews for it on the internet. Unfortunately, the printer came to the team damaged and had to be returned. A new printer was then sent to the lab again, and was able to be assembled and used correctly.\\
+
+%%INSPIRATION: THE ALBATROSS%%
+\section{Primary Inspiration: The Albatross UAV}
+\noindent The team decided to purchase the Albatross, a low-cost, entry-level drone produced by Applied Aeronautics \cite{AlbatrossFAQ}, in order to have a model for testing ideas for the OpenUAS. Specifically, the team wanted to observe the flight characteristics such as power, controllability, maneuverability, speed, and airfoil characteristics. The team also wanted to order this model to look at the material of the structure, the inside configuration, the weight, and how easy it was to assemble. After purchasing, the Albatross parts were delayed in shipping. The team received all parts before the end of the semester, but is planning to contact Applied Aeronautics for instructions before beginning to assemble the Albatross.\\
+
+\noindent Thus far, the team has liked the interior mesh for supporting the electronics inside. Looking forward, the team is going to assembly and perform multiple flight tests to answer the specific subsystem questions the team had for designing the OpenUAS. 
+
+
+%%SYSTEM ARCHITECTURE AND PROGRESS%%
+\section{OpenUAS System Architecture \& Progress}
+\noindent The OpenUAS team divided the entire system into six subsystems: Structures, Software, Controls, Electronics, Propulsion, and Ground System. The entire system completed 3 requirement revisions with added rationale.The OpenUAS will be modeled by the Albatross, created with support from the Lulzbot 3-D Printer, and utilize the best, most accessible most accessible characteristics of fixed-wing UAS. More details on the OpenUAS system is discussed below in the corresponding subsystems. \\
+
+\begin{figure}
+\includegraphics{UAS_Subsystems.jpg}
+\caption{Initial version of system architecture}
+\centering
+\end{figure}
+
+\subsection{Structures}
+\noindent The first step in the development of the structures subsystem was the creation of the structures? requirements. The requirement process is discussed in greater detail in the requirements section of this document. For the structures? requirements specifically, there are currently 25 requirements that have gone under numerous revisions and one formal peer review. There is also rationale written for each requirement, and the requirements are parametrized as needed. \\
+
+\noindent After the preliminary round of structures? requirements was drafted, the next big step was determining a preliminary estimate of the total weight of the UAS. This step was key in the progress of the project because an estimate of the weight was needed to make successive design decisions from both a structural perspective and electronics perspective. This estimate of weight was determined using several different approaches. First, an estimation of the weight of the electronics and battery was determined from specifications of commonly used components on UAVs. Then, several combinations of wingspan, wing planform area, and the resulting aspect ratio were identified. Additionally, the maximum W/S ratio of the Albatross UAV was calculated. Using these combinations coupled with a W/S ratio slightly less than the Albatross, a maximum weight estimation was determined for each combination of wingspan, wing area, and aspect ratio.\\
+
+\noindent The maximum weight calculated for each scenario was then compared to the sum of the estimated structural, electronic, and battery weights. The most favorable combination was selected. This configuration of the UAS requires a 5 ft wingspan and 2 ft wing platform area, creating an aspect ratio of 12.5, and allowing a maximum takeoff weight of 6 lbs. The estimations for weights were as follows: battery weight of 1.5 lbs, electronics weight of 1.5 lbs, and structural weight of 2.05 lbs, for a total weight of 5.05 lbs. This allows for almost 1 lb of ?wiggle? room in the weight for estimation error or additional components. \\
+
+\noindent The team decided that for the first design of the UAS, the wings would be constructed of foam. This decision was made based on the ease of working with foam, how light it is, and the availability of foam to an average hobbyist. The two choices of foam were expanded polystyrene (EPS) and expanded polypropylene (EPP). EPP was chosen as the foam for the wing as it is very durable and easily repaired. However, this foam is also very flexible. Due to this, research was also done into ways to reinforce EPP foam wings. Currently, the team is considering using carbon fiber wing spars to reinforce the wings. \\
+
+\subsection{Software}
+\noindent Our goals for software this semester were twofold: to develop useful requirements, outlining the proposed behavior of our flight software, and to select an existing, open source option for use onboard our aircraft. To satisfy this first goal, we continuously developed a requirements document (found on the team Git repository), applying the EARS requirements capture technique. Our hope is that, with more time, we may take advantage of the suite of tools specifically used for realizability checks on formally structured requirements.\\
+
+\noindent Upon completing our research of open source flight software options, we chose PX4 (https://github.com/px4/Firmware/), a community-developed autopilot for UAS. PX4 contains not only the necessary components for manual, but also autonomous flight. As we had debated the level of autonomy for our final product, this degree of freedom will be useful. The open source nature of PX4 allows for it to be continuously developed by hobbyists and professionals in the field; the well-structured community ensures that PX4 becomes more and more powerful, with approval from a dedicated team required to make substantial changes. Additionally, the flight software can be edited and built in the lab, which should allow us to alter values and behaviors as needed to satisfy our overarching goals. While ArduPilot presented an alternative autopilot software, frequently used in the UAS domain, we felt that PX4 was more well supported, documented, and developed for our chosen flight computer, the Pixhawk. \\
+
+\noindent The Pixhawk is an onboard flight computer that includes a barometer, three degree of freedom (DOF) gyroscope, three DOF accelerometer, and three DOF magnetometer built in, with some redundancy amongst components. Though these sensors are the only ones necessary to fly, we felt that an airspeed sensor would be an asset for our implementation; for hardware-in-the-loop testing through QGroundControl, this sensor was also a necessity. As such, we purchased and integrated one with the flight computer. We felt that the combination of an open source software suite and flight computer allows for maximum customization in this project, especially as we seek to allow for flexibility in the final product (ex. using alternate sensors to satisfy the same goals for PX4).\\
+
+\noindent To test the software on the ground, we are using QGroundControl, run on Ubuntu 17.10 in the lab. The PX4 documentation specifically suggested this application, along with FlightGear, for hardware in the loop testing, since it is free compared to other options. Unfortunately, we struggled to find a way to calibrate the Pixhawk?s sensors and perform testing in QGroundControl, without having to first have the airspeed sensor and radio controller; as a result, we have had to wait until now to begin this full setup process (since both tools have arrived). It is our hope to soon have all components calibrated, off the aircraft, to do some simple simulation of flight and testing of the electronics equipment.\\
+
+\subsection{Controls}
+\noindent The team has dedicated 3 requirement revisions for the controls system. While developing these requirements, the team has been researching other fixed wing UAS to develop an understanding of what works best fundamentally for controls.\\
+
+\noindent The development of the controls system requirements concentrated on safety, functionality, and responsiveness. These requirements include further subsystems and rationale for supporting the requirements. Further information of the controls requirements can be found in the requirements section of this report. \\
+
+\noindent The team has decided that for the first prototype, our UAS will utilize ailerons, flaps, and rear controls. This decision was made to provide additional control over the aircraft with minimum additional complexity. The ailerons will be the primary control of the aircraft. Another consideration was made regarding the tail section; to provide aircraft stability, coordinated yaw, and better resistance to cross wind, the team will design our model with an upward ?V? shape for the rear control functions. This design has been historically one of the best models for autonomous flight, and therefore will be incorporated into our first design. The team is considering using this design based on its implementation on the Albatross design. \\
+
+\noindent Some considerations the team has regarding future designs of the UAS include double stacked wings and vertical takeoff and landing. These are both much greater in complexity than desired for the team?s first design, but are still considered for future prospects. The controls system would change substantially for either case, but is something the team looks forward to developing. \\
+
+\noindent The team is still in the process of researching other projects to determine what controls system designs will be utilized. The Albatross is of particular interest to the team and will likely influence control system and structural decisions next semester. The software aspect of the controls is further explained under the software section of this report. \\
+
+\subsection{Electronics}
+\noindent After narrowing the overall weight of the UAS to approximately six pounds during the early iterations of the calculated design, the team decided to invest in an Iron Bird model of the UAS for testing. Using the overall weight plus an approximate weight-to-thrust ratio required for minimum takeoff, two motors were selected to fulfill different mission parameters, which are longest flight time and highest attainable velocity. These motors exceeded the minimum required thrust-to-weight ratio so that the UAS may take off in a shorter distance, but also have distinctly different flight parameters for testing the structure and the versatility of the UAS and its customization. Based off of the two motor selections, ESCs, power modules, propellers, batteries and a case to transport the Iron Bird was selected and ordered. Multiple types of propellers were purchased in order in give an even larger envelope for testing the flexibility of the UAS under different conditions. A good example of this is how the propeller characteristics and battery influence flight time, takeoff distance, and max speed. \\
+
+\noindent Due to deciding that the PX4 would be the team?s flight computer, and that the team would be using the Airspeed sensor and other needed parts from the purchased Albatross, the team did not order additional electronics until the team knew what additional parts were going to be tested. All parts currently needed for the Iron Bird version 1 that was ordered separate from the Albatross has been soldered and properly attached to form the first basic testbed system. \\
+
+\noindent As the project develops, more electronics requirements and rationale are added to demonstrate the growth of the understanding and needs of the electronics in the UAS. \\
+
+\subsection{Propulsion}
+\noindent The propulsion system considered to be the propellers and the motor. The battery was considered for this system, but placed specifically in the electronics category because it runs more than just the motor. Propulsion is directly influenced by the electronics, and equally influences the electronics system. This is because for this UAS, the propulsion system was decided to be electronic. This decision was made due to the lightness of the motor system, the fixed and lighter weight of the fuel, and attempting to use up-to-date technology. \\
+
+\noindent When choosing what motors were going to be used, a thrust-to-weight ratio and an overall weight approximation of the UAS was used from the structures side of the team. Although originally planned to be a next semester purchase, a request for the Iron Bird version 1 was requested, so a decisions for electronics and propulsion were pushed forward. The propulsion was prioritized over the electronic decision making because a weight and a thrust-to-weight decision had been made, so finding a motor to fit the needs and basing the battery and other needed parts off of the motor made the most sense. Two motors were decided on, one that had a low draw on the battery, but also had the lowest thrust, and another that had higher draw, weighed more, but also had a significantly higher thrust. This allowed us to have a large range of test parameters and flexibility, with the hope that the team could make the UAS fairly customizable while also keeping it affordable. Both motors were fairly inexpensive, and low weight, with the lighter one sitting at twenty grams, and the other just over eighty grams. \\
+
+\noindent Each motor had to separate sets of propeller purchased for them. They both had a higher thrust set and a lower thrust set, with the idea that the motors could be used for multiple roles. In particular, an idea was made to build a contraption that contained the propeller and motor of the smaller set for live testing within the lab of the Iron Bird. This way, the team could test how the controls responded with the controller and any autonomous programs while under standard, constant power draw. \\
+
+\noindent As more iterations of both the requirements of the structures and the calculated characteristics of the UAS change, the requirements of the propulsion have the potential to change due to values falling outside of the expect initial range. Because of that, many of the valued requirements still have variables in place of the number in order for the team to lock in the desired, but also reasonable, requirements for the UAS. \\
+
+\subsection{Ground System}
+\noindent The ground system of this aircraft will include features of takeoff, landing, transmitting and receiving, and an assembly kit. The team is still considering different takeoff options such as a catapult launch or runway launch. These different considerations require their own different requirements such as landing gear or some sort of connection to the catapult. Different landing considerations include bush landing, autonomous landing, or parachute landing. The team has decided that our kit for setup shall be complete and support an easy assembly and pre-flight check for the UAS. The team will use the following semester to solidify decisions within the ground system as the preliminary design for the UAS develops. \\
+
+%%LESSONS LEARNED%%
+\section{Lessons Learned}
+\begin{enumerate}
+\item Despite best efforts to set timeline at the beginning of the project, we must be prepared to adapt to unexpected changes.
+\begin{enumerate}
+\item Getting started can be slow as we work to iron out the details
+\item Things can arrive broken and must be sent back
+\item Things sometimes don?t arrive at all
+\item Outside parties may not always be capable of acting on our timeline
+\end{enumerate}
+\item Documentation takes a lot of effort \& time, and if not maintained in a ``timely" fashion, can become cumbersome to all.
+\begin{enumerate}
+\item It?s important to act with due diligence to ensure things are up to date, otherwise we fall behind with tracking our progress and can fail to capture the rationale behind our decisions.
+\end{enumerate}
+\item Purchase orders are not simple within an organization, and many levels of documentation and rationale must be used in order to obtain needed materials.
+\begin{enumerate}
+\item Rationale requires comparisons to other products of similar quality and attributes.
+\item Extensive research may be needed to find the right products
+\item A ``completed" list of items will always need to be amended
+\item Multiple item requests are to be expected.
+\end{enumerate}
+\item Documentation of safety takes much time, especially when online sources have varied (and untested) solutions.
+\begin{enumerate}
+\item Double check information found in an area that may not be well research
+\item Check sources for validity
+\item Observe and note inconsistencies in information
+\end{enumerate}
+\item Soldering takes time and patience.
+\begin{enumerate}
+\item Having extra hands, mechanical or not, makes the process easier
+\item Prepare dummy tests at first so that material isn?t going to waste
+\item Always have spares
+\end{enumerate}
+\item Don?t expect items to come in on-time or intact. 
+\item Daily, respectful reminder emails are appreciated.
+\begin{enumerate}
+\item Professors, Teacher Assistants, Employees, Mentors, and other individuals helping with projects of this scale have other things to work on. Reminders help keep you in the scope of their day to day work.
+\end{enumerate}
+\end{enumerate}
+
+%%LIST OF FUTURE TASKS%%
+\section{Future Tasks \& Deliverables}
+\begin{enumerate}
+\item Performance analysis of Lithium Polymer batteries versus each other.
+\item Performance analysis of Lithium Polymer batteries versus Albatross Lithium Ion trapezoidal battery pack
+\item Analysis and study of unexpected weight and performance of two of the Lithium Polymer batteries
+\item Design a new airfoil/wing specifically for our UAS
+\item 3D print a fuselage
+\item Create a launch system
+\item Construction of the electronic subsystem within the UAS
+\item Complete integration of electronic parts with the control surfaces
+\item Further outfit the lab with equipment and computers with needed programs
+\item Lab setup completed
+\item Final Expanded Battery Safety Documentation
+\item Document showing all purchased items for the lab 
+\item Document showing successful retrieval of all items 
+\item Fully outfitted Iron Bird 
+\item Purchase List converted to LaTeX
+\item Hardware in the loop testing through QGroundControl and FlightGear. 
+\item Flight testing the Albatross
+\item Rough Design of UAS
+\item Final Design of UAS
+\item Flight of UAS
+\item Final Documentation of Requirements
+\item Final Project Document and Review
+\item End of Semester II Paper for Dr. Rozier
+\end{enumerate}
+
+%%REFERENCES%%
+\unlabeledsection{References}
+\begin{thebibliography}{100}
+\bibitem{AlbatrossFAQ} Albatross UAV - FAQ. (n.d.). Retrieved December 13, 2017, from \\\url{https://www.appliedaeronautics.com/far/}
+\bibitem{Crawley2004} Crawley, E., De Weck, O., Eppinger, S., Magee, C., Moses, J., Seering, W.,Whitney, D. (2004). The Influence of Architecture in Engineering Systems. MIT Engineering Systems Division, 1-29. Retrieved December 11, 2017, from \\\url{http://strategic.mit.edu/docs/architecture-b.pdf}
+\bibitem{Terzakis2013} Terzakis, J. (2013). EARS: The Easy Approach to Requirements Syntax. In International Academy, Research, and Industry Association: The Eighth International Multi-Conference on Computing in the Global Information Technology. Retrieved October 11, 2017, from \\\url{https://www.iaria.org/conferences2013/filesICCGI13/ICCGI_2013_Tutorial_Terzakis.pdf}
+\bibitem{PX4Git} PX4 Open Source Dev Team. ``PX4." PX4 Pro Autopilot Software, 1.6.5, Github, 11 Dec. 2017, \\\url{github.com/px4/Firmware/}.
+\end{thebibliography}
+
+
+\end{document}

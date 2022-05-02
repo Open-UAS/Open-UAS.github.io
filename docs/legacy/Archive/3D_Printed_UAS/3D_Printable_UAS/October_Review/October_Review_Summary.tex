@@ -1,0 +1,113 @@
+\documentclass[]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[affil-it]{authblk}
+\usepackage{gastex} % pictures on steroids
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}
+%\usepackage{times}
+%\usepackage{mathtime} 
+\usepackage{pslatex} %regular times font/smaller courier font
+\usepackage{amssymb}
+\usepackage{alltt}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{mathrsfs} %for \mathscr{} 
+\usepackage{multicol}
+\usepackage{capt-of}
+\usepackage[toc,page]{appendix}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{nomencl}
+\usepackage{hyperref}
+
+
+\begin{document}
+
+\section{Summary}
+\subsection{"The Seven Intellectual Pivot Points for Conceptual Design"}
+\begin{itemize}
+\item {\bf Requirements} This is where you establish the set of requirements the aircraft must meet.  
+
+\item {\bf Weight of the Airplane - First Estimate} Getting an initial estimate of the airplane's weight is important for determining the performance parameters.
+
+\item {\bf Critical Performance Parameters}  This is where the airfoil will be chosen to determine some initial aerodynamic characteristics.
+
+\item {\bf Configuration Layout} Here we will determine more specifics about the design of our aircraft. 
+
+\item {\bf Better Weight Estimate} Based on the configuration and initial prototype, a better weight estimate can be determined.  
+
+\item {\bf Performance Analysis} Are we meeting or exceeding our requirements?  If not, iterate steps until we converge on a solution.
+
+\item {\bf Optimization} Is this the best design?
+\end{itemize}
+
+\subsection{Requirements}
+\begin{itemize}
+\item Easily re-configurable to accommodate different sensor suites and adequate internal cooling fans
+\item Long battery life to enable distance missions where autonomy is required
+\item Small size that enables flight testing at a variety of locations
+\item Easily decomposable for easy transportation
+\item 3D printable parts for quick prototyping 
+\end{itemize}
+
+\subsection{Trade Studies}
+\begin{itemize}
+\item Previously Successful Small UAS
+	\begin{itemize}
+	\item The Pointer, Raven, Puma, Dragon Eye, Desert Hawk, Orbiter, Razor
+	\end{itemize}
+\item High wing vs low wing configuration
+\item Tractor motor vs pusher motor configuration
+\end{itemize} 
+
+\subsection{Weight of the Airplane - First Estimate}
+\begin{itemize}
+\item MATLAB/Python code
+	\begin{itemize}
+	\item Determines initial guess of take-off weight, given a certain payload	
+	\item Produces graphs of some initial performance parameters
+	\item Defines constraint space for this aircraft using the following equations:
+	\subsubsection{Constraint Equations}:
+	
+	Max Load/Turn:
+	\begin{equation}
+	\frac{HP}{W}= \frac{1}{550\eta_{p}}[\frac{1}{2}\rho V^{3} C_{D_{O}} (\frac{S}{W}) + 2K \frac{n^2}{\rho V} (\frac{W}{S})]
+	\end{equation}
+	
+	Endurance:
+	\begin{equation}
+	\frac{HP}{W}=\frac{4}{550\eta_{p}} C_{D_{O}}^{1/4} (\frac{K}{3})^{3/4} (\frac{2}{\rho} \frac{W}{S})^{1/2}
+	\end{equation}
+	
+	Cruise:
+	\begin{equation}
+	\frac{HP}{W}=\frac{2}{550\eta_{p}} C_{D_{O}}^{1/4} K^{3/4} (\frac{2}{\rho} \frac{W}{S})^{1/2}
+	\end{equation}
+	
+	Takeoff Distance:
+	\begin{equation}
+	\frac{HP}{W}=\frac{2.44}{550\eta_{p}} \frac{1}{gd_{to}}(\frac{1}{\rho_{SL} C_{L_{max}}} \frac{W}{S})^{3/2}
+	\end{equation}
+	
+	Stall Condition
+	\begin{equation}
+	\frac{W}{S}= \frac{\rho}{2} C_{L{max}} V_{SO}^2
+	\end{equation}
+	
+	
+	\end{itemize}	
+\end{itemize}
+
+\subsection{Configuration Layout}
+
+\begin{itemize}
+\item 3D Modeling using open source FreeCAD
+\end{itemize}
+
+\end{document}

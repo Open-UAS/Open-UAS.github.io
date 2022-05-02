@@ -1,0 +1,154 @@
+Conversation with Jayson Clifford, ERAU, NEAR-lab on 4/6/2016
+
+
+What printer did you use? 
+- used makerbots before moving on; don't use these!!! they are not reliable but are repeatable and print the same object the same way twice; slider and motor control software produce good results but if the nozzle breaks (it does a lot on makerbot 2), makerbot requires to dial tech support number and they send ONE more nozzle and they keep breaking! The reviews are horrible
+
+- RepRap printers are awesome... to some people but NOT us! open source printing but super-focused on open source printer and tinkering and to them the point is to play with 3D printer, not do a job; a lot of RepRap printers are "fantastic" because you have to play with them constantly :(
+
+- MendelMax from maker's toolbox is still tinkery
+
+- SeeMeCNC; xyz axis that you can see on the printer 
+
+- delta printers: print head is on three arms suspended in a triangle; advantages all three axes are identical and z axis is three cars the move up at the same time and the x and the y is moved on identically configured rails so if you have a problem with one rail, you have a lot of stuff that would work; good at printing circles specifically; physically larger but less complex
+
+-- LulzBot printers are more expensive and not delta but very well build and probably the best one that you can get right now
+-- made in Colorado; good company
+-- paying for the quality of the printer
+-- not saving anything by getting the printer kit for others
+-- prints w/in 5 minutes
+
+- Ultimaker is good too but in UK and on parity 
+
+- it DOES matter which orientation you print the wings; layers are a spot of weakness no matter what and you can minimize this and do it in a way that makes sense so don't print the fuselage length-wise
+
+
+
+What materials?
+- TLA and ADS, nylon, polycarbonate, etc.
+- just manufacture of TLA (LulzBot, makergear, etc. filament works in a COMPLETELY different way); cannot compare from one manufacturer to another, can have bad quality control on the diameter of the filament and the rate at which it extrudes the filament from the extruder and there is not a way to to control for this
+- HAVE to go through and find good filament manufacturers to have good filament control
+- TLA is stiff and lightweight but brittle and light so when you put load on it it flexes between layers and they snap apart
+- cannot rely on a 3D printed piece to take load along layers
+HOWEVER print polycarbonate the layered bonding is so strong that it's a solid piece of plastic but its difficult to print
+-- can 3D print nylon part and can use this material in different places in the aircraft
+-- for wings can build around a wing-spar made out of another part of material: buy a carbon-fiber rod and be done with that
+
+1) have a carbon-fiber spar (front and back)
+2) have 3-D printed ribs  and cover with fabric, like old-school WW1 aircraft
+- can get thin sheets of polycarbonate and might be able to wrap wing in that, there's no problem with fabric to cover wing
+- can print whole wing but this could be very difficult
+- probably some interesting new ways to build wings
+-- with hot wire cutter can do one shape but if you can count on the 3D printer printing something exactly right 
+-- foam wing with hot wire cutter and can get a little fancy, could do it in a few sections and then use the printing material to help the parts of the wing interlock
+-- look at foam aircraft wing design: how can you improve foam wings snap together and lock with nylon joiner 
+- if we do the foam then the cool part is that we can bring the datafile in, put it in SolidWorks, print the guide out of the 3D printer and use that to make the foil for the aircraft and if we use the carbon-fiber spar, we can actually change out wings
+- 2 holes through the middle of the foam to get the spar on and you can have CNC hot wire foam cutting that is cool and very accurate (done at many places), or can make a very accurate template out of high-temperature plastic from 3D printer and then use it 
+-- on leading edge of the wing, stencil would have a small gap heading out to center of wing and expand out for the rod; draw across the trailing edge, ... , so now we have a place for the spar and the wing is all in one piece, and we could 3D print something that goes into the bottom that glues in place; if spars are the same place and same arrangement and we will print or otherwise manufacture a wing saddle that has spar joiners that has smaller diameter carbon fiber 
+-- aerodynamic forces make sure that the wings don't come off
+-- don't really need to cover the foam with anything; if we really need a higher wing loading, we can cover in a layer of angle-hair fiberglass for lightweight and durability
+
+- look at telemaster 8-foot-wingspan plane; look at appendage (maybe we can 3D print this part) and note that the tail doesn't drag as much
+- don't copy the design of the Kadet
+
+MAJOR CONSIDERATION: when you run into a tree, how difficult is it to rebuild?
+
+
+Control surfaces on wings
+- 9 foot wingspan to 14 foot wingspan with inverted rudder-elevator as only control OR before GALE they had competed in UAS competition and build aircraft that ...
+- you can fly aircraft with just rudder and elevator
+- ailerons are possible too: go for DIRECT servo control: run wires down BACK spar in wing that allow wires to come out and connect ailerons directly then too
+-- can get a HOT KNIFE == fantastic: can cut out a small section and glue a servo in place OR can 3D print a perfect mount for any servo and put it as close as we can get to control surface and do a very short control linkage to a control arm and then have a really responsive direct drive control surface; don't just need one motor in the middle, but can have different configurations
+- be careful with doing this in the tail: can put a control surface that adds weight in the tail to balance if the battery is heavy enough (otherwise use push-rods, can be music wire)
+- direct-drive has less to do wrong
+
+
+Battery:
+- run as HIGH voltage as you can tolerate -- their experience
+- pick the motor that handles the voltage and then pick the speed controller for it, V-IR so it's better!
+- need some speed controller and regulators : Castle Creations ($12): need to step down 11 volt to 5 volt
+- DEFINITELY use Castle: reprogrammable and easy to use; in the field can reprogram the speed controller and reprogram voltages then we can plug a USB port and tell what voltage to output
+- BECs (battery elimination circuits)
+
+
+Motor:
+- overbuild: build a truck, go with the beefiest thing we can fly
+- over-prop
+- go with big speed controller!!!!!
+- if we know we will use 50 amps, go with 75 amp speed controller
+- don't want system to explode
+- HackerUSA motors are what hey used and they are the best
+- RC groups has great
+- need something that can go well 
+- NEU motors makes some great motors that are very efficient, and great motors
+- NEU is in Gale and HackerUSA is in development version; NEU motors are ridiculously efficient
+- DON"T use Rayfire (it actually caught on fire)
+- out-runner motor NOT in-runner!
+- bigger prop, more torque
+- no ductive fan designs, no pusher designs (don't need these)
+
+
+AIM FOR LOOKING LIKE  A CESSNA
+- can get fancy on airfoil design
+
+
+
+MOTOR, BATTERIES, SPEED CONTROLLER: don't cheap out on these b/c they are most important!!!!!!!!!
+
+Props:
+fixed prop is easiest
+wooden are OK but composite last longer
+carbon CFR prop (just black propellers: Gropner, German company, Aeronaut also) where people did analysis , also Zinger for wooden
+(others are like flying paint-sticks)
+- Aeronaut is BEST and Gropner is next
+
+
+
+
+
+Wing design:
+- partially 3D printed
+- material is compressed into fuselage
+- 350 knots and major pressure requires different materials
+- BUT UAS 15-20 knots then there is different materials
+
+
+
+Can hand-launch an aircraft that was 8-foot wingspan and 12.5 
+- so don't rule out hand-launch
+- stable aircraft design with decently sized motor then it's relatively easy to hand-launch an aircraft
+- over an hour battery life
+
+if we have a camera on-board, there is a question about how far away there is an extra weight and complexity of transmitter/receiver pair and how it can be recorded
+-- lots of cameras don't work because they are just raw outputs
+-- develop a mission idea that involves identifying targets on the ground 
+-- otherwise area is so large we wouldn't focus enough to develop solution
+-- camera to do encoding on-board, lens selection, etc. 
+-- 
+
+DO COMPLETE DESIGN BEFORE BATTERY, SERVOS, etc.
+
+1) figure out payload
+2) build aircraft to 
+
+Cadette: 6.5 foot wingspan, etc.
+- fit most of stuff in 
+- modularize fuselage for snap-in module for payload
+- for hand-launch want LOW PITCH PROPELLER TO FLY SLOW (also good for cameras)
+- camera selection is important (global shutter vs rolling shutter; global is more expensive and captures all pixels at once on one frame, not capture by line, which works OK when the camera is still but not while moving)
+- need to know when to take pictures (can build on-board pictures of this)
+- minimize vibration
+
+
+
+our mission parameters are outside what most people try to do
+- difficult to find info on security cameras and parameters and moving 
+- find a lot 
+
+- Carlos does work with an airspace monitor
+-- maybe talk to him
+
+they do short contracts for hours so Carlos is on-site for short times and talk to Dr. T? and see how much it would cost to evaluate design
+
+
+NOTE: design fuselage so that battery can be moved and carried in multiple different places to change center of gravity to correct place before flying, depending on different payloads`

@@ -1,0 +1,205 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lstautogobble}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{changepage}
+\usepackage{listings}
+\usepackage{amsthm}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+%Command to change name of table of contents
+\renewcommand*\contentsname{Table of Contents}
+
+%Command to start sections on new pages
+\newcommand{\sectionbreak}{\clearpage}
+
+%Create a new "Unlabeled section" that will be added to toc but not printed
+\newcommand{\unlabeledsection}[1]{%
+ \clearpage
+  \par\refstepcounter{section}% Increase section counter
+  \sectionmark{#1}% Add section mark (header)
+  \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}% Add section to ToC
+  }
+  
+\emergencystretch=1em
+
+\title{OpenUAS:\\Fourth Semester Progress Report }
+\author{ }
+\begin{document}
+
+
+%%TITLE PAGE%%
+\maketitle
+
+\newpage
+
+%%TEAM PAGE%%
+\begin{center}
+\Large \textbf{The OpenUAS Team}
+
+\vspace{1cm}
+
+\large{
+Abigail Gries\footnote[1]{ISU Department of Aerospace Engineering}\\ Logan Gross\footnotemark[1]\\ Madison Harrington\footnote[2]{ISU Department of Materials Science and Engineering}\\ Nick Hendrickson\footnotemark[1]\\ Chris Johannsen\footnotemark[1]\\ Jordan Reese\footnotemark[1]\\ Catherine Sener\footnotemark[1]\\ Alex VandeLoo\footnotemark[1]\\ Swathy Vidyadharan\footnote[3]{ISU Department of Mechanical Engineering}\\ Josh Wallin\footnote[4]{ISU Department of Electrical and Computer Engineering}\\ 
+}\par
+
+\end{center}
+
+\newpage
+
+%%TABLE OF CONTENTS%%
+
+\tableofcontents
+
+%%PROJECT OVERVIEW%%
+\section{Project Overview}
+
+\subsection{Purpose}
+Currently, there are no open-source unmanned aerial systems (UAS) which are fixed-wing and conceptually available to the general public. There are some similar UAS which are available to the public, but they must be purchased and are not open-source. OpenUAS is producing an open-source, commercial off-the-shelf (COTS) UAS that can be used for recreational and research purposes, and it will only consist of components available to the general public, including open-source software.
+
+\subsection{Scope}
+In order to develop an open-source, COTS UAS for recreational and research purposes that is free and available to the general public, a list of objectives, deliverables, and constraints were identified at the conception of the project. The following section will provide an overview of these lists.
+
+\subsection{Objectives}
+\begin{enumerate}
+\item Create an open-source, COTS UAS for short recreational and research flights
+\item Provide full documentation of the conception, design, and testing of all systems
+\item The UAS should not require a runway for takeoff or landing
+\item The piloting of the UAS shall be accessible to hobbyists
+\item The UAS shall be made of ``affordable" components
+\item UAS components should be reconfigurable and support additional components
+\end{enumerate}
+
+\subsection{Deliverables}
+\begin{enumerate}
+\item A functioning design and prototype of a UAS
+\item A ground launch system for takeoff
+\item Relevant tools for piloting the UAS from the ground
+\item Extensive documentation of the development process
+\item Extensive documentation on proper use and safety
+\end{enumerate}
+
+\subsection{Constraints}
+\begin{enumerate}
+\item COTS components
+\item Affordable components
+\item Easily duplicated components (e.g. all 3D printed parts can be reasonably produced by hobbyists)
+\item All components should be reasonably safe (e.g. battery)
+\item Design and testing completed within 1 academic year
+\end{enumerate}
+
+%%BACKGROUND%%
+\section{Background}
+
+
+
+%%PROJECT DOCUMENTATION%%
+\section{Project Documentation}
+
+Varying forms of documentation were developed in order to assist with tracking the vision, objectives, high-level project plan, meeting documents to capture insight and actions needed, and so forth. The documentation is intended to not only support the systems engineering aspect of the project, but also serve an educational purpose by assisting future users who would like insight into what efforts and decisions were made to bring OpenUAS from a concept to a reality. Additionally, each individual on the team keeps their own weekly and semester progress documentation to maintain goals and the vision for every subgroup within the OpenUAS team. 
+
+\begin{enumerate}
+\item \textbf{Project Charter}\\ This is a one page document intended to help provide a broad overview of the project. The Project Charter lays out the team, the scope of the project, the purpose, and so forth. Additionally, the project objectives, deliverables, and constraints that were mentioned earlier in this paper come from the Project Charter as it maintains the vision and intent of the OpenUAS project.
+\item \textbf{Weekly Meeting Agenda \& Minutes}\\Each week, Meeting Minutes are held to capture what discussion and decisions occurred. The tasks of leading the meeting and taking meeting minutes are rotated through the team. The one leading the meeting will set the agenda for that meeting's primary discussion points, and the meeting minutes are taken during the meeting on the shared Google Drive. Afterward, the meeting minutes are then cleaned up and formatted into the meeting minute document kept on GitHub.
+\item \textbf{Requirements}\\ The requirements document is an extensive, volatile artifact that has been developed since the beginning of the project. Originally, our primary requirements were high-level, and directly traceable to the overall project goals. Now, as we begin to make decisions about what our design will look like, the requirements have evolved to become more detailed. For the sake of making requirements easier to read and understand, we chose to use the EARS \cite{Terzakis2013} requirements syntax.
+\end{enumerate}
+
+\section{Related Work}
+\noindent Currently, there are very few comparable fixed-wing UAS. The United States uses UAS such as the RQ-14A Dragon Eye and RQ-11B Raven in its military. Although these UAS are similar in size and weight to the OpenUAS team's target design, the technology and capabilities of these systems are much more advanced, and as such, the budget well exceeds the team?s overall budget.\\
+
+\noindent The University of Virginia created the Razor, a small fixed-wing UAS for the Department of Defense. This UAS has a flying wing design and utilizes an Android phone as the main processor. The Razor is of similar size, weight, and performance of the team?s target design. One main difference in this system is that it is entirely 3D printed. The team plans on utilizing 3D printing, but not to the extent of the Razor design.\\
+
+\noindent The Albatross is a commercial UAV produced by Applied Aeronautics. Although this aircraft is larger than the team's target design, its performance and low-cost are comparable to the team's goals. This UAV is described in more detail later in the paper, as the team purchased and is beginning to study this design. \\
+
+
+%%LAB SETUP AND ORGANIZATION%%
+\section{Lab Set-Up \& Organization}
+\noindent The lab originally started out with no equipment or tools available for our project. Throughout the last school year, orders had been placed for tools and other items needed in order to ensure a work space that has all tools needed for successful progression of this project. This last semester has built off of what was completed before, adding new equipment, rearranging tables and desks to provide more surface area in the lab for various projects, and adding more tool locations for easier access to common tools.  Because we are working within a large organization, special documentation and communication must be done in order to acquire the parts needed for the lab. This includes confirmation of successful retrieval of parts and checking if damage was done to them. If damage is found, proceeding with the proper return process and notifications so everyone knows how parts are moving about. If an item is not the item we purchased (ex a different sized cartridge for a label printer) we send it back to the individual keeping track of our orders and have them re-order the right equipment. The final goal is to have a lab outfitted in such a way that it can complete any of the tasks designed for the project with exceptions to precision machining and other similar processes.\\
+
+
+\subsection{3D Printer - LulzBot Taz 6}
+Throughout this semester, the LulzBot Taz 6 3D printer has been crucial piece of equipment for the OpenUAS team. The printer was used for both the construction of the OpenUAS design as well as for the continuing build of the Albatross UAV. The team became more comfortable using the printer throughout the semester, as some of the previous issues with printing were resolved. The team purchased a cover for the printer to make it a semi-enclosed bed. This seemed to solve some issues with print failures due to drafts and the cold air in the lab. \\\\
+In previous semesters, the 3D printer was only used for small printed parts, such as airfoil cross sections for the tail. This semester, the team experimented with larger prints and discovered that, in general, these printers turned out more accruate. There were some issues, however, most of this stemmed from software/firmware issues. The CURA LulzBot software is updated regularly, so it is essential that the newest software is used for printing. Additionally, new firmware updates were released regularly as well, and it was discovered that some problems were fixed by updating the printer firmware. \\\\
+One thing that the team experimented with this semester was form-moulding. The 3D printer was used to create the molds for this process and it worked well overall. These prints did take a significant amount of time, however.\\\\
+Another side project the team began this semester was an all 3D printed UAS. The LulzBot Taz 6 was used for this project and it also worked fairly well. There was experimentation with creating everything from 3D printed screws to wings. \\\\
+In the fall, the plan is to continue utilizing the LulzBot Taz 6 printer for the OpenUAS design as well as the 3D printed UAV. It will be essential to continue to take care of the printer through updates, bed maintenance, and part replacement as needed because the printer will be in use more and more. 
+
+%%INSPIRATION: THE ALBATROSS%%
+\section{Primary Inspiration: The Albatross UAV}
+\noindent The Albatross UAV is a commercial product of Applied Aeronautics. The team purchased this model in the Fall of 2017 to study the documentation, the ease of construction, and the flight characteristics of this model. The Albatross UAV has a wingspan of approximately 9.8 feet and is advertised to carry over 4.4kg of payload over 4 hours. The Albatross is capable of a maximum 90 MPH speed and a cruise of 40 MPH. This UAV has so far been extremely beneficial in the lessons learned from purchasing, documentation, and the construction of UAS in general. 
+
+\subsection{Construction and Progress}
+
+ 
+\subsection{Looking forward}
+
+
+
+%%SYSTEM ARCHITECTURE AND PROGRESS%%
+\section{OpenUAS System Architecture \& Progress}
+\noindent The OpenUAS team divided the entire system into six subsystems: Structures, Software, Controls, Electronics, Propulsion, and Ground System. The entire system completed 3 requirement revisions with added rationale. The OpenUAS will be modeled with ideas taken from the Albatross, created with support from the Lulzbot 3-D Printer, and utilize the best, most accessible most accessible characteristics of fixed-wing UAS. More details on the OpenUAS system is discussed below in the corresponding subsystems. \\
+
+\subsection{Structures}
+This section will discuss the design process and decisions made this semester with respect to the OpenUAS prototype currently under construction.
+
+\subsubsection{Design}
+
+\subsubsection{Computer Simulations}
+
+\subsubsection{Manufacturing}
+
+\subsubsection{Launch System}
+
+\subsection{Software}
+
+\subsection{Electronics}
+
+\subsection{Propulsion}
+
+\subsection{Ground System}
+
+%%LESSONS LEARNED%%
+\section{Lessons Learned}
+
+\begin{enumerate}
+\item Things will very often not work the way you think they will
+\item Don't rush a project to the point that the results are sloppy, because it will be time consuming to have to correct later
+\item Staying organized, especially with wiring/internal components, is incredibly important
+\item It is a good idea to go around the lab at some point and take stock, there are a lot of tools that are useful in many situations hidden away
+\item When soldering items, make sure they are soldered to the correct spots
+\item Try to complete work early, if you leave it until later in the week or day it can get forgotten
+\item While in the design process, constantly verify ease of manufacturing
+\item Detail progress, especially in construction and instances of problem solving; it's easy to forget what exactly happened and helps all the team members
+\item Servo connections can be simplified; for the OpenUAS, the team should have more organized pathways for wiring or just keep all wiring in the fuselage and have extended servo connections with long rods
+\item Update the Cura LulzBot software continuously
+\item Splicing can save time on some parts and take more time on others
+\item A copy of a tool we already have is never a bad thing when two people need to work on the same project
+\item Wear safety equipment 
+\item Double check your work
+\item Not everything works a second time
+\item A clean lab is easier to work in than a messy one
+\item Debugging takes time, and even more patience 
+
+\end{enumerate}
+
+%%LIST OF FUTURE TASKS%%
+\section{Future Tasks \& Deliverables}
+\begin{itemize}
+\item Test fly the completed OpenUAS design number one
+\item Complete OpenUAS design number two
+\item Test fly the Albatross UAV
+\end{itemize}
+
+
+%%REFERENCES%%
+\unlabeledsection{References}
+\begin{thebibliography}{100}
+\bibitem{Terzakis2013} Terzakis, J. (2013). EARS: The Easy Approach to Requirements Syntax. In International Academy, Research, and Industry Association: The Eighth International Multi-Conference on Computing in the Global Information Technology. Retrieved October 11, 2017, from \\\url{https://www.iaria.org/conferences2013/filesICCGI13/ICCGI_2013_Tutorial_Terzakis.pdf}
+\end{thebibliography}
+
+
+\end{document}

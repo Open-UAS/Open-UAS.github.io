@@ -1,0 +1,553 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{longtable}
+\usepackage{multirow}
+
+\begin{document}
+
+\title{OpenUAS: Battery Handling and Safety}
+
+\author{Logan Gross}
+
+\maketitle
+\sloppy
+\section*{Battery Name}
+\section*{Plane Used}
+\section*{Charging Preset Option}
+\section*{Storage Preset Option}
+\section*{Cell Count}
+\section*{Normal Volt Ranges}
+
+\begin{longtable}[c]{| c | c | c | c | c | c | c |}
+ \caption{Collected Battery Data\label{long}}\\
+ 
+ \hline
+ \multicolumn{7}{| c |}{Collected Battery Data}\\
+ \hline
+\multirow{2}{6em}{Date} & \multirow{2}{6em}{Reason of Use} & \multirow{2}{6em}{Usage Time} & \multirow{2}{6em}{Max and Min Volts Across Cells} & \multirow{2}{6em}{Battery Damage} & \multirow{2}{6em}{Back in Safety Case} & \multirow{2}{6em}{Temp of Battery After Usage} \\
+  & & & & & &\\
+  & & & & & &\\
+
+ \hline
+ \endfirsthead
+ 
+ \hline
+ \multicolumn{7}{| c |}{Continuation of Collected Battery Data \ref{long}}\\
+ \hline
+ \multirow{2}{6em}{Date} & \multirow{2}{6em}{Reason of Use} & \multirow{2}{6em}{Usage Time} & \multirow{2}{6em}{Max and Min Volts Across Cells} & \multirow{2}{6em}{Battery Damage} & \multirow{2}{6em}{Back in Safety Case} & \multirow{2}{6em}{Temp of Battery After Usage} \\
+  & & & & & &\\
+  & & & & & &\\
+ \hline
+ \endhead
+ 
+ \hline
+ \endfoot
+ 
+ \hline
+ \multicolumn{7}{| c |}{End of Table}\\
+ \hline
+ \endlastfoot
+ 
+  & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+& & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+& & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+& & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+& & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+& & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+& & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+& & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+& & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+\hline
+ & & & & & &\\
+
+
+\end{longtable}
+
+\end{document}
+

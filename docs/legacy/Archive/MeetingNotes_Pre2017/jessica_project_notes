@@ -1,0 +1,252 @@
+26 April 2016
+
+Some initial design considerations:
+
+*Using Lulz Bot 3D printer - which is completely open source friendly*
+
+We need to make some design decisions about what software will be used...
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Software--
+
+3D Design:
+
+open source options:
+Blender, FreeCAD, OpenSCAD (programmatic CAD), TinkerCAD, 123D Design, Onshape
+
+Blender - Typically used for creating animated films, visual effects, art, 3D printed models and video games.
+Can be difficult to learn.  Handy to have for fixing and making simple changes to STL files.
+
+123D Design - Like autodesk inventor -- includes tools for scanning, sculpting, electronics, 2D deign and 
+more.  Powerful & easy to use
+
+TinkerCAD - Runs in web browser, uses Boolean modeling to make objects using shapes and building blocks.
+Combine basic shapes to create more complex designs
+
+OpenSCAD and ImplicitCAD - Programmatic CAD, uses programming language to create objects
+
+FreeCAD - Parametric modeling allows design to be easily modified, good program for converting STEP files
+to STL
+
+Onshape - Cloud-based product -- created by solidworks team and would be very similar
+
+commercial options:
+rhino, solidworks, autodesk
+
+Rhino - Reliable for converting file types
+
+Solidworks and AutoDesk - Professional grade CAD software
+
+https://www.matterhackers.com/articles/finding-the-right-3d-modeling-software-for-you
+
+
+CFD Software Considerations:
+
+
+Open source:
+OpenFOAM - Has a large user base across most areas of engineering and science, from both commericial
+and academic organizations.  Has an extensive range of features to solve anything from complex fluid flows 
+involving chemical reactions, turbulence and heat transfer.
+
+Commerical:
+ANSYS - Licenses at UC - professional grade CFD
+
+We will pursue open source options for this project.  We would like for our design to be readily available 
+to universities everywhere, so open source avoids universities needing access to commercial software. OpenFOAM
+was the only widely used open source CFD software package found while researching.  This will be used for 
+CFD analysis.  Blender seems to be the most widely used open source 3D design software, however, after further
+research, I found that Blender is typically used for animation.  I am thinking that FreeCAD or OpenSCAD will
+possibly be the best options for our application.   I will be doing further research into what people have used
+with the particular 3D printer which we will be using (LULZ Bot).
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+28 April 2016
+
+
+WING CONSIDERATIONS:
+
+Foam wing:
+
+Advantages - lightweight, somewhat easy to construct
+
+Disadvantages - fragile, must find method to run spars down middle of wing, less room to
+spread payload throughout wing
+
+3D printable rib wing w/ fabric cover:
+
+Advantages: lightweight, room to spread payload throughout wing
+
+Disadvantages/Considerations: Finding reliable & lightweight fabric
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+01 May 2016
+
+Different Material Options (3D printing)
+
+PLA
+-good, brittle material
+-will work differently depending on manufacturer 
+
+Polycarbonate
+-very strong layer bonding
+
+Nylon
+-strong and flexible
+
+*from NEAR lab meeting notes*
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+01 May 2016
+
+/
+
+^Link to a tutorial in FreeCAD, stepping through turning a 2D sketch into a 3D printable object
+
+https://all3dp.com/freecad-tutorial-3d-printing/
+
+^Another step-by-step tutorial
+
+
+After reading through information on Blender and FreeCAD, I think that FreeCAD better suits what we are 
+looking for.  Blender is the most widely used open source 3D design software, but it is widely used for
+video animation and game creation.  It is widely used for creating objects like animated animals and humans. 
+FreeCAD is more suited for engineering applications, and the Lulz bot manual also stated that its STL files 
+were best compatible with the 3D printer.  There are plenty of tutorials available for how to use the software.
+I was able to find two right away (links above) after one simple google search.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+09 May 2016
+
+Installing Freecad:
+
+#installing software via terminal
+sudo apt-get install freecad
+
+#PPA repostiory with latest stable freeCAD verison
+sudo add-apt-repostiory ppa:freecad-maintainers/freecad-stable
+
+#update and upgrade
+sudo apt-get update
+sudo apt-get upgrade
+
+FreeCAD Website: http://www.freecadweb.org/
+FreeCAD Wiki: http://www.freecadweb.org/wiki/
+FreeCAD Forum: https://sourceforge.net/projects/free-cad/
+
+Tutorial:
+https://www.youtube.com/watch?v=bosJdm2iEKw
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+15 May 2016 
+
+FreeCAD Notes from tutorials/free cad website
+
+-You can create a fully parametric model programmed in Python.  I'm not sure how involved 
+something like this would be -- but I think it would be cool if we could create a model
+where the size of the payload will actually scale our model to size.  Then it would also 
+scale the size of the wings // as well as providing an input for 2d airfoil shapes so we 
+can use any airfoil we would like. 
+
+We have a few known relationships:
+
+Wto=Wp/.201 *ballpark figure developed from previous historical data* Wp=payload weight
+		Wto=take-off weight
+
+S=Wto/dws *where S is the wing area, Wto is the take off weight, and dws is the design point
+		for wing loading chosen by the user*
+
+b=sqrt(S*dAR)  *where b is the wingspan, S is the area of the wing, and dAR is the aspect ratio
+
+
+
+--I have already created a matlab script which uses the relationships discussed above and many 
+more to make some initial 2d flight performance estimations.  I could easily translate this script
+into python and maybe take it a step further to create a scalable UAS design.  Perhaps starting 
+with our core Ironbird components as the base model.  Then, for example, if we would like to
+add extra payload, we can create relationships which will manipulate the size & length of the 
+fuselage, as well as the wings and tail.  -- The scalable models could just be a baseline to start
+with and then of course anyone could personally customize the script if necessary
+
+
+Some things I need to know:
+-Dimensions of each component of the Ironbird (in component list I believe, if not, probably 
+available on the internet
+-I have a very good grasp on how to size the wings given the payload.  Would like to look into
+how to go about sizing the fuselage [aircraft performance book is probably a good starting point]
+-Start looking into PLA mass properties in order to approximate, given a certain size fuselage,
+if it will go over weight allowance for payload size
+-Once approximate weight of fuselage is calculated, how much weight is left to contribute to
+the wings and tail.  
+
+SOME PROPERTIES OF PLA:
+
+ Density: 1.210–1.430 g·cm−3
+
+ Melting point: 150-160 degrees celcius/ 302-320 degrees F
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ADDING FREECAD SCRIPTING BASICS LINK:
+http://www.freecadweb.org/wiki/index.php?title=FreeCAD_Scripting_Basics
+
+
+Python/FreeCAD notes:
+
+-Current FreeCAD has very few native commands to interact with 3D objects
+-FreeCAD has a built-in python interpreter which allows you to be a power user and 
+easily customize your designs
+-From the interpreter , you can access all system-installed Python modules, as well as built-in
+FreeCAD modules
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+22 May 2016
+
+http://www.freecadweb.org/wiki/index.php?title=Power_users_hub
+^^ More python scripting documentation
+
+-App module is for creating object properties, Gui module is for creating the visual object
+-each object will have an app & gui file
+
+#creates a new file
+doc=FreeCAD.newDocument()
+
+#creates box
+box = doc.addObject("Part::Box","myBox")
+doc.recompute()
+
+#to explore the contents of the box type:
+box.
+
+#you can make changes such as
+box.Height=5
+
+
+
+#To import the Part module
+import Part
+
+
+http://www.freecadweb.org/wiki/index.php?title=Topological_data_scripting
+
+^^Another source all about Part module/part scripting
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Part Module Notes:
+
+IMPORTING AIRFOILS
+http://www.freecadweb.org/wiki/index.php?title=Common_Airfoil_Data_Import
+
+-Can use PyQt for creating GUI to select airfoil option
+
+
+
+
+
+

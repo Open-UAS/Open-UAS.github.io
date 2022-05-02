@@ -1,0 +1,119 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+
+\title{OpenUAS: Battery Handling and Safety}
+
+\author{Logan Gross}
+
+\maketitle
+
+%%%%%%%%%%%%%\section*{Part 1: Lithium Ion Battery Safety Descriptions}
+
+The first commercially available, rechargeable Li-Ion battery was built in 1991 by Sony (1). The ability to produce a battery that can contain high levels of energy in such a small volume is ideal for mobile electronics, especially because they are also very light. That being said, the high level of energy kept within such a small volume also means potential danger to the user if one discharges improperly, which can range from intense releases of heat and gas to small explosions. The majority of the time this occurs with improper usage and manufacturing defects. Below are several different sections on lithium-ion battery safety, and procedures needed to keep the battery healthy and us safe. With this document both in the lab and in the field, the dangers with the lithium ion batteries used in this project will be minimized.
+
+\subsection*{Documentation}
+For the duration of the project, a constant, living documentation of the battery and its usage should be kept available in order to avoid pushing the life cycle past its safe range, record damages, keep track of location, know where it is in its charging cycle, and any other information deemed important. A typical lithium-ion battery should work between 300 to 500 discharge/charge cycles, though with the nature of experimentation during this project, this cycle may be shortened, especially under the circumstance of a failed landing (3). Documentation helps protects the team, and allows for the maximum amount of safe usage. It also monitors the realistic lifespan of the battery in a dynamic setting versus ideal conditions, and how well the team is handling them, in particular if one or more fails during the project. 
+
+\subsection*{Purchasing}
+For the sake of the project and personal safety, batteries purchased and used should always be new. Although a used battery could be cheaper, and even say "Used Once" on it, there's a possibility for a scam, but more so, a lack of knowledge of the usage of the battery (2). A used battery makes the documentation impossible to track accurately, putting the team and project needlessly at risk. 
+
+\subsection*{Charging}
+Never leave a lithium ion battery unattended to during charging. Although some chargers are designed to turn off after the battery has hit a certain voltage, a defect within the battery or charger could cause the battery to become unstable and catch flame. The same applies when discharging the battery, because if the voltage between the cells get too low, the battery could become irreversibly damaged. These processes will take a certain amount of time, making it easier to monitor. Lithium ion batteries require specific charging styles depending on their attributes, and some chargers have different programming methods so that they can accommodate for that. The batteries used in this project are no exception. The proposed battery charger will have specific settings that allow us to have different batteries and still charge all of them from the single unit. Instructions for each specific battery will be provided down below. 
+
+\subsection*{Before Use}
+Check to make sure the battery has no punctures, odd changes in shape, bloating, or is producing excessive heat before use. Check to see if the battery was documented as charged or discharged. If discharged, reference the charging sheet down below. If recently charged, the battery may be warm. Wait until it has cooled down until using to help extend the life of the battery. Any time the battery is about to be used, make sure it has the proper cooling and/or ventilation in order to help stop it from overheating. Document what the battery is about to be used for, and the time it is being used. If transporting, make sure it is in the proper container, which should be capable of surviving a battery failure while protecting the users. 
+
+\subsection*{During Use}
+Return battery to a recharge station before it dips below twenty percent (4). This will keep the battery healthy, and assist in getting the maximum amount of cycles out of it. If a temperature sensor is available for the battery, staying under sixty degrees celsius is recommended. If visible, make sure the battery does not begin swelling. If swelling occurs, shutdown the system, and observe the battery from a safe distance way, more than 30 feet preferably. If the swelling goes down, move anything around the battery with care and caution. Once a battery has swelled, it is to be considered as dangerous, and battery failure procedures may need to be considered depending on the level of swelling. If it maintains or continues to grow, begin battery failure procedures immediately. If the system is contained keep an eye on the sensors and overall performance of the plane. It will be hard to determine if the battery is the cause of the issue in this situation.
+
+\subsection*{After Use}
+If the system is contained, approach with caution after use and check for heat. Although the battery will most likely be warm after use, excessive heat could be the sign of battery failure, or bad cooling. Wait until the battery has cooled down before charging or transporting. If transporting back to the lab, make sure to place it back into the safety container. Document the battery's final charge, time used, and circumstantial incidents. If the battery has suffered a sudden impact, example being a plane crash, observe the system at a distance. The battery may set fire or burst due to impact or puncture damage. If this occurs and safety equipment is available, attempt to contain the flame from a distance, but if the flame becomes intense or safety equipment is not available, stay back and notifiy the fire department. Due to the multiple cells within the battery, one may not initially set fire, creating the chance for another fire to start during the recovery process. 
+
+\subsection*{Storage}
+When the battery is discharged to about forty percent, or approximately 3.8V per cell, it is ready to be stored (5)(6). Keep the battery stored in room temperature or below and in a fireproof bag or ammo crate. This reduces the wear on the battery while keeping it at a low temperature helps avoid the ignition temperature needed for a damaged battery. Keep the stored batteries away from highly flammable materials.
+
+\subsection*{Transportation}
+If a battery is leaving the lab, make sure that it is being transported using the ammo crate or fireproof bag. This keeps both the team and individuals on the route taken safe. Make sure that the batteries are placed safely within the bag and transported in a way that keeps them from becoming disturbed, shaken, or otherwise damaged throught the process. If caught in a situation where the batteries are potentially critically damaged, for example a car accident, leave the area immediately. 
+
+\subsection*{Disposal}
+Do not incinerate. If small, discharge fully, which is zero volts(7), and dispose of regularly. For this lab, discharge, and store each battery in a separate bag. Call into local disposal sites and find one that will accept the batteries for recycling.
+
+\subsection*{Battery Failure}
+Under most circumstances in which a battery failure has occurred, move quickly and efficiently to a safe location and notify the fire department of the situation. Lithium-ion batteries with multiple cells don't always burn up all at once, making an extinguished fire still dangerous. Proper disposal will be needed. If a battery failure is not imminent, but there are signs that it may occur, place the battery on a cement surface. Do not use your hands. Do not throw, toss, or in any other way cause potential damage to the battery, because it may cause it to rupture. Isolate it from flammable materials. Obtain the fire extinguisher and prepare to minimize the damage caused by applying the extinguished onto the battery. If none are available, water may work as a coolant in the surrounding area, but should not be used directly on the battery. If possible, use a bucket of sand to control and smother the fire.  Follow the fire department's instructions if given any.
+
+%\subsection*{Safety Tips}
+\begin{enumerate}
+\item 
+
+%%%%%%%%%%%\section*{Part 2: Lithium Ion Battery Safety Specifics}
+
+\subsection*{Documentation}
+
+Location of instruction sheets are:
+
+\begin{enumerate}
+\item Both doors \\
+
+\item In the cabinet near the charging station \\
+
+\item Next to the transportation bag \\
+
+\item Next to the storage bag \\
+
+\item Within cabinet or desk x \\
+
+\item Available on Git \\ 
+
+\end{enumerate}
+
+This totals to six physical locations and one electronic copy as well. 
+
+Locations of required documentation sheets are:
+
+\begin{enumerate}
+
+\item Within cabinet or desk x \\
+
+\item Available on Git \\ 
+
+\end{enumerate} 
+
+Update both everytime a battery is used. 
+
+%\subsection*{Purchasing}
+
+%\subsection*{Charging}
+
+%\subsection*{Before Use}
+
+%\subsection*{During Use}
+
+%\subsection*{After Use}
+
+%\subsection*{Storage}
+
+%\subsection*{Transportation}
+
+%\subsection*{Disposal}
+
+%\subsection*{Safety Tips}
+
+% \end{enumerate}
+
+\end{document}
+
+
+Potential Sources:
+(1) https://www.electrochem.org/dl/ma/201/pdfs/0259.pdf
+(2) http://thedronegirl.com/2015/02/07/lipo-battery/
+(3) http://batteryuniversity.com/learn/article/how_to_prolong_lithium_based_batteries
+(4) https://www.dronethusiast.com/ultimate-drone-battery-care/       <---- Check later, change, not good source
+(5) http://batteryuniversity.com/learn/article/do_and_dont_battery_table
+(6)https://rogershobbycenter.com/lipoguide/
+(7) https://rogershobbycenter.com/lipoguide/
+(7) http://www.bipowerusa.com/documents/disposal.asp - old 7, not sure if 2 volts is low enough
+(8?)http://www.rchelicopterfun.com/rc-lipo-batteries.html - less professional, still knowledgeable in some regards.
+http://uterc.org/files/LipoStorageTips.pdf - Short, has good storage advice and reasoning, also informs of their sources as well. 
+

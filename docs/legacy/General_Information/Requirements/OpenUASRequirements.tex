@@ -1,0 +1,275 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{ragged2e}
+\usepackage{color,soul}
+\usepackage{setspace}
+\geometry{letterpaper,margin=1in}
+
+\title{Open UAS Requirements \& Guidelines}
+\date{April 27th, 2020}
+\author{Stephanie Jou}
+
+
+\begin{document}
+
+\onehalfspacing
+\maketitle
+\newpage
+
+\justify
+\tableofcontents
+\newpage
+
+This document is meant to provide some guidelines on the requirements for the Open UAS. \\
+
+To reiterate, the main objective of the Open UAS project is to design, model, and manufacture an unmanned aircraft system that is easy to build with accessible material. In the long run, this project is expected to be shared with the public. This means that they should be able to get the materials needed for this project, manufacture, and assemble the UAS system if desired. \\
+
+The Open UAS project is currently a semester project. This means that one iteration of design, conceptual design evaluation, manufacturing, assembling, and flight testing is expected to happen in one semester. In the following pages there will be the different structural requirements and guidelines of what is available to use at the Temporal Logic Lab.\\
+
+\section{Design Requirements and Guidelines}
+\subsection{Structural}
+This is a list of the flight control requirements as of April 14th, 2020.
+
+\subsubsection{General}
+For this section, the general requirements for the design are provided with its proper reasoning.
+\begin{enumerate}
+  \item{All the components shall be placed such that the center of gravity is stable.}
+  \begin{itemize}
+    \item{The center of gravity is essential for the calculations to estimate the performance of the Open UAS and ultimately its ability to perform in actual flight. If the center of gravity is not stable, the UAS will not balance and it is harder to control when flying.}
+  \end{itemize}
+  
+  \item{All the components should be modeled using Solidworks and included in the appropriate shared folder}
+  \begin{itemize}
+    \item{The components are modeled in Solidworks since this is the software team members are more familiar with and it is easier to transfer for conceptual analysis before manufacturing.}
+    \item{The modeled components should be included in the proper shared folder. This will allow for collaboration between members.}
+  \end{itemize}
+  
+  \item{The frame should be waterproof and protect the electrical components from water.}
+  \begin{itemize}
+    \item{The Open UAS will include electronic components so it is essential that the frame is waterproof to protect all the contents.}
+  \end{itemize}
+  
+  \item{The weight of the total frame should not exceed \hl{[]} pounds (lbs).}
+  \begin{itemize}
+    \item{The Open UAS will include electronic components so it is essential that the frame is waterproof to protect all the contents.}
+  \end{itemize}
+  
+  \item{All the connection points should be able to withstand a minimum impact of \hl{[]} G.}
+  \begin{itemize}
+    \item{The connection points are the weakest spots on the UAS so it is essential that they can take a minimum amount of impact. The more they can handle, the less likely it is necessary to make many repairs that can change the properties of the UAS.}
+  \end{itemize}
+  
+  \item{If there is a launch system designed, the Open UAS should have a place to be set.}
+  \begin{itemize}
+    \item{Hand launch is currently used while a launch system is in the works. When this is ready to be implemented, the UAS should have a location for its setup for launch.}
+  \end{itemize}
+  
+  \item{In the long run, there should be different design options to choose from.}
+  \begin{itemize}
+    \item{This project is intended to be shared with the public. If there are more options, the interested party can choose depending on budget and preferences.}
+  \end{itemize}
+
+\end{enumerate}
+
+\subsubsection{Materials}
+For this section, the requirements and information on what is accessible at the Temporal Logic Lab is provided.
+
+\begin{enumerate}
+  \item{The materials used for this should be accessible to the public.}
+  \begin{itemize}
+    \item{This is part of the objective for this project.}
+    \item{In the long run, alternate options should be provided for interested parties.}
+  \end{itemize}
+  
+  \item{Any foam used in the UAS should be extruded polystyrene (XPS).}
+  \begin{itemize}
+    \item{Advantages of this foam over a regular one is its rigidity and good resistance to different conditions such as heat and water.}
+  \end{itemize}
+  
+  \item{Any 3D printed parts will be manufactured by the LulzBot TAZ 6 3D printer available in the lab.}
+  \begin{itemize}
+    \item{For parts requiring strong structural support, acrylonitrile butadiene styrene (ABS) filament will be used. This is stronger and more durable than other options.}\\
+    \textbf{NOTE}: When working with this filament, it is required to close the chamber of the printer.
+    \item{For parts that do not require strong structural support, polylactide (PLA) filament will be used. This filament is easier to handle and quicker to print compared to ABS.}\\
+    \textbf{NOTE}:  Use as less 3D printed parts as possible, they add quite some weight to the craft.
+  \end{itemize}
+  
+\end{enumerate}
+
+\subsubsection{Fuselage}
+\begin{enumerate}
+  \item{The fuselage should house all the electronics required and protect its components.}
+  \begin{itemize}
+    \item{All the electronics should fit inside. Batteries, ESCs, Pixhawk, BEC, telemetry equipment, among others are already modeled in Solidworks to give a good idea of the space needed for the electronics.}
+    \item{The contents should be protected inside such that the impact when landing does not damage them.}
+    \item{For better handling of the electronics, they should be secured in the inside with Velcro or alternative ways. This is easier to avoid tangling and damages.}
+  \end{itemize}
+  
+  \item{The fuselage should be able to take a minimum impact of \hl{[]} G.}
+  \begin{itemize}
+    \item{The fuselage will receive the most impact when landing so it is crucial that it can take a minimum impact. The more it can handle, the less likely it is necessary to make many repairs that will change the UAS properties.}
+  \end{itemize}
+  
+  \item{The fuselage should have easy access points.}
+  \begin{itemize}
+    \item{The openings in the fuselage should enable any team member to handle the electronics easily. This will make the preparation process smooth before testing and will allow swapping parts easy enough. If any changes must be made during a flight test, it will be easy enough to enable the continuation of the testing.}
+  \end{itemize}
+
+\end{enumerate}
+
+\subsubsection{Wings}
+\begin{enumerate}
+  \item{The wings should be easily removable.}
+  \begin{itemize}
+    \item{This will allow to work on multiple parts of the UAS and make any repairs/changes if needed to the wings without affecting the fuselage of the UAS.}
+  \end{itemize}
+  
+  \item{The wings should have a rod going through them.}
+  \begin{itemize}
+    \item{The rod will provide stability to the wings since they are made of foam and will add some weight to them.}
+  \end{itemize}
+  
+  \item{The wings should have ailerons and flaps or flaperons as the control surfaces}
+  \begin{itemize}
+     \item{These control surfaces increase stability and affect maneuverability of the craft.}
+  \end{itemize}
+  
+  \item{The wings should be able to resist drafts up to \hl{[]} knots, \hl{[]} m/s, or \hl{[]} ft/s.}
+  \begin{itemize}
+    \item{The wings will be exposed to winds during flight so it should resist them.}
+  \end{itemize}
+  
+  \item{The wings will be reinforced with composite material.}
+  \begin{itemize}
+    \item{The wing should be reinforced with composites (carbon fiber, fiberglass, or an alternative) to give it more strength and increase durability.}
+    \item{In the long run, it is desired to have a second pair of wings. Given the case one breaks during a test flight; a change can easily be made to keep the flight test going.}
+  \end{itemize}
+  
+  \item{At zero angle of attack, the lift generated should equal the weight of the UAS.}
+  \begin{itemize}
+    \item{This will ensure that the lift generated with an angle of attack will provide lift to fly and not to counteract the weight entirely.}
+  \end{itemize}
+\end{enumerate}
+
+\subsubsection{Empennage}
+\begin{enumerate}
+  \item{The empennage will count with both horizontal and vertical tails which will have elevators and rudders}
+  \begin{itemize}
+    \item{These tails provide stability. The elevators will affect the pitch while rudder will affect yaw.}
+  \end{itemize}
+  
+  \item{The horizontal and vertical tails should be easily removable.}
+  \begin{itemize}
+    \item{Given the reasons for the wings, these will allow for easier changes/repairs needed.}
+  \end{itemize}
+  
+  \item{The horizontal and vertical tails will be reinforced with composite material.}
+  \begin{itemize}
+    \item{These parts should be reinforced with composites (carbon fiber, fiberglass, or an alternative) to increase strength and durability.}
+  \end{itemize}
+\end{enumerate}
+
+\subsection{Control}
+This is a list of the flight control requirements as of April 10th, 2019.
+\begin{enumerate}
+  \item{The controls system shall utilize both an open and closed feedback loop.}
+  \item{The controls system shall respond within 1 second to internal commands.}
+  \item{The control system shall be capable of performing in environments with external forces such as mild cross winds.}
+  \item{The controls system shall use the wings and ailerons as primary control.}
+  \item{The controls system shall be stable in cruise flight.}
+  \item{The controls system shall be able to operate in max speed flight.}
+  \item{The controls system shall include the needed cooling devices to stay below critical heat levels.}
+  \item{The controls system shall be activated using electronics and airflow only.}
+  \item{The controls system shall have restricted range of motion to avoid damaging the control surfaces.}
+  \item{The controls system shall be light enough to be controlled with servos.}
+  \item{The controls system shall operate without harming other components of the UAS.}
+  \item{The controls system shall be able to complete a controlled landing if the main motor fails.}
+\end{enumerate}
+
+\subsection{Electronics}
+This is a list of the electronics requirements as of April 10th, 2019.
+\begin{enumerate}
+  \item{The electronics subsystem shall include sufficient sensors to inform flight decisions.}
+  \item{The electronics subsystem shall provide an interface to receive ground commands and to send data to the ground.}
+  \item{The battery, sensors, and wires shall be replaceable.}
+  \item{The battery and flight computer shall be able to be reasonably moved within the fuselage}
+  \begin{itemize}
+    \item{This enables customization based on the sensor choice.}
+  \end{itemize}
+  \item{Electrical components shall be placed such that there is sufficient space for heat to dissipate, keeping electronics below 100 degrees Fahrenheit}
+  \begin{itemize}
+    \item{Heat shrink, and if necessary, heat sinks shall be provided for cooling vital electrical components.}
+  \end{itemize}
+  \item{The electronics subsystem shall provide additional sensors to ensure redundancy.}
+  \item{The flight computer shall be separated such that no components, beyond sensors and controls, may be connected to ensure the safety algorithms are implemented as planned.}
+  \item{The battery shall provide a minimum of one hour of operational flight time.}
+  \begin{itemize}
+    \item{The users are recommended to provide documentation of usage of the battery for both safety and lifespan purposes.}
+  \end{itemize}
+  \item{Auxiliary electronic units shall be capable of being turned on and off by user during operation.}
+  \item{The onboard receiver should be capable of receiving messages up to a direct distance of at least 1 mile from the ground station.}
+  \item{The onboard transmitter shall be capable of sending messages at a direct distance of at least 1 mile to the ground station.}
+  \item{The battery capacity shall not be drained below twenty percent during flight tests.}
+  \begin{itemize}
+    \item{This is because when the battery goes below this percentage, the chance of the battery to swell and its longevity decrease.}
+  \end{itemize}
+  \item{The battery shall be stored at 3.8 Volts per cell in a storage container separate from other batteries.}
+  \item{The Electronic Speed Controller used in the UAS will also include a Battery Elimination Circuit.}
+
+\end{enumerate}
+
+\subsection{Group Equipment}
+This is a list of the electronics requirements as of April 10th, 2019.
+
+\subsubsection{Takeoff / Landing System}
+\begin{enumerate}
+  \item{The aircraft shall be capable of being launched from a catapult.}
+  \item{The aircraft shall be capable of "bush landings."}
+  \item{The catapult shall weigh between 15-20lbs.}
+  \item{The catapult shall be able to fit in a car.}
+
+\end{enumerate}
+
+\subsubsection{Transmitter and Receiver}
+\begin{enumerate}
+  \item{The transmitter shall be capable of communicating with the UAS for a distance of at least 1 mile.}
+  \item{The receiver shall be capable of communicating with the UAS for a distance of at least 1 mile.}
+
+\end{enumerate}
+
+\subsubsection{Future Requirements}
+\begin{enumerate}
+  \item{The aircraft shall takeoff on a paved or grass surface.}
+  \item{The aircraft shall land on a paved or grass surface. }
+  \item{The aircraft shall takeoff autonomously.}
+  \item{The aircraft shall land autonomously.}
+
+\end{enumerate}
+
+\subsection{Propulsion}
+This is a list of the electronics requirements as of September 20th, 2017.
+\begin{enumerate}
+  \item{The propulsion system shall provide a maximum acceleration of \hl{(Max Acceleration)}.}
+  \item{The propulsion system shall provide a minimum acceleration of \hl{(Min Acceleration)}.}
+  \item{The propulsion system shall use an electric motor only.}
+  \item{The propulsion system shall provide a max velocity of \hl{(Max Velocity)}.}
+  \item{The propulsion system shall include the needed cooling devices to stay below critical heat levels.}
+
+\end{enumerate}
+
+\subsection{Software}
+This is a list of the electronics requirements as of September 20th, 2017.
+\begin{enumerate}
+  \item{The flight software shall respond in a timely manner to all internally and externally generated commands.}
+  \item{All commands affecting safety-critical flight operation shall be user initiated}
+  \item{No portion of the non-safety critical software shall affect the safety critical software.}
+  \item{The flight software shall prioritize all human commands above those generated by the autopilot.}
+  \item{The flight software shall use sensor values to make controls decisions.}
+  \item{Every flight software routine deemed safety critical shall be guaranteed to run at least once per cycle.}
+  \item{The flight software shall provide a read-only interface for sensor data.}
+  \item{The flight software shall provide a read/write interface for controls data and commands. }
+  \item{The flight software shall be resistant to overflow in the sensor buffers.}
+
+\end{enumerate}
+
+\end{document}

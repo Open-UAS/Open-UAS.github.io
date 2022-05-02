@@ -1,0 +1,134 @@
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lecture Specific Information to Fill Out
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\LectureTitle}{NEAR Lab Discussion Notes}
+%\newcommand{\LectureDate}{\today}
+\newcommand{\LectureDate}{April\ 6,\ 2016}
+\newcommand{\LatexerName}{LTL}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsmath,amsfonts,amsthm,amssymb}
+\usepackage{setspace}
+\usepackage{Tabbing}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{extramarks}
+\usepackage{chngpage}
+\usepackage{soul,color}
+\usepackage{graphicx,float,wrapfig}
+\usepackage{afterpage}
+\usepackage{abstract}
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\pagestyle{fancy}
+\lhead{\LatexerName}
+\chead{\LectureTitle}
+\rhead{\LectureDate}
+\lfoot{\lastxmark}
+\cfoot{}
+\rfoot{Page\ \thepage\ of\ \pageref{LastPage}}
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+
+\begin{document}
+\begin{spacing}{1.1}
+\newpage
+
+\begin{itemize}
+
+\item Materials/3D printing suggestions
+
+\begin{itemize}
+\item PLA - good material - brittle, stiff, lightweight, easy to print
+\item Some PLA manufacturers have porr quality control resulting in irregular filament diameter -- this affects extrusion rate
+\item Orientation does matter -- materials will snap between layers when load is applied
+\item Polycarbonate has very strong layer bonding but it is difficult to print
+\item Nylon is extremely strong but also flexible --good for parts where stiffness doesn't matter
+\item  McMaster-Carr can supply many COTS items to reduce number of printed parts (they have everything, an engineer's best friend)
+\item SOME 3D PRINTING COMPANIES NAMED (unsure of spelling on all)
+\begin{itemize}
+\item RepRap - Great community, open source, good for tinkering and experimenting
+\item Makers Tool Works - Mendel Max
+\item SeeMe CNC - orion delta printers -- good at printing circles
+\item Lulz Bot ** This is the printer he really raved about. Insisted that you pay extra but for really great quality -- best printer on the market in his opinion
+\item DO NOT USE MAKER BOT- nozzle breaks often and replacing parts is difficult
+\end{itemize}
+\end{itemize}
+
+\item Control Surfaces
+\begin{itemize}
+\item prefers direct drive
+\item has flown aircraft with little to no control surfaces
+\item will need to come up with mechanism to wire motor to battery if we use rudders
+\end{itemize}
+
+\item Battery
+\begin{itemize}
+\item Run voltage as high as possible --allows most efficient way to power aircraft
+\item Use power regulators to regulate power to components
+\item One power regulator mentioned was BECS -- very useful because it is reprogrammable
+
+\end{itemize}
+
+
+\item Wing Design
+
+\begin{itemize}
+\item suggested that wing should not be 3D printed
+\item One idea: Carbon fiber spar, 3d printable rib, fabric covering (talk to AeroCats)
+\item Another idea: Foam wing --carbon fiber or fiberglass as needed
+\end{itemize}
+
+\item Motor/Props
+\begin{itemize}
+\item Out runner motor
+\item With our style of aircraft we should use big motor, big prop (overdo it if anything)
+\item BIG speed controller (well above rated amp)
+\item Castle speed controllers - easily reprogrammable
+\item RC groups will have motor recommendations
+\item Some Brand Names mentioned:
+\begin{itemize}
+\item Hacker if possible ** may have gone out of business
+\item Neu Motor was another very good company  named
+\item Axi
+\item Hyperion
+\end{itemize}
+\item Props:
+\begin{itemize}
+\item Fixed Prop
+\item Wooden props work well and are very light weight
+\item Composite prop will last longer - carbon fill carbon resin
+\item Some Companies Named: Graupner, Aeronaut, Zinger, Top Flight
+\end{itemize}
+\end{itemize}
+
+
+\item Miscellaneous 
+
+\begin{itemize}
+\item Do not rule out hand-launch -- as long as the aircrat is statically stable it should be able to be let go and fly on its own
+\item the design should be driven by the payload -- battery should be very last consideration.
+\item For hand launch, low pitch prop
+\item Minimize vibration in general but especially if using camera
+\item Camera payload considerations
+\begin{itemize}
+\item Global shutter - captures all pixels at once
+\item Will need to know when to take pictures
+\end{itemize}
+\item Payload does not include anything needed to fly aircraft, so all motors should be taken out of payload calculation
+\end{itemize}
+
+
+
+\end{itemize}
+
+\end{spacing}
+\end{document}

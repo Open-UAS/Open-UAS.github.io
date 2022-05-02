@@ -1,0 +1,72 @@
+\documentclass{article} %A different option for format styling...
+
+\textwidth 6.5in
+\oddsidemargin 0.0in %this is a 1-inch margin
+\evensidemargin 1.0in %matching 1-inch margin
+
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{alltt}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{mathrsfs} %for \mathscr{} 
+\usepackage{amsthm}
+\usepackage{listings}
+\usepackage{gensymb} %for \degree
+\usepackage{longtable} %for longtabu
+\usepackage{tabu} %for longtabu
+\usepackage{hhline} %for double \hline in longtabu
+
+\begin{document}
+
+\title{OpenUAS: Electronics Requirements\\ v0.1}
+
+\author{Josh Wallin and Logan Gross}
+
+\maketitle
+
+\begin{enumerate}
+
+\item The electronics subsystem shall include sufficient sensors to inform flight decisions.\\
+
+\item The electronics subsystem shall provide an interface to receive ground commands.\\
+
+\item The electronics subsystem shall provide an interface to send data to the ground.\\
+
+\item The battery shall be replaceable.\\
+
+\item The sensors shall be replaceable.\\
+
+\item The wires shall be replaceable.\\
+
+\item The battery shall be able to be reasonably moved within the fuselage to enable customization based on the sensor choice.\\
+
+\item The flight computer shall be able to be reasonably moved within the fuselage to enable customization based on the sensor choice.\\
+
+\item Electrical components shall be placed such that there is sufficient space for heat to dissipate, keeping electronics below 100 degrees fahrenheit.\\
+
+\item Heat shrink, and if necessary, heat sinks shall be provided for cooling vital electrical components.\\
+
+\item The electronics subsystem shall provide additional sensors to ensure redundancy.\\
+
+\item The flight computer shall be separated such that no components, beyond sensors and controls, may be connected to ensure the safety algorithms are implemented as planned.\\
+
+\item The battery shall provide a minimum of one hour of operational flight time.\\
+
+\item The users are recommended to provide documentation of usage of the battery for both safety and lifespan purposes.\\
+
+\item Auxiliary electronic units shall be capable of being turned on and off by user during operation.\\
+
+\item The onboard receiver shall be capable of receiving messages up to a direct distance of at least 1 mile from the ground station.\\
+
+\item The onboard transmitter shall be capable of sending messages at a direct distance of at least 1 mile to the ground station.\\
+
+\item The battery capacity shall not be drained below twenty percent during flight tests.  This is because when the battery goes below this percentage, the chance of the battery to swell and its longevity decrease. \\
+
+\item The battery shall be stored at 3.8 Volts per cell in a storage container separate from other batteries.\\
+
+\item The Electronic Speed Controller used in the UAS will also include a Battery Elimination Circuit.\\ 
+
+\end{enumerate}
+
+\end{document}

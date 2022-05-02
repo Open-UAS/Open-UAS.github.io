@@ -1,0 +1,214 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[affil-it]{authblk}
+
+
+%
+%This is a LaTeX document for organizing the Related Work on the 3-D Printed UAS project
+%
+% To compile this into a .pdf simply run 'pdflatex 3DUAS_RelatedWork.tex' on the command line.
+% To automatically generate the bibliography, then run 'bibtex 3DUAS_RelatedWork' and then repeat the command 'pdflatex 3DUAS_RelatedWork.tex' twice.
+%
+
+\usepackage{amsmath}
+%\usepackage{times}
+%\usepackage{mathtime} 
+\usepackage{pslatex} %regular times font/smaller courier font
+\usepackage{amssymb}
+\usepackage{alltt}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{mathrsfs} %for \mathscr{} 
+\usepackage{multicol}
+\usepackage{capt-of}
+\usepackage[toc,page]{appendix}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{color}
+
+\lstset{frame=tb,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+%\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}{Corollary}
+\newtheorem{lem}{Lemma}
+\newtheorem{defin}{Definition}
+%Use like this: \begin{lem}\label{...}  .... \end{lem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Figure Magic
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{gastex} % pictures on steroids
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\renewcommand{\topfraction}{.95} %figures can take up at most 95% of the page before being alone
+\renewcommand{\bottomfraction}{.99} %figures can take up at most 99% of the page before being alone
+\renewcommand{\textfraction}{.1} %at most this this % of page will be text before making figure-only page
+
+%%%%%%%%%%%
+% Block Quotes       %
+%%%%%%%%%%%
+\newenvironment{blockquote}{
+  \par
+  \medskip
+  \leftskip=4em\rightskip=2em
+  \noindent\ignorespaces}{
+  \par\medskip}
+
+%for code listings
+%\usepackage{listings}
+%\usepackage{courier}
+
+
+\title{3-D Printed Unmanned Aerial System Project}
+\author{
+Jessica Glass %\inst{1}
+and Kristin Yvonne Rozier %\inst{1}
+}
+\affil{University of Cincinnati, Cincinnati, Ohio, USA \\
+   \texttt{\{glassjp,rozierky\}@ucmail.uc.edu}
+}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+%
+% Add a table of contents to make the document easier to index as it grows...
+%
+\tableofcontents
+
+
+\section{Project Overview}
+The Laboratory for Temporal Logic (LTL) in Aerospace at the University of Cincinnati is designing a new, free-and-open-source, easy-manufacture (i.e. 3-D printable with COTS components) Unmanned Aerial System (UAS). The UAS will be designed specifically to maximally support System Health Management (SHM) capabilities needed to safely create intelligent, autonomous UAS.
+
+
+\section{Related Work}
+
+This section contains short descriptions of related work, by category.
+
+\subsection{Challenges of Previous UAS That We Need To Overcome}
+
+We would like to maximize the utility of the UAS to avoid as many of the following challenges of related work as possible.
+
+\begin{itemize}
+
+\item {\bf Challenges with DragonEye UAS} (Note: Seedling 2014 final deliverable technical report contains this too: \cite{RSI15}.)
+  \begin{itemize}
+    \item {\bf Overheating components} The Parallela Board overheats and shuts off due to lack of adequate cooling inside the DragonEye's only available compartment.
+    \item {\bf Hard to maintain} The components are manufactured to fit exactly and glued into place. Re-connecting a loose wire requires many hours and possibly cutting into the UAS body.
+    \item {\bf Short battery life} The battery lasts 1 hour maximum, but less with demanding sensors or operating at high speeds or after battery wear.
+    \item {\bf Specialized components} The battery and other components are manufactured for the specific fuselage shape and difficult to replace when they wear out since they are not manufactured separately from the UAS.
+  \end{itemize}
+
+\item {\bf Challenges with Swift UAS}
+  \begin{itemize}
+    \item {\bf Requires runway for take-off and landing} The need to schedule a full-sized runway where passenger planes can take off limits possibilities for flight testing.
+    \item {\bf Hard to ship to different flight test locations} The 13-foot wingspan binds this UAS to one airport.
+  \end{itemize}
+
+\end{itemize}
+
+
+\subsection{Requirements for Our UAS}
+
+This leads us to the following set of requirements for our UAS.
+
+\begin{itemize}
+  \item Easily re-configurable to accomodate different sensor suites and adequate internal cooling fans
+  \item Long battery life to enable distance missions where autonomy is required
+  \item Small size that enables flight testing at a variety of locations without requiring a full-sized runway
+  \item Easily de-composable for easy transportation to flight testing location
+  \item 3D printable parts
+\end{itemize}
+
+\subsection{Other 3-D Printed UAS}
+
+\begin{itemize}
+
+\item {\bf UVA's ``Razor'' four-foot wingspan 3D printed flying wing \cite{Gol14}} Razor is printed in nine parts that click together like DragonEye, with a similar one-piece fuselage with a removable hatch covering the cargo bay. Other independently-printed parts are: aileron, winglets, and mount for the small jet engine. \emph{(It is unclear what engine: we should find out.)} It is controlled by a Google Nexus 5 smartphone; UVA custom-designed an avionics app that controls the plane \emph{(let's find out if this is available)}. Razor has a four-foot wingspan, weighs 1.8 pounds empty and up to 6 pounds with sensors. The batteries take 2 hours to charge and are COTS. It can fly at 40 mph for up to 45 minutes with a max speed of 120 mph. The 3-D printing cost is \$800; phone, sensors, and other electronics cost \$1,700 for a total cost of \$2,500 per aircraft. The team found that 3-D printing lead to structural weaknesses in the aircraft, inspiring the flying-wing design.
+
+\end{itemize}
+
+\subsection{Fixed Wing Propeller Aircraft Design}
+
+\begin{itemize}
+
+\item {\bf Aerodynamic and Structural Design of a Small Nonplanar Wing UAV} \cite{Lan08} This paper discusses, in detail, the design process of a small, nonplanar wing UAS. The initial sizing of the aircraft was inspired by previously successful small UASs (mostly military aircraft).  By using data from the previous small UASs, the author has created a "design space" for all UASs which meet the same operational requirements.  The paper has presented the step-by-step design process for any small UAS, nonplanar or otherwise, by first beginning with an initial weight estimate.  After an initial estimate has been calculated, a design point may be chosen, and then the aircraft performance characteristics will be determined.  Once all of this has been determined, you are able to choose a propulsion system (propeller motor and battery combination) based on how much power is needed to fly the UAS. 
+
+\item {\bf Aircraft Performance and Design - John D. Anderson} \cite{And99} Chapter 8 of this textbook focuses on the design of propeller driven aircraft.  John D. Anderson has divided the design of a propeller aircraft into 7 main "pivot points".  Because his design process assumes a gas powered piston engine, there are some aspects of the weight estimation (which assumes weight variation) that cannot be used for battery powered UAS purposes.  However, Anderson offers some very valuable insight as to how to configure the actual geometry of the aircraft based on the final weight estimation.  The seven pivot points also offer an iterative method as a way to finalize the design of the aircraft.
+
+\end{itemize}
+
+\subsection{Batteries}
+
+\begin{itemize}
+
+\item {\bf A Guide to LiPo Batteries} \cite{Sch} This article gives a great explanation as to what separates LiPo batteries from the other COTS technologies that are available.  It also explains the significance of the voltage, capacity and discharge rating, as well as how to properly take care of a LiPo battery.  The advantages and disadvantages of using a Lithium Polymer battery are:
+
+
+\begin{itemize}
+
+\item Advantages (over commonly used Nickel-Metal Hydride and Nickel Cadmium batteries):
+
+\begin{itemize}
+\item Much lighter weight; made in all shapes and sizes
+\item Much higher capacities, therefore holding more power
+\item Higher discharge rates
+\end{itemize}
+
+\item Disadvantages:
+
+\begin{itemize}
+\item Shorter lifespan than NiCd/NiMH batteries (300-400 cycles)
+\item Can lead to fires should the battery be punctured
+\item Need specialized care--storage, charge and discharge
+\end{itemize}
+
+\end{itemize}
+
+\end{itemize}
+
+
+\subsection{Motor Types}
+
+\begin{itemize}
+
+\item {\bf Brushless DC Motor Fundamentals} \cite{YZ11} This paper introduces a comparison between brushless motors and various other types of motors including brushed, AC induction, etc.  When comparing a BLDC motor to a brushed DC motor, the brushless motor has many advantages over a brushed.  Some of the advantages include electronic switches to replace mechanical devices, higher efficiency, low electric noise and better thermal performance, just to name a few. 
+ 
+
+\end{itemize}
+
+
+\subsection{Materials}
+
+
+
+%
+% Finally, generate the bibliography
+%
+\bibliographystyle{plain}
+\bibliography{UAS}
+
+
+
+\end{document}

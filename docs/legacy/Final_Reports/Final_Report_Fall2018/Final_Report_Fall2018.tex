@@ -1,0 +1,268 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lstautogobble}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{changepage}
+\usepackage{listings}
+\usepackage{amsthm}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+%Command to change name of table of contents
+\renewcommand*\contentsname{Table of Contents}
+
+%Command to start sections on new pages
+\newcommand{\sectionbreak}{\clearpage}
+
+%Create a new "Unlabeled section" that will be added to toc but not printed
+\newcommand{\unlabeledsection}[1]{%
+ \clearpage
+  \par\refstepcounter{section}% Increase section counter
+  \sectionmark{#1}% Add section mark (header)
+  \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}% Add section to ToC
+  }
+  
+\emergencystretch=1em
+
+\title{OpenUAS:\\Third Semester Progress Report }
+\author{ }
+\begin{document}
+
+
+%%TITLE PAGE%%
+\maketitle
+
+\newpage
+
+%%TEAM PAGE%%
+\begin{center}
+\Large \textbf{The OpenUAS Team}
+
+\vspace{1cm}
+
+\large{
+Abigail Gries\footnote[1]{ISU Department of Aerospace Engineering}\\ Logan Gross\footnotemark[1]\\ Madison Harrington\footnote[2]{ISU Department of Materials Science and Engineering}\\ Nick Hendrickson\footnotemark[1]\\ Chris Johannsen\footnotemark[1]\\ Jaymee Logan\footnotemark[1]\\ Jordan Reese\footnotemark[1]\\ Catherine Sener\footnotemark[1]\\ Alex VandeLoo\footnotemark[1]\\ Swathy Vidyadharan\footnote[3]{ISU Department of Mechanical Engineering}\\ Josh Wallin\footnote[4]{ISU Department of Electrical and Computer Engineering}\\ 
+}\par
+
+\end{center}
+
+\newpage
+
+%%TABLE OF CONTENTS%%
+
+\tableofcontents
+
+%%PROJECT OVERVIEW%%
+\section{Project Overview}
+
+\subsection{Purpose}
+Currently, there are no open-source unmanned aerial systems (UAS) which are fixed-wing and conceptually available to the general public. There are some similar UAS which are available to the public, but they must be purchased and are not open-source. OpenUAS is producing an open-source, commercial off-the-shelf (COTS) UAS that can be used for recreational and research purposes, and it will only consist of components available to the general public, including open-source software.
+
+\subsection{Scope}
+In order to develop an open-source, COTS UAS for recreational and research purposes that is free and available to the general public, a list of objectives, deliverables, and constraints were identified at the conception of the project. The following section will provide an overview of these lists.
+
+\subsection{Objectives}
+\begin{enumerate}
+\item Create an open-source, COTS UAS for short recreational and research flights
+\item Provide full documentation of the conception, design, and testing of all systems
+\item The UAS should not require a runway for takeoff or landing
+\item The piloting of the UAS shall be accessible to hobbyists
+\item The UAS shall be made of ``affordable" components
+\item UAS components should be reconfigurable and support additional components
+\end{enumerate}
+
+\subsection{Deliverables}
+\begin{enumerate}
+\item A functioning design and prototype of a UAS
+\item A ground launch system for takeoff
+\item Relevant tools for piloting the UAS from the ground
+\item Extensive documentation of the development process
+\item Extensive documentation on proper use and safety
+\end{enumerate}
+
+\subsection{Constraints}
+\begin{enumerate}
+\item COTS components
+\item Affordable components
+\item Easily duplicated components (e.g. all 3D printed parts can be reasonably produced by hobbyists)
+\item All components should be reasonably safe (e.g. battery)
+\item Design and testing completed within 1 academic year
+\end{enumerate}
+
+%%BACKGROUND%%
+\section{Background}
+
+
+
+%%PROJECT DOCUMENTATION%%
+\section{Project Documentation}
+
+Varying forms of documentation were developed in order to assist with tracking the vision, objectives, high-level project plan, meeting documents to capture insight and actions needed, and so forth. The documentation is intended to not only support the systems engineering aspect of the project, but also serve an educational purpose by assisting future users who would like insight into what efforts and decisions were made to bring OpenUAS from a concept to a reality. Additionally, each individual on the team keeps their own weekly and semester progress documentation to maintain goals and the vision for every subgroup within the OpenUAS team. 
+
+\begin{enumerate}
+\item \textbf{Project Charter}\\ This is a one page document intended to help provide a broad overview of the project. The Project Charter lays out the team, the scope of the project, the purpose, and so forth. Additionally, the project objectives, deliverables, and constraints that were mentioned earlier in this paper come from the Project Charter as it maintains the vision and intent of the OpenUAS project.
+\item \textbf{Weekly Meeting Agenda \& Minutes}\\Each week, Meeting Minutes are held to capture what discussion and decisions occurred. The tasks of leading the meeting and taking meeting minutes are rotated through the team. The one leading the meeting will set the agenda for that meeting's primary discussion points, and the meeting minutes are taken during the meeting on the shared Google Drive. Afterward, the meeting minutes are then cleaned up and formatted into the meeting minute document kept on GitHub.
+\item \textbf{Requirements}\\ The requirements document is an extensive, volatile artifact that has been developed since the beginning of the project. Originally, our primary requirements were high-level, and directly traceable to the overall project goals. Now, as we begin to make decisions about what our design will look like, the requirements have evolved to become more detailed. For the sake of making requirements easier to read and understand, we chose to use the EARS \cite{Terzakis2013} requirements syntax.
+\end{enumerate}
+
+\section{Related Work}
+\noindent Currently, there are very few comparable fixed-wing UAS. The United States uses UAS such as the RQ-14A Dragon Eye and RQ-11B Raven in its military. Although these UAS are similar in size and weight to the OpenUAS team's target design, the technology and capabilities of these systems are much more advanced, and as such, the budget well exceeds the team?s overall budget.\\
+
+\noindent The University of Virginia created the Razor, a small fixed-wing UAS for the Department of Defense. This UAS has a flying wing design and utilizes an Android phone as the main processor. The Razor is of similar size, weight, and performance of the team?s target design. One main difference in this system is that it is entirely 3D printed. The team plans on utilizing 3D printing, but not to the extent of the Razor design.\\
+
+\noindent The Albatross is a commercial UAV produced by Applied Aeronautics. Although this aircraft is larger than the team's target design, its performance and low-cost are comparable to the team's goals. This UAV is described in more detail later in the paper, as the team purchased and is beginning to study this design. \\
+
+
+%%LAB SETUP AND ORGANIZATION%%
+\section{Lab Set-Up \& Organization}
+\noindent The lab originally started out with no equipment or tools available for our project. Throughout the last school year, orders had been placed for tools and other items needed in order to ensure a work space that has all tools needed for successful progression of this project. This last semester has built off of what was completed before, adding new equipment, rearranging tables and desks to provide more surface area in the lab for various projects, and adding more tool locations for easier access to common tools.  Because we are working within a large organization, special documentation and communication must be done in order to acquire the parts needed for the lab. This includes confirmation of successful retrieval of parts and checking if damage was done to them. If damage is found, proceeding with the proper return process and notifications so everyone knows how parts are moving about. If an item is not the item we purchased (ex a different sized cartridge for a label printer) we send it back to the individual keeping track of our orders and have them re-order the right equipment. The final goal is to have a lab outfitted in such a way that it can complete any of the tasks designed for the project with exceptions to precision machining and other similar processes.\\
+
+
+\subsection{3D Printer - LulzBot Taz 6}
+The LulzBot Taz 6 has been a crucial piece of equipment for the OpenUAS team. Its precision has been critical in creating components of the OpenUAS structure such as the tail cross sections, or the servo mounts for the albatross. The 3D printer has been able to create models with an accuracy of 0.1 mm out of various materials such as ABS and NinjaFlex. However, with this great convenience comes its fair share of issues.
+\\
+\\The largest issue this semester has been with the software for the Ubuntu version of Cura LulzBot, the software that provides an interface between the 3D printer and the computer. The updated open source software has a memory leak. This caused prints longer than 10 minutes to freeze. The Windows version of Cura LulzBot does not have this issue. So our solution has been to use a Windows version for now, and continuously update the Ubuntu version. So far, each update has improved the length of print time.
+\\
+\\The team discussed getting a cover for the printer this semester, to make it a closed bed printer, for a few reasons. A majority of the prints are created using PLA, a non-harmful material. Other materials, such as ABS, create toxic fumes when printed. The lab has a draft due to the vents in the room. This creates uneven cooling on the bed which negatively affects the structure of the prints. The cooling of each layer prevents proper adhesion between the layers. A temperature controlled closed bed printer creates strong, more accurate prints. The team is getting to a point where more accurate prints are required for custom precision parts. With these factors in mind it has been decided to acquire a cover for the LulzBot Taz 6.
+
+
+%%INSPIRATION: THE ALBATROSS%%
+\section{Primary Inspiration: The Albatross UAV}
+\noindent The Albatross UAV is a commercial product of Applied Aeronautics. The team purchased this model in the Fall of 2017 to study the documentation, the ease of construction, and the flight characteristics of this model. The Albatross UAV has a wingspan of approximately 9.8 feet and is advertised to carry over 4.4kg of payload over 4 hours. The Albatross is capable of a maximum 90 MPH speed and a cruise of 40 MPH. This UAV has so far been extremely beneficial in the lessons learned from purchasing, documentation, and the construction of UAS in general. 
+
+\subsection{Construction and Progress}
+\noindent The first phase of the construction of the Albatross is completed, meaning the Albatross is flight ready with minimum capability. The two most prominent features that have not been integrated onto the craft so far are flap control and telemetry functionality. The OpenUAS team understands that these features are not entirely necessary for flight, but is more of a luxury. Thus far, the Albatross has been purchased, assembled, and is ready for flight testing and improvements. The specific construction notes for the Albatross are outlined: 
+
+This Fall 2018 semester, the Albatross UAV has working servo connections to the control surfaces, a connected avionics system with one battery, and communicates through the pixhawk to the Taranis flight controller. The construction of the servos was slightly difficult because the Applied Aeronautics' team had controversial supplies and instructions for installment. The team still followed their configuration after purchasing the correct pieces which used swivel joint links and a single screw through the control surface. This construction process was useful because the team has more ideas on how to simplify this servo configuration for the OpenUAS design. The avionics system, through multiple testing trials, successfully connects the pixhawk, motor, and wiring to all servos and sensors inside the Albatross. The Albatross is calibrated through the Taranis controller through identifying servos, servo limitations, motor controls, and flight modes pre-installed into the pixhawk. 
+
+ 
+\subsection{Looking forward}
+\noindent For following semesters, the flight testing of the Albatross coinciding with the design and construction of the OpenUAS will be the primary focus of the OpenUAS teams. Control, power, and avionic capabilities will be tested on the Albatross to make improvements in the open source UAS model. Furthermore, battery configurations, telemetry, LIDAR, and video capability will be tested using the Albatross before attempting to implement them to the OpenUAS. \\
+
+
+%%SYSTEM ARCHITECTURE AND PROGRESS%%
+\section{OpenUAS System Architecture \& Progress}
+\noindent The OpenUAS team divided the entire system into six subsystems: Structures, Software, Controls, Electronics, Propulsion, and Ground System. The entire system completed 3 requirement revisions with added rationale. The OpenUAS will be modeled with ideas taken from the Albatross, created with support from the Lulzbot 3-D Printer, and utilize the best, most accessible most accessible characteristics of fixed-wing UAS. More details on the OpenUAS system is discussed below in the corresponding subsystems. \\
+
+\subsection{Structures}
+This section will discuss the design process and decisions made this semester with respect to the OpenUAS prototype currently under construction.
+
+\subsubsection{Design}
+Since the fuselage was designed and created in the Spring of 2018, this semester the Structures team focuses mostly on creating the wings, tail, and control surfaces. This process involved center of gravity calculations to determine exactly where control surfaces should be placed. Additionally, the airfoil for the horizontal and vertical tail sections was chosen and analyzed this semester. The NACA 0012 airfoil was selected as this airfoil is symmetric and is commonly used for tails for this reason. Using XFLR5, characteristics of the NACA 0012 airfoil at the target Reynolds number, Mach Number, and Ncrit value were calculated. All the information regarding the center of gravity calculations, airfoil analysis, and overall tail design can be found in the tailsizing.pdf on Git. 
+\\
+\\One of the main tasks this semester was determining the correct sizing for both the wing and tail control surfaces. Relevant documentation on control surfaces sizing in small UAVs is sparse, so as a starting place, the control surfaces were sized by finding popular ratios in the community of remote controlled (RC) planes. This knowledge and experience from the RC community coupled with other academic research papers, allowed the Structures team to make reasonable preliminary size estimates for the control surfaces. After the initial flight tests are performed next semester, the team will better understand what needs to be improved upon in the sizing and overall design on the control surfaces. One issue discovered this semester was the small size of the control surfaces and overall surface area of the wings. This provided unique problems with placement and strength of materials.
+\\
+\\The initial wing design called for flaps and ailerons, like a traditional plane. However, the surface are of the wing was not large enough to provide a structurally stable option of having both flaps, ailerons, and their control systems. This lead to the option of utilizing flaperons instead. A flaperon is exactly what is sounds like, it's a flap, and an aileron in one. A pair of flaperons can cause a plane to roll, as well as slow it down and create more lift.
+\\
+\\There are currently two options for the tail controls. One is the traditional ruder and elevator design, and the other is through the use of canards. Canards are control surfaces like a rudder and elevator, except they're on the front end of the plane.
+\\
+\\We chose traditional to start. The canard design is still in consideration for future designs of the UAS. 
+\\
+\\With all of these control surfaces and limited area on the wing, the decision was made to veto the solid foam wing design, and instead work with cross sections. The cross sections allows control surfaces to simply be inserted into the proper position on the wing. Rods attached permanently to the control surface cutouts, but not the full airfoil cutouts, will be controlled by servos within the fuselage. 
+\\
+\\The cross sections of the airfoil are spaced out and held with the use of carbon fiber rods and wooden dowels. The actual shape of the wing will be created with the use of Monokote. The plastic material will be placed over and shrunk around the cross sections to create a continuous shape of the correct airfoil.
+\\
+\\Originally, it was planned that all cross sections would be created out of balsa wood, but this proved problematic. More will be discussed in the manufacturing portion of this paper. 
+
+
+\subsubsection{Computer Simulations}
+\noindent This semester the Open UAS team has started to utilize the program Star CCM+ to perform computational fluid dynamics (CFD) on each model. CFD allows accurate calculations pertaining to the aerodynamic properties such as lift, drag, pressure differential and more of the UAV aircraft. This semester was focused on becoming familiar with the program and running simulations on the current model to obtain preliminary data.
+\\
+\\Looking forward to next semester, the structures team is looking into redesigning the fuselage of the UAV utilizing knowledge of what worked and what did not work on the previous design. In addition, CFD will be used as a tool to optimize the aerodynamics of the vehicle.   
+
+
+\subsubsection{Manufacturing}
+\noindent Last semester we were able to do a little bit of manufacturing for the fuselage with the help of Andrew. This semester we have manufactured quite a few parts of OpenUAS. We have printed and milled all of the wing parts. This included spars and airfoil profiles for the wings and control surfaces. For the main wing, we used the CNC mill to cut the profiles. After Catherine had designed the profiles for the length of the wing, we loaded the parts into MasterCam. This program allowed us to code in coordinates for the mill to follow that allowed us to cut the profile of the airfoil with an endmill. The material of choice was a sturdy balsa wood that allowed us to save weight, yet have a decent amount of structure. The profiles for the tail wings were done using the 3d printer. We chose to use the printer because after the parts were designed, we realized that we couldn't mill them due to their same size. Once all the profiles were created, we used a carbon fiber rod to link the profiles together in predetermined holes and then we glued the profiles to the rods. After that assembly was done, we used monokote to create the skin of the wing. The next step is to mount the wings to the fuselage we created last year. Overall manufacturing of the OpenUAS is going fairly smoothly with only some minor hiccups, such as material selection and size. The structures team got together and determined that we should get everyone some hands on experience to diversify our skill set. 
+
+\subsubsection{Launch System}
+This semester we looked into launch systems for the open UAS. Of the several options for launch systems, such as Pneumatic, Hydraulic, Bungee cord, Kinetic Energy, and Rocket Assisted Take-off, we chose to use bungee cords to launch the UAS. Our method of building the launch system is by using a cradle, a launching rail and two rollers. 
+\\
+\\The cradle has the possibility of moving along the inclined launching rail from its start to the end position. The elastic cord set is connected to the cradle by one of its ends and then enwrapped over a system of rollers and by the other end it is firmly attached to the rail body. The elastic cords are tensioned by the cradle moving to the start position where it is locked. After releasing, the force of the elastic cords accelerates the cradle with a jerk along the launching rail to the end position. After the cradle stops, the forward momentum causes the UAV to continue forward and takes over the flight with its propulsion assistance. The front roller is allowed its own rotation, but it has fixed position on the launching rail. Except of its own rotation, the rear roller is given adjustable displacement by means of the wheelchair to move longitudinally within the rail body. Moving the wheelchair back and forth to vary previous tension cords gives a possibility to accommodate a wider range of UAV take-off mass. The return of the cradle or the movement of the lower wheelchair with the rear roller is performed by means of a steel rope wounded by an electric winch on the back side of the catapult.
+
+
+\subsection{Software}
+
+The OpenUAS Software Team handles the implementation of the avionics system. This system includes the on board flight controller, the various peripheral sensors which attach to the flight controller, and the software which controls these components. We have been able to fully implement the flight controller, the mRo Pixhawk, with the accompanying PX4 flight stack. This is an open source piece of software which is calibrated through QGroundControl and allow for manual and autonomous flight capabilities.\\
+
+\noindent All of the sensors have also been implemented into the system. The flight controller, a mRo Pixhawk, has many integrated sensors on board, including a compass, magnetometer, accelerometer, and gyroscope, all of which are calibrated through QGroundControl. The GPS component and airspeed sensors were integrated into the system as well, which are plug and play in tandem with the Pixhawk. \\
+
+\subsection{Controls}
+\noindent The OpenUAS Controls team lead the construction and testing of the servos, servo attachments, and the respective control surfaces primarily for the Albatross UAV. The implementation of the servos was accomplished according to the instruction from Applied Aeronautics by using joint links to connect the control surfaces (two ailerons, two rear controls, and two flaps) to the servos inside the body of each control surface. These were then connected to the main body of the Albatross where power and the pixhawk is stored. \\
+
+\noindent The OpenUAS team tested the controls by connecting power to the pixhawk and controlling the servos with the Taranis flight controller. The Taranis allows the calibration of all controls systems to take place, as well as the arming of both the servos and motor. The servos were calibrated to have a certain range of mobility as well as default positions. The team plans to maintain a static front wheel so that ground steering is not possible; this is primarily for simplicity. \\
+
+\subsection{Electronics}
+
+\noindent The OpenUAS Electronics team's main priorities this semester was wiring the Albatross electrical system, updating the OpenUAS Iron Bird, and looking into how to diagram the electronics system. We developed an Iron Bird system while the servos and sensors were being set within the Albatross, and during that development we attempted to replicate the battery system Applied Aeronautics had instructed us to create. Unfortunately, the batteries were said to be set in series, and when connected with the rest of the system, it created a pop and damaged components. We realized that the voltage across some parts of the system were well above the maximum volts some of these parts could handle, and we scrapped that part of the project until we could resolve the voltage issue. Ideas that were passed around to resolve the battery issue included a switch between batteries or a step down voltage converter. \\
+
+\noindent After resolving the battery issues, we set the Albatross Iron Bird into the Albatross frame and connected the wires. During this process we had to string additional wires through the wing frame and connect the frame of the Albatross together in order to measure correct and finalized wire lengths. We went through two major iteration, where the first was quite messy and difficult to connect wires in and the second was a much cleaner layout within the fuselage. The second layout includes zip-tied wires, rearrange components for easier access, and a reorientated Pixhawk. \\
+
+\noindent While working through iterations of the electrical system, we decided that it would be more convenient if the components were attached using Wago splice connectors instead of soldering the parts together. This made it much easier to change out and adjust different parts of the system which saved time and also made it so the wires could be more organized. Additionally, using splice connectors allows the team to debug issues within the wiring faster and have a lower chance for a cold solder within the system. We started using the Wago splice connectors with the Albatross electronics system, and once we confirmed it worked on that system, we upgraded the OpenUAS electronics system as well. \\
+
+\noindent Along with the splicers, we also updated the components in the OpenUAS electrical system. We decided to scale them down with the smaller battery so that we don't accidentally draw too much voltage and burn out a wire or important component mid-flight. The ESC was updated to handle 30A and 2~3S with 6V which is much closer to the open UAS requirements. The power module and BEC were the same as in the albatross since they still fit the correct parameters and a closer fit was unable to be found. The power module can handle 50A and 2~6S with a max of 28V and the BEC can handle 20A and 12S with 50.4V. We also made sure that we ordered spares just in case, while testing the system, we happen to wire something incorrectly and burn out a component.
+
+\noindent For the electronics diagram, we found a potential free program to use to setup the layout. Additional research is required to make it works the way we want it to. 
+
+\subsection{Propulsion}
+
+The propulsion system has not changed since last year for the OpenUAS. The Albatross motor has had some very basic ground tests done with it, including making sure the propeller does not oscillate badly during flight, securing it for flight, and checking that it reacts properly to the controller. Further testing will be concluded pre-flight and during the flight of the Albatross.
+
+\subsection{Ground System}
+
+%%LESSONS LEARNED%%
+\section{Lessons Learned}
+
+\begin{enumerate}
+\item Things will very often not work the way you think they will
+\item Don't rush a project to the point that the results are sloppy, because it will be time consuming to have to correct later
+\item Staying organized, especially with wiring/internal components, is incredibly important
+\item It is a good idea to go around the lab at some point and take stock, there are a lot of tools that are useful in many situations hidden away
+\item When soldering items, make sure they are soldered to the correct spots
+\item Try to complete work early, if you leave it until later in the week or day it can get forgotten
+\item While in the design process, constantly verify ease of manufacturing
+\item Detail progress, especially in construction and instances of problem solving; it's easy to forget what exactly happened and helps all the team members
+\item Servo connections can be simplified; for the OpenUAS, the team should have more organized pathways for wiring or just keep all wiring in the fuselage and have extended servo connections with long rods
+\item Update the Cura LulzBot software continuously
+\item Splicing can save time on some parts and take more time on others
+\item A copy of a tool we already have is never a bad thing when two people need to work on the same project
+\item Wear safety equipment 
+\item Double check your work
+\item Not everything works a second time
+\item A clean lab is easier to work in than a messy one
+\item Debugging takes time, and even more patience 
+
+\end{enumerate}
+
+%%LIST OF FUTURE TASKS%%
+\section{Future Tasks \& Deliverables}
+
+\begin{enumerate}
+\item Create a wiring diagram
+\item Create new documentation for electronics system creation
+\item Update documentation
+\item Organize Albatross construction photos
+\item Capture OpenUAS prototype photos for documentation
+\item Complete multiple phases of Albatross flight testing
+\item Discuss flight characteristics of the Albatross
+\item Discuss what should be changed specifically from the Albatross model to the OpenUAS design
+\item Complete construction of OpenUAS prototype
+\item Conduct wind tunnel tests on OpenUAS prototype
+\item Conduct OpenUAS flight testing
+\item Begin second OpenUAS design 
+\item Learn to use the quadcopters for video recording flights
+\item Expand tools available
+\item Create a tool list per tool box
+\item Cost estimates for various parts for budget estimates
+\end{enumerate}
+
+%%REFERENCES%%
+\unlabeledsection{References}
+\begin{thebibliography}{100}
+\bibitem{Terzakis2013} Terzakis, J. (2013). EARS: The Easy Approach to Requirements Syntax. In International Academy, Research, and Industry Association: The Eighth International Multi-Conference on Computing in the Global Information Technology. Retrieved October 11, 2017, from \\\url{https://www.iaria.org/conferences2013/filesICCGI13/ICCGI_2013_Tutorial_Terzakis.pdf}
+\end{thebibliography}
+
+
+\end{document}

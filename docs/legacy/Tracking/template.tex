@@ -1,0 +1,143 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+%This means that any images must be in a folder named 'images' located in the same directory as this main.tex file
+\graphicspath{ {./images/} }
+
+\title{UAS Tracking Document}
+\date{February 2021}
+\author{}
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+The purpose of this document is to help record changes made to the OpenUAS so that the design can be traced back and optimized as needed. \\ \\
+In order to add a new iteration to this document, just copy the section titled 'Template' to the end of the document. There will be a number of places that you will need to enter information by replacing the commented explanations in each sub-section. Make sure to iterate the UAS number for each new test / version. If you are making significant redesigns to the UAS, iterate the first number (ie. UAS 1.0, UAS 2.0...) if you are making smaller changes or running tests on a version of the UAS, iterate the second number (ie. UAS 1.1, UAS 1.2...).\\ \\
+If you have any questions or suggestions about this document please contact Alex VandeLoo (aavande@iastate.edu)
+
+\newpage
+\section*{Template}
+
+%Start copying for Template
+
+\section*{
+	\begin{center}
+	UAS 1.0
+	\end{center}
+}
+
+\subsection*{Changes Overview}
+Talk about what changes were done for this version
+
+\subsection*{Reasoning for Decisions}
+Why did we choose to do this test. Why did we use certain materials over others.
+
+\subsection*{Tradeoffs}
+Go over how the changes affected the performance of the UAS
+
+\subsection*{Structure}
+Include a solid model of the UAS. \\ \\
+\begin{figure}[H]
+	\includegraphics[width = \columnwidth]{test.png %Include file name here, remove the document type (.png, .jpeg)
+	}
+	\caption{Figure Description}
+\end{figure}
+
+\subsection*{Materials}
+Include an edited model of the UAS to have different parts color coded to indicate which materials they were constructed with. \\ \\
+
+\begin{tabular}{ c c }
+	\textbf{Part of UAS} & \textbf{Material}  \\ 
+	 Tail Surfaces & Foam Core, Carbon Fiber  \\  
+	 Tail Beam & 3/4" Carbon Fiber Rod  \\ 
+	 Fuselage & Carbon Fiber  \\  
+	 Wings & Foam Core, Carbon Fiber  \\  
+	 Nose Cone & Foam Core, Carbon Fiber  \\  
+	 %Part of UAS & Material \\
+\end{tabular} \\
+
+\subsection*{Electronics}
+\subsubsection*{Wiring Diagram}
+Include an image of the wiring diagram, make sure to indicate which lines are power, signal, and ground. \\ \\
+\begin{figure}[H]
+	\includegraphics[width = \columnwidth]{test.png %Include file name here, remove the document type (.png, .jpeg)
+	}
+	\caption{Figure Description}
+\end{figure}
+
+\subsubsection*{Electrical Components}
+List which components were used for this run of the UAS. \\ \\
+\begin{tabular}{ c c }
+	\textbf{Type} & \textbf{Component}  \\ 
+	Battery & 6200 mAh 11.1V  \\  
+	Motor & Badass something
+	%Type of Component & Specific Component \\
+\end{tabular} \\
+
+\subsection*{Performance Values}
+List the quantitative values here that will be applicable to comparing the different versions. \\ \\
+\begin{tabular}{ c c }
+	\textbf{Characteristic} & \textbf{Value}  \\
+	Cd & numbers  \\ 
+	Stall & more numbers
+	%Characteristic & Value \\
+\end{tabular} \\
+
+\subsection*{Pilot Comments}
+Include a short blurb about qualitative aspects of the UAS. How it handles / feels.
+
+\subsection*{Images}
+Include any extra images relevant to this design. \\ \\
+%Copy and paste this includegraphics command for each image to be added
+
+\begin{figure}[H]
+	\includegraphics[width = \columnwidth]{test.png %Include file name here, remove the document type (.png, .jpeg)
+	}
+	\caption{Figure Description}
+\end{figure}
+
+\subsection*{Future Work}
+List any future work that is planned to be completed based off of this test. \\
+\begin{enumerate}
+	\item Make it fly better
+	\item Other things
+\end{enumerate}
+\newpage
+
+\section*{
+	\begin{center}
+	UAS 1.X
+	\end{center}
+}
+
+\subsection*{Changes}
+\subsubsection*{Structure Changes}
+Include images and descriptions of what was added or changed on the structure. Add a description of why the changes were done. \\
+
+\subsubsection*{Material Changes}
+Include a table that has the UAS parts listed along with their new material. \\ \\
+ \begin{tabular}{ c c }
+	\textbf{Part of UAS} & \textbf{Material}  \\ 
+	 Tail Surfaces & Foam  \\  
+	 Wings & Monokote Coated Foam  \\  
+\end{tabular} \\
+Add a description of why the changes were done. \\
+\subsubsection*{Electronics Changes}
+Include a table that has the UAS parts listed along with the new part used for this version. Add a description of why the changes were done. \\
+
+
+\subsection*{Tests Performed}
+What tests if any were performed with this version? \\ \\
+
+\subsection*{Pilot Comments}
+How did this version fly differently \\ \\
+
+\subsection*{Future Work}
+What other changes would be suggested off of this version? \\ \\
+
+
+
+
+\end{document}

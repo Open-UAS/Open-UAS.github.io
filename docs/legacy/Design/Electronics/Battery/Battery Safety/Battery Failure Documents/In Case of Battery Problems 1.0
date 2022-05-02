@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+
+\title{OpenUAS: In Case of Battery Failure}
+
+\author{Logan Gross}
+
+\maketitle
+
+\section*{Part 1: In the UAV}
+
+Under most circumstances in which a battery failure has occurred, move quickly and efficiently to a safe location. 
+
+\subsection*{Crashed UAV with no Smoke or Fire} 
+Approach slowly with extreme caution with fire extinguisher and sand bucket. If smoking or on fire, resort to the next sections. If the UAV is doing neither, touch the outer edge of the UAV compartment and see if it is hot. If it is, move a safe distance away for 5 minutes and check again after the time has passed. If it is still hot after 3 checks, consider it to be on fire and see below. If it is not warm, open the fuselage carefully. If not on fire or smoking, make sure the UAV is powered off and slowly check the batteries for damage. If they are punctured, consider battery to be dangerous, place it into the fire safe container, and move a safe distance away from the container (minimum 50 feet). Call a disposal center if the battery is not swelling or the fire department if it is. If the battery is not punctured but is swelling, move a safe distance away (minimum 50 feet) and see the section on swelling below. If the battery is intact and appears undamaged, place it into the fire safe container and keep checking it for swelling periodically. If it begins to swell at any point, see below. 
+
+
+\subsection*{Visable Smoke}
+If it smoking, but there is a decently large hole into the compartment where the batteries are located and a Class D fire extinguisher is availbale, approach slowly and carefully. If fire begins, move quickly to a safe location. Attempt to stop the smoke with the extinguisher. If smoke stops, wait 5 minutes. UNDER NO CIRCUMSTANCES touch the UAV if it is smoking. Check the fuselage to see if it is hot. If it is not, put on welding gloves, the heavy leather apron, and goggles. Very slowly attempt to extract the battery. If smoking occurs again, let go of the battery and re-attempt to extinguish the smoke. If fire occurs, see below. If successful with pulling out the smoking battery, carefully set it into the battery case. Although extinguished, the battery could re-light, so fill the case with sand to help choke off any possible re-lights. Call the disposal center and proceed from there. The battery is not salvagable. If the battery re-lit once already, call fire department for disposal instead. 
+
+\subsection*{On Fire}
+The UAV is toast, call the fire department (reminder, the number is 911). Although someone can wait for the fire/smoke to die down, not all of the cells may have been triggered in the fire, so there is a chance for re-light when someone attempts to recover the battery. It would be very unwise to attempt to salvage anything until the battery has been properly removed by firefighters. 
+
+\newpage
+
+\section*{Part 2: In the Lab}
+
+\subsection*{If the Battery is Swelling}
+
+If the battery is swelling quickly, move out of the lab and pull the fire alarm while moving quickly to a safe location. If it is a very slow swell or you have just noticed that it is inflated, quickly put on safety goggles, an air filter, welding gloves, and a heavy leather apron. If at any point it begins smoking intensely, catches fire, or explodes, move out of the lab and pull the fire alarm while moving quickly to a safe location. If it is charging, unplug the battery quickly and place it into the safety container. If it is in the safety container, cover it with sand (located under the counter to the right of the sink). Call the disposal center and proceed from there. The battery is not salvagable. If the battery re-lit once already, call fire department for disposal instead. 
+
+\subsection*{If the Battery is Smoking}
+
+If it smoking anymore than slightly, move out of the lab and pull the fire alarm while moving quickly to a safe location. If it is smoking slightly and a Class D fire extinguisher and sand (located under the counter to the right of the sink) are available, approach slowly and carefully with the extinguisher. If fire begins, move out of the lab and pull the fire alarm while moving quickly to a safe location. If it is smoking heavily enough that it is making a small cloud, close all doors, pull the fire alarm, and get to a safe location. Otherwise, attempt to stop the smoke with the extinguisher. If smoke stops, put on safety goggles, an air filter, welding gloves, and a heavy leather apron while waiting 5 minutes. UNDER NO CIRCUMSTANCES touch the battery without gloves if it is smoking. Very slowly attempt to place the battery into a safety case. If smoking occurs again, quickly but gently place the battery on the floor and re-attempt to extinguish the smoke. If fire occurs, bail. If successful with setting the battery into the case cover the case in sand. Although extinguished, the battery could re-light. Call the disposal center and proceed from there. The battery is not salvagable. If the battery re-lit once already, call fire department for disposal instead. 
+
+\subsection*{If the Battery is on Fire}
+
+Under most circumstances in which a battery failure has occurred, move quickly and efficiently to a safe location and notify the fire department of the situation. If it is NOT smoking and the fire is VERY small (unlikely), get the Class D fire extinguisher (the big one on the 2-wheeled cart) and attempt to extinguish the flame. If it begins smoking heavily or the fire gets more intense, move out of the lab and pull the fire alarm while moving quickly to a safe location. If you manage to put out the flame with minimal smoking, quickly put on safety goggle, an air filter, welding gloves, and a heavy leather apron while waiting 5 minutes. If it has not re-ignited and has NOT smoked in the last 5 minutes, attempt to move it to a safety container. If it begins to smoke or re-light, move out of the lab and pull the fire alarm while moving quickly to a safe location (bail). If successful with setting the battery into the case cover the case in sand. Although extinguished, the battery could re-light. Call the disposal center and proceed from there. The battery is not salvagable. If the battery re-lit once already, call fire department for disposal instead. 
+
+\subsection*{If the Battery was on Fire}
+
+Call the disposal center and proceed from there. The battery is not salvagable. If the battery re-lit once already, call fire department for disposal instead. 
+
+\end{document}

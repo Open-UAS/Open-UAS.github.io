@@ -1,0 +1,84 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+
+\begin{document}
+	\title{Structure Requirements (Rough Draft)}
+	
+	\author{Catherine Sener, Abigail Gries}
+	\maketitle
+	
+	\textit{This document will describe the structures requirements for the Iowa State University Open UAS project.}\\
+	
+	\flushleft{\textcolor{red}{Overall, I think justifications should probably be added to these. Not because they aren't good requirements,
+	but because that satisfies one of our goals of documenting and justifying our decisions.}}
+	
+	\begin{enumerate}
+		
+		\section{Wings}
+		
+		\item The wings shall be able to withstand drafts of up to 50 knots.\\
+		\item The wings shall be constructed of EPP foam.\\
+		\item The wingspan shall be 5 feet.\\
+		\item The wing planform \textcolor{red}{(typo?)} area shall be 2 square feet.\\
+		\item The maximum coefficient of lift shall be upwards of 1.8.\\
+		\item The wing loading factor shall not exceed 3.5 pounds per square foot.\\
+		\item The wings shall be attached to the frame of UAS by a 3D printed latch. \textcolor{red}{Do we want to assert this yet, or 				should it be left more ambiguous? - Like, "the wings shall be removable" instead}\\
+		\item The wings shall be removable through the printed latch.\\
+		\item The wings shall contain a rod through the center to add weight.\\
+		\item The wings shall have control surfaces.\\
+		\item The wings shall have multiple paths inside to allow wires for control surfaces.\\
+		\item The foam wings shall be covered by a balsa wood shell.\\
+		
+	\end{enumerate}
+		
+	\begin{enumerate}
+		
+		\section{Fuselage}
+		
+		\item The fuselage shall house the required electronic equipment.\\
+		\item The inside of fuselage shall cushion and protect components.\\
+		\item The fuselage shall contain custom 3D printed storage containers for components.\\
+		\item The inside of fuselage shall be accessible.\\
+		\item The fuselage shall be able to withstand minimum impact of 2G.\\
+		\item The fuselage shall be aerodynamically efficient (??).\textcolor{red}{At this stage, we may want to quantify this}\\
+	
+	\end{enumerate}
+
+	\begin{enumerate}
+		
+		\section{Empennage}
+		
+		\item Empennage shall have appropriate control surfaces (??). \textcolor{red}{At this stage, we may want to quantify this}\\
+		
+	\end{enumerate}
+
+	\begin{enumerate}
+		
+		\section{Materials}
+		
+		\item The 3D printed components shall be produced by the LulzBot Taz 6 3D printer.\\
+		\item The 3D printed structural components shall use ABS filament.\\
+		\item The non-structural 3D printed components shall use PLA filament.\\
+		\item The foam used for the wings shall be EPP foam.\\
+		\item The foam shall only be cut using the hot wire and hot knife.\textcolor{red}{I'm not sure if this should be captured as a 			Materials requirement, or instead elsewhere in safety documentation - doesn't really describe the material itself}\\
+		\item The materials shall be accessible by general public.\textcolor{red}{For clarity, perhaps explain that the general public should 		be able to purchase them, rather than just 'access' them}\\
+		\item Alternate materials and printers shall be listed for hobbyists' use.\textcolor{red}{(I'm not sure if this should be captured as a 			Materials requirement, or instead appear in some other documentation - it implicitly requires that the design be such that 				here are multiple possible materials, but describes the method instead)}\\
+
+	\end{enumerate}		
+
+	\begin{enumerate}
+		
+		\section{General}
+		
+		\item All components shall be placed such that the center of gravity is stable.\\
+		\item All connection points shall be able to withstand minimum impact of 2G.\\
+		\item All components shall be modeled and documented in SolidWorks. \textcolor{red}{(Seems like a description of the project itself, or perhaps the process, but not of the actual subsystem in question)}\\
+		\item The weight of the total structural frame without electrical components shall not exceed 2.5 lbs.\\
+		\item The entire frame shall be waterproof and protect housed electrical components from water.\\
+		
+		
+		
+	\end{enumerate}
+	
+\end{document}
