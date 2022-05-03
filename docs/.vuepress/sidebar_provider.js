@@ -23,7 +23,9 @@ module.exports = {
         //construct key/value property for each directory in root of docs, using the SUMMARY.md file
         result_sidebar = {};
         for(const dir of dirs){
-            result_sidebar['/'+dir+'/'] = this.sidebar(dir)
+            if(fs.existsSync(path.resolve(rootPath, dir, 'SUMMARY.md'))){
+                result_sidebar['/'+dir+'/'] = this.sidebar(dir)
+            }
         }
 
         //append last fallback sidebar mapping

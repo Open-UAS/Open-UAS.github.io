@@ -19,6 +19,6 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.COLTON_ACCESS_TOKEN }}
         TARGET_REPO: LTL-AERO/OpenUAS
         TARGET_BRANCH: gh-pages
-        BUILD_SCRIPT: cd Documentation && npm install && npm run build
+        BUILD_SCRIPT: npm install && npm run build
         BUILD_DIR: docs/.vuepress/dist
         #CNAME: https://www.xxx.com

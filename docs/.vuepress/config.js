@@ -30,7 +30,6 @@ module.exports = {
           ],
 
         //Use SUMMARY.md files in the top level of each doc section to generate the sidebar for each section
-        //TODO not updating correctly for fallback when going to legacy folder, motor selection process
         sidebar: sidebar_provider.getMultiSidebar('./docs'),
         sidebarDepth: 2,
         searchPlaceholder: 'Search',
@@ -40,7 +39,7 @@ module.exports = {
         //Details for repo link in nav bar and edit this page link at bottom of all pages
         repo: 'Open-UAS/Open-UAS.github.io',
         docsDir: 'docs',
-        docsBranch:'main',  //TODO update
+        docsBranch:'main',
         editLinks: true,
         smoothScroll: true
       },
