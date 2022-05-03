@@ -16,7 +16,7 @@ module.exports = {
         //logo stored in .vuepress/public folder
         logo: '/logo.png',
         nav: [
-            {text: 'Intro',       link: '/intro/'},
+            {text: 'Intro',       link: '/Intro/'},
             {text: 'Meta Docs',   link: '/Meta_Docs/'},
             {text: 'Design',      link: '/Design/' },
             {text: 'Manufacturing',      link: '/Manufacturing/' },
