@@ -1,4 +1,1 @@
-# [OpenUAS Documentation](open-uas.github.io)
-
-
-TODO: git lfs
+# [OpenUAS Documentation](https://open-uas.github.io/)
