@@ -1,10 +1,11 @@
 name: Vuepress Build and Deploy
-on:
+on:   
+  workflow_dispatch:
   push:
     branches:
       - main
     paths:
-      - docs/**
+      - docs/**  
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -18,7 +19,7 @@ jobs:
         #TODO this access token will expire and need to be updated, created from Colton Glick's account
         ACCESS_TOKEN: ${{ secrets.COLTON_ACCESS_TOKEN }}
         TARGET_REPO: Open-UAS/Open-UAS.github.io
-        TARGET_BRANCH: gh-pages
+        TARGET_BRANCH: vuepress-build
         BUILD_SCRIPT: npm install && npm run build
         BUILD_DIR: docs/.vuepress/dist
         #CNAME: https://www.xxx.com
