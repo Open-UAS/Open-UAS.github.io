@@ -26,7 +26,8 @@ module.exports = {
                 {text: 'Electrical', link: '/electrical/'}
               ] 
             },
-            {text: 'Lab Docs',    link: '/lab/'}
+            {text: 'Lab Docs',    link: '/lab/'},
+            {text: 'Archive',     link: 'https://open-uas.github.io/Archive/'}
           ],
 
         //Use SUMMARY.md files in the top level of each doc section to generate the sidebar for each section
