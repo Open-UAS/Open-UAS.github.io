@@ -6,11 +6,14 @@ module.exports = {
     base: '/',
     title: 'OpenUAS',
     description: 'Designing and building an open source fixed-wing UAS',
-    plugins:[
-      [
-        'vuepress-plugin-mathjax',
-      ],
-    ],
+    plugins:{
+        '@vuepress/medium-zoom': {
+          options: {
+            margin: 10,
+          }
+        },
+        'vuepress-plugin-mathjax': {}
+    },
 
     themeConfig: {
         //logo stored in .vuepress/public folder
@@ -22,11 +25,11 @@ module.exports = {
             {text: 'Manufacturing',      link: '/Manufacturing/' },
             {text: 'Software/Electrical',  link: '/Software_Electrical/',
               items:[
-                {text: 'Software', link: '/software/'},
-                {text: 'Electrical', link: '/electrical/'}
+                {text: 'Software', link: '/Software/'},
+                {text: 'Electrical', link: '/Electrical/'}
               ] 
             },
-            {text: 'Lab Docs',    link: '/lab/'},
+            {text: 'Lab Docs',    link: '/Lab_Docs/'},
             {text: 'Archive',     link: 'https://open-uas.github.io/Archive/'}
           ],
 
