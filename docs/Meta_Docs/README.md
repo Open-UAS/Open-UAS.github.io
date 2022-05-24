@@ -1,28 +1,31 @@
 # Meta Documentation
 Here you will find documentation *about* the documentation
 
-## Vuepress
-This documentation uses Vuepress to render basic mark down files as a static webpage.
+## VuePress
+This documentation uses VuePress to render basic mark down files as a static webpage.
 
- In the past the team has used Latex to write documentation. While Latex is good for writing final documents, Vuepress gives a more streamlined workflow that is easier for new members to jump into, both for reading documentation and especially for editing documentation.
+ In the past the team has used Latex to write documentation. While Latex is good for writing final documents, VuePress gives a more streamlined workflow that is easier for new members to jump into reading documentation and especially editing documentation.
 
 ### Contributing to the Documentation
-The easiest way is to click the "Edit this page" button at the bottom of the page you'd like to contribute to. The Vuepress site is pre-configured with the OpenUAS git repository to automatically rebuild and deploy when a change to the Documentation folder is pushed to master. The build status can be viewed on the [Github actions page](https://github.com/LTL-AERO/OpenUAS/actions)
+The easiest way is to click the "Edit this page" button at the bottom of the page you'd like to contribute to. The VuePress site is pre-configured with the OpenUAS git repository to automatically rebuild and deploy when a change to the Documentation folder is pushed to the main branch. The build status can be viewed on the [Github actions page](https://github.com/Open-UAS/OpenUAS/actions)
 
-You can also make modifications to the Documentation folder from any text editor, then push to master and your changes will be built and published. To test your changes before publishing them, you'll need to setup a development environment:
+You can also make modifications to the `docs` folder from any text editor, then push to the main branch and your changes will be built and published. To test your changes before publishing them, you'll need to setup a development environment:
 
-#### Vuepress Personal Development Environment
+#### VuePress Personal Development Environment
 To build the docs you will need a few things:
-- Clone the OpenUAS repo locally
+- Clone the documentation repo locally
+    ``` bash
+    git clone git@github.com:Open-UAS/Open-UAS.github.io.git
+    ```
 - install node.js and npm 
     - [Downloading and installing Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 - install Vuepress dependencies
     ``` bash
-    cd OpenUAS/Documentation
+    cd Open-UAS.github.io/
     npm install
     ```
 
-Once everything is setup and installed you will be able to build and run the docs from your local machine. Run `npm run dev` from the `Documentation` folder. Once everything looks good on your machine, you should be able to push your changes to master to publish.
+Once everything is setup and installed you will be able to build and run the docs from your local machine. Run `npm run dev` from the root folder to start the server. Once everything looks good on your machine, you should be able to push your changes to main to publish.
 
 
 ### LaTeX Conversion
