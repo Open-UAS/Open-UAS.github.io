@@ -13,19 +13,21 @@ You can also make modifications to the `docs` folder from any text editor, then 
 
 #### VuePress Personal Development Environment
 To build the docs you will need a few things:
-- Clone the documentation repo locally
+1. Clone the documentation repo locally
     ``` bash
     git clone git@github.com:Open-UAS/Open-UAS.github.io.git
     ```
-- install node.js and npm 
+2. install node.js and npm 
     - [Downloading and installing Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-- install Vuepress dependencies
+3. install Vuepress dependencies
     ``` bash
     cd Open-UAS.github.io/
     npm install
-    ```
+   ```
+4. Build and run the docs from your local machine. Run `npm run dev` from the root folder to start the server. 
+5. Open a web browser to http://localhost:8080/ to see your local changes.
 
-Once everything is setup and installed you will be able to build and run the docs from your local machine. Run `npm run dev` from the root folder to start the server. Once everything looks good on your machine, you should be able to push your changes to main to publish.
+Once everything looks good on your machine, you should be able to push your changes to main to publish.
 
 
 ### LaTeX Conversion
