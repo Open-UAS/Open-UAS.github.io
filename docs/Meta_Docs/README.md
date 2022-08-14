@@ -30,6 +30,37 @@ To build the docs you will need a few things:
 Once everything looks good on your machine, you should be able to push your changes to main to publish.
 
 
+### Adding a New Page
+To create a new page, simply create a markdown file (.md) in the appropriate folder. To add your new page to the sidebar, the `SUMMARY.md` file must be modified. This file exists in the base folder for each section (ie, Design, Electrical, Software) and is used by a script at compile time to generate the side bar information. Any relative or external link can be added to the side bar, but it is good practice to follow the actual folder structure where the files are stored.
+
+ Below is an example of the `SUMMARY.md` file with the following folder structure.
+
+    Docs
+    |-- Intro
+    |   |-- SUMMARY.md
+    |   |-- README.md
+    |   |-- ProjectCharter.md
+    |   |-- Example_Folder
+    |   |   |-- README.md
+    |   |   |-- example_file.md
+    |   |   |-- Example_Sub_Folder
+    |   |   |   |-- README.md
+    |   |   |   |-- example_sub_file.md
+```
+# Summary
+
+* [New Member Orientation](README.md)
+* [Project Charter](ProjectCharter.md)
+* [Example Folder](Example_Folder/README.md)
+     * [Example file](Example_Folder/example_file.md)
+     * [Example Sub Folder](Example_Folder/Example_Sub_Folder/README.md)
+          * [Example Sub File](Example_Folder/Example_Sub_Folder/example_sub_file.md)
+```
+
+The headings of each page are automatically detected and displayed by vuepress and cannot be easily changed.
+
+To see more details on the side bar see [.vuepress/config.js](https://github.com/Open-UAS/Open-UAS.github.io/blob/main/docs/.vuepress/config.js) and [.vuepress/sidebar_provider.js](https://github.com/Open-UAS/Open-UAS.github.io/blob/main/docs/.vuepress/sidebar_provider.js)
+
 ### LaTeX Conversion
 - [Pandoc](https://pandoc.org/index.html) can be used to convert from a LaTeX file into a mark down file.
     - `pandoc -s example.tex -o example.md`
