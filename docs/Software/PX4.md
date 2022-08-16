@@ -41,7 +41,7 @@ This airframe is intended for the current OpenUAS vehicle and should be adapted 
     - Which mixer to use is set in the airframe config file created earlier.
     - [See below](#openuas-mixer) for more details on mixers. 
 
-See [Using The OpenUAS Airframe](#using-the-openuas-airframe) for details and enabling the new airframe in QGC.
+See [Using The OpenUAS Airframe](./QGroundControl.md#using-the-openuas-airframe) for details and enabling the new airframe in QGC.
 
 ### Apprentice Airframe (2151)
 
