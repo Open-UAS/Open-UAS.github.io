@@ -11,9 +11,11 @@ This setup can get fairly complicated with all the dependencies that PX4 require
 
 **Linux**
 - Install docker engine, [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
+- Once your development tools are all setup, go ahead and clone the OpenUAS PX4-autopilot repository from [https://github.com/Open-UAS/PX4-Autopilot](https://github.com/Open-UAS/PX4-Autopilot) 
 
 **Windows**
 - Install Docker Desktop with WSL2 backend, [https://docs.docker.com/desktop/install/windows-install/](https://docs.docker.com/desktop/install/windows-install/)
+- Once your development tools are all setup, go ahead and clone the OpenUAS PX4-autopilot repository from [https://github.com/Open-UAS/PX4-Autopilot](https://github.com/Open-UAS/PX4-Autopilot) 
 
 ### Native Setup
 
@@ -21,7 +23,35 @@ This setup can get fairly complicated with all the dependencies that PX4 require
 TODO
 
 **Windows**
-TODO
+- Install WSL 2 with Ubuntu 20.04.1 LTS [https://docs.microsoft.com/en-us/windows/wsl/install](https://docs.microsoft.com/en-us/windows/wsl/install)
+- Once your development tools are all setup, go ahead and clone the OpenUAS PX4-autopilot repository from [https://github.com/Open-UAS/PX4-Autopilot](https://github.com/Open-UAS/PX4-Autopilot) 
+
+
+## Building and Flashing Custom Firmware
+See [Dev Environment Setup](#dev-environment-setup) for setup details.
+
+### Building with Docker
+- Open a terminal to the root of the PX4 folder structure.
+- Run `./Tools/docker_run.sh make px4_fmu-v5_default`. This will start a new docker container and compile the firmware for Pixhawk 4.
+    - Using the docker build script follows this format, `./Tools/docker_run.sh {command to execute}`
+    - See [Building PX4](https://docs.px4.io/main/en/dev_setup/building_px4.html#nuttx-pixhawk-based-boards) for all available targets
+- Once compilation is complete the firmware will be under the `build` folder as `px4_fmu-v5_default.px4` among other files.
+
+### Building Natively 
+- Open a terminal to the root of the PX4 folder structure.
+- Run `make px4_fmu-v5_default`.
+    - See [Building PX4](https://docs.px4.io/main/en/dev_setup/building_px4.html) for all available targets
+- Once compilation is complete the firmware will be under the `build` folder as `px4_fmu-v5_default.px4` among other files.
+
+### Flash Firmware With QGroundControl
+- Open QGC and go to vehicle setup, then firmware tab.
+- Plug the Pixhawk 4 into your machine via USB, it should auto detect and QGC will prompt you what firmware to flash.
+- Select advanced settings, and set the custom firmware file option in the version drop down.
+![Advanced settings](./firmware_selection_advanced_settings.jpg)
+- Select our newly created `PX4_fmu-v5_default.px4` file and click ok to start flashing.
+- Wait for the Pixhawk to reboot to complete the update.
+
+
 
 ## Custom Airframes
 
@@ -59,27 +89,3 @@ A similar approach was taken to add this custom airframe as previous.
 The mixer for the custom airframes are defined in the `ROMFS/px4fmu_common/mixers` folder eg [open_uas_apprentice.main.mix](https://github.com/Open-UAS/PX4-Autopilot/blob/stable/ROMFS/px4fmu_common/mixers/open_uas_apprentice.main.mix) . The mixer files can get somewhat confusing to understand, details on writing mixers can be found on the [PX4 docs](https://docs.px4.io/main/en/concept/mixing.html#px4-mixer-definitions). The general idea is that you have n number of actuator outputs, each of those n actuators are defined to be driven by 1 or more outputs from PX4. The mixer file is defined sequentially, starting with actuator 1, then 2, 3 ... to n actuators. These actuator numbers correspond to the pwm port number on the [Pixhawk wiring](http://localhost:8080/Electrical/#current-wiring-diagram). 
 
 The default mixer file can be **overridden** at runtime by placing the mix file with the same name (eg `open_uas_apprentice.main.mix`) onto the Pixhawk SD card under `/etc/mixers/` This mix file will be loaded instead of the default one defined at compile time.
-
-## Building and Flashing Custom Firmware
-See [Dev Environment Setup](#dev-environment-setup) for setup details.
-
-### Building with Docker
-- Open a terminal to the root of the PX4 folder structure.
-- Run `./Tools/docker_run.sh make px4_fmu-v5_default`. This will start a new docker container and compile the firmware for Pixhawk 4.
-    - Using the docker build script follows this format, `./Tools/docker_run.sh {command to execute}`
-    - See [Building PX4](https://docs.px4.io/main/en/dev_setup/building_px4.html#nuttx-pixhawk-based-boards) for all available targets
-- Once compilation is complete the firmware will be under the `build` folder as `px4_fmu-v5_default.px4` among other files.
-
-### Building Natively 
-- Open a terminal to the root of the PX4 folder structure.
-- Run `make px4_fmu-v5_default`.
-    - See [Building PX4](https://docs.px4.io/main/en/dev_setup/building_px4.html) for all available targets
-- Once compilation is complete the firmware will be under the `build` folder as `px4_fmu-v5_default.px4` among other files.
-
-### Flash Firmware With QGroundControl
-- Open QGC and go to vehicle setup, then firmware tab.
-- Plug the Pixhawk 4 into your machine via USB, it should auto detect and QGC will prompt you what firmware to flash.
-- Select advanced settings, and set the custom firmware file option in the version drop down.
-![Advanced settings](./firmware_selection_advanced_settings.jpg)
-- Select our newly created `PX4_fmu-v5_default.px4` file and click ok to start flashing.
-- Wait for the Pixhawk to reboot to complete the update.
