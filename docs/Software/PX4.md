@@ -67,7 +67,7 @@ See [Dev Environment Setup](#dev-environment-setup) for setup details.
 - Open a terminal to the root of the PX4 folder structure.
 - Run `./Tools/docker_run.sh make px4_fmu-v5_default`. This will start a new docker container and compile the firmware for Pixhawk 4.
     - Using the docker build script follows this format, `./Tools/docker_run.sh {command to execute}`
-    - See [Building PX4](https://docs.px4.io/main/en/dev_setup/building_px4.html) for all available targets
+    - See [Building PX4](https://docs.px4.io/main/en/dev_setup/building_px4.html#nuttx-pixhawk-based-boards) for all available targets
 - Once compilation is complete the firmware will be under the `build` folder as `px4_fmu-v5_default.px4` among other files.
 
 ### Building Natively 
