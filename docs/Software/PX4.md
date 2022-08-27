@@ -7,21 +7,28 @@ PX4 allows for many out of the box capabilities such as flight stabilization, au
 ## Dev Environment Setup
 This setup can get fairly complicated with all the dependencies that PX4 requires. A new method that alleviates some of this is using a docker container to compile PX4. This pre-packages the dependencies required to build PX4
 
-### Using the Docker Toolchain
+### Using the Docker Toolchain (Recommended)
 
-**Windows**
-- Be sure virtualization is enabled on your machine through the bios.
-- Install Windows Subsystem for Linux 2 (WSL 2) by opening an *administrator* command prompt and running `wsl --install --distribution Ubuntu-20.04`
-- Reboot your machine 
-- Install Docker Desktop with WSL2 backend, [Docker, Windows install](https://docs.docker.com/desktop/install/windows-install/)
-- Once your development tools are all setup, go ahead and use git to clone the OpenUAS PX4-autopilot repository from [https://github.com/Open-UAS/PX4-Autopilot](https://github.com/Open-UAS/PX4-Autopilot) and checkout the stable branch.
+**Windows with WSL 2**
+1. Be sure virtualization is enabled on your machine through the bios.
+2. Install Windows Subsystem for Linux 2 (WSL 2) by opening an *administrator* command prompt and running `wsl --install --distribution Ubuntu-20.04`
+3. Reboot your machine 
+4. Install Docker Desktop with WSL2 backend, [Docker, Windows install](https://docs.docker.com/desktop/install/windows-install/)
+5. Once your development tools are all setup, go ahead and use git to clone the OpenUAS PX4-autopilot repository from [https://github.com/Open-UAS/PX4-Autopilot](https://github.com/Open-UAS/PX4-Autopilot) and checkout the stable branch.
 
 
 **Linux**
-- Install docker engine, [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
+1. Install docker engine, [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
+2. Once your development tools are all setup, go ahead and clone the OpenUAS PX4-autopilot repository from [https://github.com/Open-UAS/PX4-Autopilot](https://github.com/Open-UAS/PX4-Autopilot) and checkout the stable branch.
+
+### Without Docker
+
+**Windows with WSL 2**
+- Install WSL 2 with Ubuntu 20.04.1 LTS [https://docs.microsoft.com/en-us/windows/wsl/install](https://docs.microsoft.com/en-us/windows/wsl/install)
 - Once your development tools are all setup, go ahead and clone the OpenUAS PX4-autopilot repository from [https://github.com/Open-UAS/PX4-Autopilot](https://github.com/Open-UAS/PX4-Autopilot) and checkout the stable branch.
 
-### Native Setup
+**Linux**
+TODO
 
 **Native Windows**
 :::warning
@@ -30,15 +37,6 @@ Gazebo is a Linux only software so it must be run through WSL or natively on Lin
 :::
 - Details on this configuration may be lacking as not many people have used it before. 
 - Check the PX4 docs for this configuration [https://docs.px4.io/main/en/dev_setup/dev_env_windows_cygwin.html](https://docs.px4.io/main/en/dev_setup/dev_env_windows_cygwin.html)
-
-**Windows with WSL 2**
-- Install WSL 2 with Ubuntu 20.04.1 LTS [https://docs.microsoft.com/en-us/windows/wsl/install](https://docs.microsoft.com/en-us/windows/wsl/install)
-- Once your development tools are all setup, go ahead and clone the OpenUAS PX4-autopilot repository from [https://github.com/Open-UAS/PX4-Autopilot](https://github.com/Open-UAS/PX4-Autopilot) and checkout the stable branch.
-
-
-**Linux**
-TODO
-
 
 
 ## Building and Flashing Custom Firmware
