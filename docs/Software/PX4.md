@@ -28,7 +28,8 @@ This setup can get fairly complicated with all the dependencies that PX4 require
 This configuration will not be able to run the gazebo simulation.
 Gazebo is a Linux only software so it must be run through WSL or natively on Linux.
 :::
-- Details on this configuration may be lacking as not many people have experimented with it before. 
+- Details on this configuration may be lacking as not many people have used it before. 
+- Check the PX4 docs for this configuration [https://docs.px4.io/main/en/dev_setup/dev_env_windows_cygwin.html](https://docs.px4.io/main/en/dev_setup/dev_env_windows_cygwin.html)
 
 **Windows with WSL 2**
 - Install WSL 2 with Ubuntu 20.04.1 LTS [https://docs.microsoft.com/en-us/windows/wsl/install](https://docs.microsoft.com/en-us/windows/wsl/install)
