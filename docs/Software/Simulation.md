@@ -9,6 +9,10 @@ This section assumes you already have [setup dev tools for PX4](PX4.md#dev-envir
 
 Gazebo is a linux only application so we will be running it either through WSL 2 or natively on linux:
 
+::: warning
+If you plan to use Docker to run the simulation, the current container comes Gazebo 9 only. Local and Docker versions of gazebo must match to work correctly. During the installation step replace "gazebo11" with "gazebo9"
+:::
+
 ### Windows with WSL 2
 Depending what version of windows you are using, some additional setup may be needed
 
@@ -68,7 +72,11 @@ The current Docker simulation container includes Gazebo 9. Local and Docker vers
     ::: 
     substituting in the id of your new container
 5. Run `export GAZEBO_MASTER_URI=$GAZEBO_MASTER_IP:11345`
+6. Run `export GAZEBO_MODEL_PATH=~/git/PX4-Autopilot/Tools/sitl_gazebo/models/`
+    - Replace first part of path as needed to point to your local PX4-Autopilot directory
 6. Run `gzclient --verbose` to launch the gazebo GUI on the host machine, and connect to the docker server
+
+TODO: docker container is not reachable from WSL, need to investigate
 
 ### Without Docker
 
