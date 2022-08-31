@@ -76,7 +76,38 @@ The current Docker simulation container includes Gazebo 9. Local and Docker vers
     - Replace first part of path as needed to point to your local PX4-Autopilot directory
 6. Run `gzclient --verbose` to launch the gazebo GUI on the host machine, and connect to the docker server
 
+**Windows with WSL2**
 TODO: docker container is not reachable from WSL, need to investigate
+    - Had to publish gazebo port 11345 when starting docker container with `--publish 11345:11345`
+    - Used different IP address that was visible in windows control panel
+TODO: Gazebo is reachable from wsl to docker container, but wsl shows only black screen and has the following output
+```
+$ gzclient --verbose
+Gazebo multi-robot simulator, version 9.19.0
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
+
+[Msg] Waiting for master.
+[Err] [ConnectionManager.cc:155] Conflicting gazebo versions
+[Msg] Publicized address: 127.0.0.1
+[Wrn] [GuiIface.cc:120] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-colton-glick'
+Conflicting gazebo versions
+[Wrn] [Publisher.cc:185] Queue limit reached for topic /gazebo/default/user_camera/pose, deleting message. This warning is printed only once.
+^C^\Quit
+```
+
+1. Open a terminal to the root of the PX4 firmware
+2. Run `export PX4_DOCKER_REPO="px4io/px4-dev-simulation-bionic:2021-02-04"` 
+3. Run `./Tools/docker_run.sh make px4_sitl gazebo_Open_UAS` to build and launch the OpenUAS gazebo simulation in docker
+4. Open a new terminal and run `export GAZEBO_MASTER_IP=172.30.160.1`
+    - This is the IP address for the network adapter in windows that WSL uses called "vEthernet (WSL)"
+    - This value may differ between machines, check by opening control panel > Network and Internet > Network and Sharing Center > Change adapter settings > right click "vEthernet (WSL)" > status > details > IPv4 address
+5. Run `export GAZEBO_MASTER_URI=$GAZEBO_MASTER_IP:11345`
+6. Run `export GAZEBO_MODEL_PATH=~/git/PX4-Autopilot/Tools/sitl_gazebo/models/`
+    - Replace first part of path as needed to point to your local PX4-Autopilot directory
+6. Run `gzclient --verbose` to launch the gazebo GUI on the host machine, and connect to the docker server
+
 
 ### Without Docker
 
