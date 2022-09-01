@@ -14,12 +14,14 @@ This setup can get fairly complicated with all the dependencies that PX4 require
 2. Install Windows Subsystem for Linux 2 (WSL 2) by opening an *administrator* command prompt and running `wsl --install --distribution Ubuntu-20.04`
 3. Reboot your machine 
 4. Install Docker Desktop with WSL2 backend, [Docker, Windows install](https://docs.docker.com/desktop/install/windows-install/)
-5. Once your development tools are all setup, go ahead and use git to clone the OpenUAS PX4-autopilot repository from [https://github.com/Open-UAS/PX4-Autopilot](https://github.com/Open-UAS/PX4-Autopilot) and checkout the stable branch.
+5. Do [Docker post install steps](https://docs.docker.com/engine/install/linux-postinstall/) to run docker as non-root.
+6. Once your development tools are all setup, go ahead and use git to clone the OpenUAS PX4-autopilot repository from [https://github.com/Open-UAS/PX4-Autopilot](https://github.com/Open-UAS/PX4-Autopilot) and checkout the stable branch.
 
 
 **Linux**
 1. Install docker engine, [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
-2. Once your development tools are all setup, go ahead and clone the OpenUAS PX4-autopilot repository from [https://github.com/Open-UAS/PX4-Autopilot](https://github.com/Open-UAS/PX4-Autopilot) and checkout the stable branch.
+2. Do [Docker post install steps](https://docs.docker.com/engine/install/linux-postinstall/) to run docker as non-root.
+3. Once your development tools are all setup, go ahead and clone the OpenUAS PX4-autopilot repository from [https://github.com/Open-UAS/PX4-Autopilot](https://github.com/Open-UAS/PX4-Autopilot) and checkout the stable branch.
 
 ### Without Docker
 
