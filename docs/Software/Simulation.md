@@ -57,6 +57,13 @@ TODO
 
 ## Building PX4 and Running the Simulation
 
+### Without Docker
+
+**Linux Native**
+1. Open a terminal to the root of the PX4 firmware
+2. Run `make px4_sitl gazebo_Open_UAS` to build and launch the OpenUAS gazebo simulation
+
+
 ### Using Docker Toolchain
 ::: warning
 The current Docker simulation container includes Gazebo 9. Local and Docker versions of gazebo must match to work correctly.
@@ -77,10 +84,17 @@ The current Docker simulation container includes Gazebo 9. Local and Docker vers
 6. Run `gzclient --verbose` to launch the gazebo GUI on the host machine, and connect to the docker server
 
 **Windows with WSL2**
+:::warning
+Not currently working with Docker on Windows
+:::
+
 TODO: docker container is not reachable from WSL, need to investigate
-    - Had to publish gazebo port 11345 when starting docker container with `--publish 11345:11345`
-    - Used different IP address that was visible in windows control panel
+- Had to publish gazebo port 11345 when starting docker container with `--publish 11345:11345`
+- Used different IP address that was visible in windows control panel
+
 TODO: Gazebo is reachable from wsl to docker container, but wsl shows only black screen and has the following output
+
+
 ```
 $ gzclient --verbose
 Gazebo multi-robot simulator, version 9.19.0
@@ -97,6 +111,18 @@ Conflicting gazebo versions
 ^C^\Quit
 ```
 
+Investigated further, I think this is due to docker only exposing port 11345 for gazebo when it needs additional ports for topic pub/sub communication.
+While a `gzserver` and `gzclient` pair is running under WSL2, running `sudo lsof -i -P -n | grep LISTEN` shows what ports are being used by gzserver and gzclient.
+These ports include 11345 plus 5 other random ports between 35000 and 45000. I believe these ports handle topic communication and potentially other tasks. It appears [gz-transport](https://github.com/gazebosim/gz-transport) is used to manage the network communication for the topics and this creates the ports. [Question #166](https://github.com/gazebosim/gz-transport/issues/166) talks about some of the issues I am running into. These ports change every time gazebo is run so its not possible to publish the ports before the docker container starts. 
+
+Also the docker network `host` does not work on docker for windows as stated in the [documentation](https://docs.docker.com/network/host/#:~:text=The%20host%20networking%20driver%20only%20works%20on%20Linux). I've read that the `host` network instructs the container to run under the same network adapter as the docker daemon, however I've read that Docker with WSL2 backend runs in an isolated network environment from the rest of WSL2, so this blocks all connection from WSL2 to the container. It is possible to publish a range of ports like so, `-p 30000-31000:30000-31000`, however the range that gazebo uses appears to be around 10,000 ports. Publishing even 4,000 ports fails to complete the `docker run` command.  
+
+Next lead is to try to uninstall docker from windows, and install through WSL2 only. Hopefully this will cause the docker installation to behave closer to the true linux installation and allow for full port communication without needing to publish specific ports.
+
+
+
+-----------
+
 1. Open a terminal to the root of the PX4 firmware
 2. Run `export PX4_DOCKER_REPO="px4io/px4-dev-simulation-bionic:2021-02-04"` 
 3. Run `./Tools/docker_run.sh make px4_sitl gazebo_Open_UAS` to build and launch the OpenUAS gazebo simulation in docker
@@ -107,11 +133,3 @@ Conflicting gazebo versions
 6. Run `export GAZEBO_MODEL_PATH=~/git/PX4-Autopilot/Tools/sitl_gazebo/models/`
     - Replace first part of path as needed to point to your local PX4-Autopilot directory
 6. Run `gzclient --verbose` to launch the gazebo GUI on the host machine, and connect to the docker server
-
-
-### Without Docker
-
-**Linux Native**
-1. Open a terminal to the root of the PX4 firmware
-2. Run `make px4_sitl gazebo_Open_UAS` to build and launch the OpenUAS gazebo simulation
-
