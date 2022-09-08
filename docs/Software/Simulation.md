@@ -121,7 +121,7 @@ Next lead is to try to uninstall docker from windows, and install through WSL2 o
 
 **Gazebo working** under docker installed directly in WSL2 from docker [linux installation instructions](https://docs.docker.com/engine/install/ubuntu/). Had to run the docker container under the 'host' network to allow access to all the ports for gazebo to operate. Running under bridge with only port 11345 published did not work.
 
-Current issue with configuration is performance, gazebo client running from WSL with docker gazebo server, sits at about 10 fps circling the iowa aeromodelers field when running maximized on my 21:9 monitor (smaller client resolution helps a lot). The performance drop from running gazebo server in docker compared to running gazebo client and server in wsl is minimal (1 to 2 FPS). However, running the same scenario on linux on bare metal with Nvidia drivers gives 62 fps.
+Current issue with configuration is performance, gazebo client running from WSL with docker gazebo server, sits at about 10 fps circling the iowa aeromodelers field when running maximized on my 21:9 monitor (smaller client resolution helps a lot). The performance drop from running gazebo server in docker compared to running gazebo client and server in wsl is minimal (1 to 2 FPS). However, running the same scenario on linux on bare metal with Nvidia drivers gives 62 fps. Additioanlly, running the docker container for the gazebo server on linux bare metal, does not significantly impact fps, so this is likely an issue with wsl.
 
 
 
