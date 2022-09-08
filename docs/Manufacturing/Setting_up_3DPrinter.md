@@ -1,5 +1,5 @@
 # What Slicer do we use? 
-Our 3D printer is a Lulzbot Taz Pro for the Lab, and we use the Cura Lulzbot Edition as our Slicer. 
+Our 3D printer is a Lulzbot Taz Pro for the Lab, and we use the Cura Lulzbot Edition as our Slicer. Most up to date version of Cura Lulzbot Edition 3.6.37
 
 # How to get started with Cura Lulzbot Edition 
 Cura is a free-to-use slicer that requires no special operating system or hardware. From any search engine, you should be able to look up Cura Lulzbot 
