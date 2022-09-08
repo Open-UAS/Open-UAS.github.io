@@ -119,6 +119,10 @@ Also the docker network `host` does not work on docker for windows as stated in 
 
 Next lead is to try to uninstall docker from windows, and install through WSL2 only. Hopefully this will cause the docker installation to behave closer to the true linux installation and allow for full port communication without needing to publish specific ports.
 
+**Gazebo working** under docker installed directly in WSL2 from docker [linux installation instructions](https://docs.docker.com/engine/install/ubuntu/). Had to run the docker container under the 'host' network to allow access to all the ports for gazebo to operate. Running under bridge with only port 11345 published did not work.
+
+Current issue with configuration is performance, gazebo client running from WSL with docker gazebo server, sits at about 10 fps circling the iowa aeromodelers field when running maximized on my 21:9 monitor (smaller client resolution helps a lot). The performance difference between running gazebo client and server in wsl is minimal (1 to 2 FPS).
+
 
 
 -----------
