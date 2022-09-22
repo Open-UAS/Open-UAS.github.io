@@ -16,9 +16,9 @@ below.
 
 | **Role**          |        **Name**        |     **Email**                 |
 |-------------------|------------------------|-------------------------------|
-|Project Leader      |      William Burken   |     weburken@iastate.edu    |
+|Project Leader      |      John Edgren   |     edgrenj@iastate.edu    |
 |Electrical/Software Team Leader  | Colton Glick  |  crglick@iastate.edu   |
-|Design Team Leader    |    John Edgren   |     edgrenj@iastate.edu      |
+|Design Team Leader    |    Andres Batista Diaz   |     andresb@iastate.edu      |
 |Manufacturing Team Leader   |     Taylor Roquet    |   troquet@iastate.edu       |
 
 ## First Steps - Checklist
