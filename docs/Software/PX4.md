@@ -108,3 +108,75 @@ A similar approach was taken to add this custom airframe as previous.
 The mixer for the custom airframes are defined in the `ROMFS/px4fmu_common/mixers` folder eg [open_uas_apprentice.main.mix](https://github.com/Open-UAS/PX4-Autopilot/blob/stable/ROMFS/px4fmu_common/mixers/open_uas_apprentice.main.mix) . The mixer files can get somewhat confusing to understand, details on writing mixers can be found on the [PX4 docs](https://docs.px4.io/main/en/concept/mixing.html#px4-mixer-definitions). The general idea is that you have n number of actuator outputs, each of those n actuators are defined to be driven by 1 or more outputs from PX4. The mixer file is defined sequentially, starting with actuator 1, then 2, 3 ... to n actuators. These actuator numbers correspond to the pwm port number on the [Pixhawk wiring](http://localhost:8080/Electrical/#current-wiring-diagram). 
 
 The default mixer file can be **overridden** at runtime by placing the mix file with the same name (eg `open_uas_apprentice.main.mix`) onto the Pixhawk SD card under `/etc/mixers/` This mix file will be loaded instead of the default one defined at compile time.
+
+
+## Parameters and Configuration
+PX4 allows the user to control the behavior of the autopilot through hundreds of parameters. This is the main way that we customize the OpenUAS and control its behavior. 
+
+The current parameters of the connected vehicle set can always be viewed in [QGroundControl](./QGroundControl.md) under vehicle setup > parameters.
+![Parameters](./q_groundcontrol_parameters.png)
+
+Some parameters are initialized by the airframe definition file, ex: [PX4-Autopilot/ROMFS/px4fmu_common/init.d/airframes/2150_open_uas](https://github.com/Open-UAS/PX4-Autopilot/blob/stable/ROMFS/px4fmu_common/init.d/airframes/2150_open_uas) and some parameters are modified later by the user. Because of this, all modified parameters are reset when switching to a new airframe, but parameters are saved if the vehicle is simply powered off.
+
+
+### Important Parameters
+
+PX4 includes hundreds of parameters to modify, a full list of all available parameters can be found in the [PX4 docs](https://docs.px4.io/main/en/advanced_config/parameter_reference.html). Below are some parameters of note that we have modified in the past.
+
+
+#### BAT1_CAPACITY
+Specifies the capacity of the batter in mAh. Needed for accurate battery percentage readings.
+
+#### BAT1_N_CELLS
+Specifies the number of cells our batter has (we normally use 3S batteries). Needed for an accurate voltage measurement of the battery.
+
+#### BAT1_V_CHARGED
+Specifies the charged voltage of one cell of the battery. Needed for accurate battery percentage readings. This value is typically around 4.2V (12.6V total battery voltage when fully charged)
+
+#### BAT1_V_EMPTY
+Specifies the voltage to classify a batter cell as empty. Needed for accurate battery percentage readings. A safe value would be around 3.5V (giving total battery voltage of 10.5 when empty). Can use more of the batter by setting this value to around 3V (9v total battery voltage when empty). DO NOT set this value lower than 2.8V.
+
+#### BAT1_R_INTERNAL
+Specifies the internal resistance of the battery in Ohms. Optionally needed to improve the battery percentage readings and current draw readings. This value can be measured using the battery charger we have in the lab. A typical value is around 0.006 ohms.
+
+#### COM_ARM_WO_GPS
+Allows for PX4 to be armed without a GPS signal. This is required to arm the OpenUAS in the basement of Howe where no GPS signal can be acquired.
+
+#### COM_DISARM_LAND
+Specifies the amount of time after landing to automatically disarm the vehicle. If set to 0s, does not disarm on landing. This parameter is intended more for quad-copters than fixed wing planes. We typically set this value to 0 to not disarm on landing.
+
+#### COM_DISARM_PRFLT
+Specifies the amount of time after arming which if not taken off, will automatically disarm the vehicle. If set to 0s, does not disarm. We typically set this value to 0 to not disarm when trying to takeoff.
+
+#### FW_FLAPS_SCL
+Specifies a scale factor for the flaps. If set to 100% the flaps will move the ailerons to the their max travel when flaps are deployed, 50% will move them half of their travel.
+
+#### FW_LND_EARLYCFG 
+When true, sets the flaps position during the final loiter loop of the landing sequence instead of on the final approach. Typically set to true.
+
+#### FW_P_LIM_MAX and FW_P_LIM_MIN
+Specifies the min and max pitch angles the controller will command the vehicle to achieve. This is only in affect in autonomous modes, including altitude and position control flight mode.
+
+#### FW_R_LIM
+Specifies the max roll angle the controller will command the vehicle to achieve. This is only in affect in autonomous modes, including altitude and position control flight mode.
+
+#### LAUN_ALL_ON
+Turns on launch detection to launch the vehicle with a catapult launch or with a hand launch
+
+#### LAUN_CAT_A
+Specifies the acceleration threshold to detect a launch event.
+
+#### LAUN_CAT_T
+Specifies the required time an acceleration must be held for to detect a launch event.
+
+#### NAV_ACC_RAD
+Specifies the acceptance radius of hitting a waypoint.
+
+#### PWM_MAIN_TRIM0
+Trims the center point of the servo number at the end of the parameter name. Needed to center each servo before flight.
+
+#### PWM_MAIN_REV0
+Reverses the direction of the server number at the end of the parameter name.
+
+#### RWTO_TKOFF
+Specifies we are taking off on a runway with landing gear. Used for automatic takeoff.
