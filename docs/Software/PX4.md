@@ -125,19 +125,19 @@ PX4 includes hundreds of parameters to modify, a full list of all available para
 
 
 #### BAT1_CAPACITY
-Specifies the capacity of the batter in mAh. Needed for accurate battery percentage readings.
+Specifies the capacity of the battery in mAh. Needed for accurate battery percentage readings.
 
 #### BAT1_N_CELLS
-Specifies the number of cells our batter has (we normally use 3S batteries). Needed for an accurate voltage measurement of the battery.
+Specifies the number of cells our battery has (we normally use 3S batteries). Needed for an accurate voltage measurement of the battery.
 
 #### BAT1_V_CHARGED
 Specifies the charged voltage of one cell of the battery. Needed for accurate battery percentage readings. This value is typically around 4.2V (12.6V total battery voltage when fully charged)
 
 #### BAT1_V_EMPTY
-Specifies the voltage to classify a batter cell as empty. Needed for accurate battery percentage readings. A safe value would be around 3.5V (giving total battery voltage of 10.5 when empty). Can use more of the batter by setting this value to around 3V (9v total battery voltage when empty). DO NOT set this value lower than 2.8V.
+Specifies the voltage to classify a battery cell as empty. Needed for accurate battery percentage readings. A safe value would be around 3.5V (giving total battery voltage of 10.5 when empty). Can use more of the battery by setting this value to around 3V (9v total battery voltage when empty). DO NOT set this value lower than 2.8V.
 
 #### BAT1_R_INTERNAL
-Specifies the internal resistance of the battery in Ohms. Optionally needed to improve the battery percentage readings and current draw readings. This value can be measured using the battery charger we have in the lab. A typical value is around 0.006 ohms.
+Specifies the internal resistance of the battery in ohms. Optionally needed to improve the battery percentage readings and current draw readings. This value can be measured using the battery charger we have in the lab. A typical value is around 0.006 ohms.
 
 #### COM_ARM_WO_GPS
 Allows for PX4 to be armed without a GPS signal. This is required to arm the OpenUAS in the basement of Howe where no GPS signal can be acquired.
@@ -152,13 +152,13 @@ Specifies the amount of time after arming which if not taken off, will automatic
 Specifies a scale factor for the flaps. If set to 100% the flaps will move the ailerons to the their max travel when flaps are deployed, 50% will move them half of their travel.
 
 #### FW_LND_EARLYCFG 
-When true, sets the flaps position during the final loiter loop of the landing sequence instead of on the final approach. Typically set to true.
+When true, sets the flaps position during the final loiter loop of the automatic landing sequence instead of on the final approach. Typically set to true.
 
 #### FW_P_LIM_MAX and FW_P_LIM_MIN
-Specifies the min and max pitch angles the controller will command the vehicle to achieve. This is only in affect in autonomous modes, including altitude and position control flight mode.
+Specifies the min and max pitch angles the controller will command the vehicle to achieve. This is only in effect in autonomous modes, including altitude and position control flight mode.
 
 #### FW_R_LIM
-Specifies the max roll angle the controller will command the vehicle to achieve. This is only in affect in autonomous modes, including altitude and position control flight mode.
+Specifies the max roll angle the controller will command the vehicle to achieve. This is only in effect in autonomous modes, including altitude and position control flight mode.
 
 #### LAUN_ALL_ON
 Turns on launch detection to launch the vehicle with a catapult launch or with a hand launch
@@ -170,7 +170,7 @@ Specifies the acceleration threshold to detect a launch event.
 Specifies the required time an acceleration must be held for to detect a launch event.
 
 #### NAV_ACC_RAD
-Specifies the acceptance radius of hitting a waypoint.
+Specifies the acceptance radius of hitting a waypoint in autonomous flight.
 
 #### PWM_MAIN_TRIM0
 Trims the center point of the servo number at the end of the parameter name. Needed to center each servo before flight.
