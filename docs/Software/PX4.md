@@ -180,3 +180,9 @@ Reverses the direction of the server number at the end of the parameter name.
 
 #### RWTO_TKOFF
 Specifies we are taking off on a runway with landing gear. Used for automatic takeoff.
+
+#### SENS_EN_SF0X
+Sets what LightWare sensor is in use for the *serial port*, normally set to SF11/c.
+
+#### SENS_SF0X_CFG
+Sets what *serial port* the LightWare distance sensor is plugged into. Normally set to TELEM2.
