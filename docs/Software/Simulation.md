@@ -52,7 +52,7 @@ You must go through the configuration for Xlauch every time you reboot windows.
 You can save the configuration file on the last step in Xlaunch and run that instead to speed things up.
 :::
 
-### Ubuntu 20.04 Native/Virtual Machine
+### Ubuntu 18.04/20.04 Native/Virtual Machine
 1. No additional setup required.
 
 
@@ -60,7 +60,7 @@ You can save the configuration file on the last step in Xlaunch and run that ins
 
 ### Without Docker
 
-**Ubuntu 20.04 Native/Virtual Machine**
+**Ubuntu 18.04/20.04 Native/Virtual Machine**
 1. Open a terminal to the root of the PX4 firmware
 2. Run `make px4_sitl gazebo_open_uas` to build and launch the OpenUAS gazebo simulation
 
