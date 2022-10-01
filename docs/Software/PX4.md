@@ -30,7 +30,7 @@ This setup can get fairly complicated with all the dependencies that PX4 require
 2. Reboot your machine 
 3. Once your development tools are all setup, go ahead and clone the OpenUAS PX4-autopilot repository from [https://github.com/Open-UAS/PX4-Autopilot](https://github.com/Open-UAS/PX4-Autopilot) and checkout the stable branch.
 
-**Ubuntu 18.04/20.04 Native/Virtual Machine*
+**Ubuntu 18.04/20.04 Native/Virtual Machine**
 
 Note from the PX4 User Guide:
 
