@@ -32,6 +32,10 @@ This setup can get fairly complicated with all the dependencies that PX4 require
 
 **Ubuntu 18.04/20.04 Native/Virtual Machine*
 
+Note from the PX4 User Guide:
+
+The supported OS versions for PX4 development are Ubuntu Linux LTS 18.04 (Bionic Beaver) and 20.04 (Focal Fossa).
+
 1. Clone forked px4 repository to your machine `git clone --branch stable https://github.com/LTL-AERO/PX4-Autopilot.git`
 2. Move into the newly cloned px4 repository `cd PX4-Autopilot`
 3. Run `git submodule update --init --recursive` to clone all submodules within the repository, to your machine
@@ -40,12 +44,12 @@ This setup can get fairly complicated with all the dependencies that PX4 require
 4. Setup development environment following the steps below, retrieved from [https://dev.px4.io/master/en/setup/dev_env_linux.html](https://dev.px4.io/master/en/setup/dev_env_linux.html)
      - Run the ubuntu.sh to install the required dependencies(including gazebo for simulation):`bash ./Tools/setup/ubuntu.sh`
      - IMPORTANT for Ubuntu Focal(20.04)! `gcc-9-arm-linux-gnueabihf` is the default installation which is not fully supported, so we must manually install `gcc-8-arm-linux-gnueabihf` and set it as the default toolchain.
-            - `sudo apt-get install -y gcc-8-arm-linux-gnueabihf g++-8-arm-linux-gnueabihf
-sudo update-alternatives --install /usr/bin/arm-linux-gnueabihf-gcc arm-linux-gnueabihf-gcc /usr/bin/arm-linux-gnueabihf-gcc-8 100 --slave /usr/bin/arm-linux-gnueabihf-g++ arm-linux-gnueabihf-g++ /usr/bin/arm-linux-gnueabihf-g++-8
-sudo update-alternatives --config arm-linux-gnueabihf-gcc`
+          - `sudo apt-get install -y gcc-8-arm-linux-gnueabihf g++-8-arm-linux-gnueabihf`
+          - `sudo update-alternatives --install /usr/bin/arm-linux-gnueabihf-gcc arm-linux-gnueabihf-gcc /usr/bin/arm-linux-gnueabihf-gcc-8 100 --slave /usr/bin/arm-linux-gnueabihf-g++ arm-linux-gnueabihf-g++ /usr/bin/arm-linux-gnueabihf-g++-8`
+          - `sudo update-alternatives --config arm-linux-gnueabihf-gcc`
  5. Done.
-      - Steps for building PX4 firmware: [https://open-uas.github.io/Software/PX4.html#building-natively](https://open-uas.github.io/Software/PX4.html#building-natively)
-      - Steps for running Gazebo: TODO
+      - [Steps for building PX4 firmware](#building-on-ubuntu-18-04-20-04-native-virtual-machine)
+      - [Steps for running Gazebo](Simulation.md#ubuntu-20-04-native-virtual-machine)
 
 
 **Native Windows**
