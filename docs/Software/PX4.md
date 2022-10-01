@@ -49,7 +49,7 @@ The supported OS versions for PX4 development are Ubuntu Linux LTS 18.04 (Bionic
           - `sudo update-alternatives --config arm-linux-gnueabihf-gcc`
  5. Done.
       - [Steps for building PX4 firmware](#building-on-ubuntu-18-04-20-04-native-virtual-machine)
-      - [Steps for running Gazebo](Simulation.md#ubuntu-20-04-native-virtual-machine)
+      - [Steps for running Gazebo](Simulation.md#without-docker)
 
 
 **Native Windows**
