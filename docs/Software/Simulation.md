@@ -71,9 +71,12 @@ The current Docker simulation container includes Gazebo 9. Local and Docker vers
 :::
 **Linux**
 1. Open a terminal to the root of the PX4 firmware
-2. Run `./Tools/docker_run.sh make px4_sitl gazebo_open_uas` to build and launch the OpenUAS gazebo simulation server in docker
+2. Select a docker container with the version of Gazebo that corresponds to the version running on the host machine. See the version of Gazebo by installed by running `gazebo --version`.
+    - For hosts with Gazebo 9 installed, including Ubuntu Bionic 18.04, run `export PX4_DOCKER_REPO="px4io/px4-dev-bionic-focal:latest"`
+    - For hosts with Gazebo 11 installed, including Ubuntu Focal 20.04, run: `export PX4_DOCKER_REPO="px4io/px4-dev-simulation-focal:latest"`
+4. Run `./Tools/docker_run.sh make px4_sitl gazebo_open_uas` to build and launch the OpenUAS gazebo simulation server in docker
     - If you get compilation errors, it can be a good idea to run `./Tools/docker_run.sh make clean px4_sitl` to put the build process in a clean state
-3. Open a new terminal and run `export GAZEBO_MASTER_IP=172.17.0.2`
+5. Open a new terminal and run `export GAZEBO_MASTER_IP=172.17.0.2`
     - This is the public IP address for the container we just made. The public IP address gazebo uses is printed out when the server first starts up in docker
     ![Gazebo Public Address](./gazebo_public_address.png)
     - This value can also be verified by running the following, substituting in the id of your new container
