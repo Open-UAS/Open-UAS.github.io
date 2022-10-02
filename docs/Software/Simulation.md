@@ -72,7 +72,7 @@ The current Docker simulation container includes Gazebo 9. Local and Docker vers
 **Linux**
 1. Open a terminal to the root of the PX4 firmware
 2. Select a docker container with the version of Gazebo that corresponds to the version running on the host machine. See the version of Gazebo by installed by running `gazebo --version`.
-    - For hosts with Gazebo 9 installed, including Ubuntu Bionic 18.04, run `export PX4_DOCKER_REPO="px4io/px4-dev-bionic-focal:latest"`
+    - For hosts with Gazebo 9 installed, including Ubuntu Bionic 18.04, run `export PX4_DOCKER_REPO="px4io/px4-dev-simulation-bionic:latest"`
     - For hosts with Gazebo 11 installed, including Ubuntu Focal 20.04, run: `export PX4_DOCKER_REPO="px4io/px4-dev-simulation-focal:latest"`
 4. Run `./Tools/docker_run.sh make px4_sitl gazebo_open_uas` to build and launch the OpenUAS gazebo simulation server in docker
     - If you get compilation errors, it can be a good idea to run `./Tools/docker_run.sh make clean px4_sitl` to put the build process in a clean state
