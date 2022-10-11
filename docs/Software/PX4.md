@@ -43,11 +43,7 @@ The supported OS versions for PX4 development are Ubuntu Linux LTS 18.04 (Bionic
      - `git submodule update --recursive` can be run in the future to update all submodules
 4. Setup development environment following the steps below, retrieved from [https://dev.px4.io/master/en/setup/dev_env_linux.html](https://dev.px4.io/master/en/setup/dev_env_linux.html)
      - Run the ubuntu.sh to install the required dependencies(including gazebo for simulation) then reboot:`bash ./Tools/setup/ubuntu.sh`
-     - IMPORTANT for Ubuntu Focal(20.04)! `gcc-9-arm-linux-gnueabihf` is the default installation which is not fully supported, so we must manually install `gcc-8-arm-linux-gnueabihf` and set it as the default toolchain.
-          - `sudo apt-get install -y gcc-8-arm-linux-gnueabihf g++-8-arm-linux-gnueabihf`
-          - `sudo update-alternatives --install /usr/bin/arm-linux-gnueabihf-gcc arm-linux-gnueabihf-gcc /usr/bin/arm-linux-gnueabihf-gcc-8 100 --slave /usr/bin/arm-linux-gnueabihf-g++ arm-linux-gnueabihf-g++ /usr/bin/arm-linux-gnueabihf-g++-8`
-          - `sudo update-alternatives --config arm-linux-gnueabihf-gcc`
- 5. Done.
+5. Done.
       - [Steps for building PX4 firmware](#building-on-ubuntu-18-04-20-04-native-virtual-machine)
       - [Steps for running Gazebo](Simulation.md#without-docker)
 
