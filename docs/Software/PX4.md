@@ -41,7 +41,7 @@ The supported OS versions for PX4 development are Ubuntu Linux LTS 18.04 (Bionic
 3. Run `git submodule update --init --recursive` to clone all submodules within the repository, to your machine
      - alternatively `git submodule update --init --recursive <submodule folder>` can be used if you know the specific submodule needed 
      - `git submodule update --recursive` can be run in the future to update all submodules
-4. Setup development environment following the steps below, retrieved from [https://dev.px4.io/master/en/setup/dev_env_linux.html](https://dev.px4.io/master/en/setup/dev_env_linux.html)
+4. Setup development environment and install dependencies, more information about development environment setup can be found here: [https://dev.px4.io/master/en/setup/dev_env_linux.html](https://dev.px4.io/master/en/setup/dev_env_linux.html)
      - Run the ubuntu.sh to install the required dependencies(including gazebo for simulation) then reboot:`bash ./Tools/setup/ubuntu.sh`
 5. Done.
       - [Steps for building PX4 firmware](#building-on-ubuntu-18-04-20-04-native-virtual-machine)
