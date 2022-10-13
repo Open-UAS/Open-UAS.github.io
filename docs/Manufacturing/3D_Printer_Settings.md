@@ -37,7 +37,7 @@ Bed Adhesion types
 * Raft 
 * None \* Technically not a type but is an option 
 
-# Skirt bed adhesion 
+# Skirt 
 The skirt setting in Cura Lulzbot Edition is simple to use and what it does is create a line around the part before printing the part. This is useful in some cases if 
 the printer has poor material flow issues. It is not commonly used for many parts unless the part is larger and is printed to a higher/fine quality to ensure the material flows smoothly. 
 
@@ -57,6 +57,6 @@ This setting is more used for prints where you would use a skirt; however, you a
 \* In some cases, using a **light** layer of glue on the print bed can eliminate the need for adjustments in the bed adhesion settings. Please note that this method does require the user to clean the bed before and after the print takes place to help ensure the print bed is smooth for printing. 
 
 
-# **Other Helpful Settings/Actions** 
+# **Other Helpful Settings/Actions for Bed adhesion** 
 The bed adhesion can be affected by several external factors and the g code settings set by the slicer. These external factors result from the environment in which the printer is stationed to print. In the case of the lab, we know that a draft affects the quality of the prints we get regardless of the settings we use in Cura Lulzbot Edition. The draft creates an issue with the layers being smooth when the print is completed due to inconsistent cooling time. A newer setting released by Cura Lulzbot Edition is the experimental setting referred to as *Enable Draft Shield* Which then brings up a range of different settings, including the distance from the print it is along with the height of the shield. 
 This setting can be useful in spaces like the lab where a small draft affects the print, even with a printer shield. It does use a lot of material to create the shield, so if used, try to limit the excess nature of the setting. This can include shorting the default height or bringing the shield closer to the print.  
