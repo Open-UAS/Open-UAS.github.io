@@ -4,7 +4,7 @@ Our 3D printer is a Lulzbot Taz Pro for the Lab, and we use the Cura Lulzbot Edi
 # How to get started with Cura Lulzbot Edition 
 Cura is a free-to-use slicer that requires no special operating system or hardware. From any search engine, you should be able to look up Cura Lulzbot 
 Edition and download the respective software for the operating system on your device (laptop/desktop). It should not take an extended period to download the
-software after following the instructions provided and installing it on the Cura website.   
+software after following the instructions provided and installing it on the Cura website (https://lulzbot.com/support/cura).   
 
 Once Cura Has been installed and opened, you should see an opening screen asking you to set up the printer. For the case of the Lab, our setup is the Lulzbot Taz 
 Pro with dual head extruders. After setting up the printer on your device, the next important step before printing is ensuring that you have the correct material 
