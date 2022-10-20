@@ -27,4 +27,4 @@ tend to work the best to insure the quailty of parts. You can do this by scrolli
 
 \* For example, type printing temperature to see the printing temperature-related settings. 
 
-This is the standard setup of the Cura Lulzbot edition. From this point, you should be able to open an STL file of a model and print. There are more specialized settings for different types of parts that can be used but are more in depth and will be revised at another document. 
+This is the standard setup of the Cura Lulzbot edition. From this point, you should be able to open an STL file of a model and print. There are more specialized settings for different types of parts that can be used but are more in depth and will be revised in another document. 
