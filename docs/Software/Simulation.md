@@ -68,9 +68,6 @@ You can save the configuration file on the last step in Xlaunch and run that ins
 ### Using Docker Toolchain
 ::: warning
 There are only docker containers for Gazebo 9 and Gazebo 11. Local and Docker versions of gazebo must match to work correctly. The docker script will attempt to find the verison on you machine, otherwise it will default to Gazebo 9. You can check your local gazebo version by running `gazebo --version`
-
-    - For hosts with Gazebo 9 installed, including Ubuntu Bionic 18.04, run `export PX4_DOCKER_REPO="px4io/px4-dev-simulation-bionic:latest"`
-    - For hosts with Gazebo 11 installed, including Ubuntu Focal 20.04, run: `export PX4_DOCKER_REPO="px4io/px4-dev-simulation-focal:latest"`
 :::
 **Linux**
 1. Open a terminal to the root of the PX4 firmware
