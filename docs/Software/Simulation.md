@@ -10,7 +10,7 @@ This section assumes you already have [setup dev tools for PX4](PX4.md#dev-envir
 Gazebo is a linux only application so we will be running it either through WSL 2 or natively on linux:
 
 ::: warning
-If you plan to use Docker to run the simulation, the current container comes Gazebo 9 only. Local and Docker versions of gazebo must match to work correctly. You can check your local gazebo version by running `gazebo --version`
+If you plan to use Docker to run the simulation, there are only docker containers for Gazebo 9 and Gazebo 11. Local and Docker versions of gazebo must match to work correctly. The docker script will attempt to find the verison on you machine, otherwise it will default to Gazebo 9. You can check your local gazebo version by running `gazebo --version`
 :::
 
 ### Windows with WSL 2
@@ -67,16 +67,16 @@ You can save the configuration file on the last step in Xlaunch and run that ins
 
 ### Using Docker Toolchain
 ::: warning
-The current Docker simulation container includes Gazebo 9. Local and Docker versions of gazebo must match to work correctly. You can check your local gazebo version by running `gazebo --version` 
+There are only docker containers for Gazebo 9 and Gazebo 11. Local and Docker versions of gazebo must match to work correctly. The docker script will attempt to find the verison on you machine, otherwise it will default to Gazebo 9. You can check your local gazebo version by running `gazebo --version`
+
+    - For hosts with Gazebo 9 installed, including Ubuntu Bionic 18.04, run `export PX4_DOCKER_REPO="px4io/px4-dev-simulation-bionic:latest"`
+    - For hosts with Gazebo 11 installed, including Ubuntu Focal 20.04, run: `export PX4_DOCKER_REPO="px4io/px4-dev-simulation-focal:latest"`
 :::
 **Linux**
 1. Open a terminal to the root of the PX4 firmware
-2. Select a docker container with the version of Gazebo that corresponds to the version running on the host machine. See the version of Gazebo by installed by running `gazebo --version`.
-    - For hosts with Gazebo 9 installed, including Ubuntu Bionic 18.04, run `export PX4_DOCKER_REPO="px4io/px4-dev-simulation-bionic:latest"`
-    - For hosts with Gazebo 11 installed, including Ubuntu Focal 20.04, run: `export PX4_DOCKER_REPO="px4io/px4-dev-simulation-focal:latest"`
-4. Run `./Tools/docker_run.sh make px4_sitl gazebo_open_uas` to build and launch the OpenUAS gazebo simulation server in docker
+2. Run `./Tools/docker_run.sh make px4_sitl gazebo_open_uas` to build and launch the OpenUAS gazebo simulation server in docker
     - If you get compilation errors, it can be a good idea to run `./Tools/docker_run.sh make clean px4_sitl` to put the build process in a clean state
-5. Open a new terminal and run `export GAZEBO_MASTER_IP=172.17.0.2`
+3. Open a new terminal and run `export GAZEBO_MASTER_IP=172.17.0.2`
     - This is the public IP address for the container we just made. The public IP address gazebo uses is printed out when the server first starts up in docker
     ![Gazebo Public Address](./gazebo_public_address.png)
     - This value can also be verified by running the following, substituting in the id of your new container
