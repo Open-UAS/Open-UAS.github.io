@@ -1,7 +1,7 @@
 # What Slicer do we use? 
 Our 3D printer is a Lulzbot Taz Pro for the Lab, and we use the Cura Lulzbot Edition as our Slicer. 
 
-# How to get started with Cura Lulzbot Edition 
+## How to get started with Cura Lulzbot Edition 
 Cura is a free-to-use slicer that requires no special operating system or hardware. From any search engine, you should be able to look up Cura Lulzbot 
 Edition and download the respective software for the operating system on your device (laptop/desktop). It should not take an extended period to download the
 software after following the instructions provided and installing it on the Cura website (https://lulzbot.com/support/cura).   
