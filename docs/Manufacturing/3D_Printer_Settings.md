@@ -23,7 +23,7 @@ The following are the settings that we found successful when printing various pa
 - Print Speed: 45mm/s
 
 
-# The Use of Settings to improve the quailty of a print
+## The Use of Settings to improve the quailty of a print
 3D printers have a variety of applications that can be useful for several reasons. This document will cover some basic and helpful settings for 
 ensuring a quality print for different needs. Please note that the settings gone over in this section are not related to print mature and or material type, and these settings should be checked before any other troubleshooting is done. Please refer to the 3D printing settings sections under the Manufacturing documentation if you want this information. 
 
