@@ -7,7 +7,7 @@ The OpenUAS 2.0 model has a major foucs on the use of 3D printed parts to create
 
 There were a few issues that arose with the construction of the 2nd iteration of the OpenUAS project. These were mostly forecasted issues the team had planned mitigation methods for, but  that ended up not working the intended way. There were a few issues that arose that were not foreseen but directly related to the predicted issues. 
 
-## The Issues 
+## The First Major Area of Issue 
 The issues we were faced with all revolved around the tail of the UAS. The original idea was to create a tail that's lightweight and easily replaceable. In order to do this the tail was broken down into a few different parts. These included the carbon fiber support rod, and 3D printed parts including: tail supports, tail feather support, and connection rod of the tail.  
 
 ### Twisting of the tail 
@@ -35,8 +35,21 @@ Solution | How it would fix the problem | Why we went with it or not | Was it th
 
 
 
-## Our solution 
+## Our solution to the First Issue 
 After mocking up and reviewing different ideas between the sub-teams we determined that using the 2nd rod method would be our best course of action. This was based on the fact the rod would not only fix the issue with the bowing but it would also address the twisting problem in the tail at the same time. 
 
 We were not able to mock up this idea in our lab space however, we were able to compare the stiffness from the assembled tail and the singular rod we would add. We did this by applying a small amount of force on each of the structures to determine how much bending would occur. (should we measure the amount of bending for quantitative data(plus another table would be cool))
 Once we determined that the singular rod would be the best solution to reduce the bowing in the part we took a look at the twisting. In order to incorporate the rod we had to redesign the tail feather and connection parts. Our theory is that by taking the time to redesign the tail feather we can reduce the twisting at the end of the tail. Primary because the bowing and bending of the 3 carbon fiber rods will no longer be a problem when the tail is one solid rod along the length of the UAS’s body and tail.
+
+
+## Second Area of Issue 
+
+After the assmebly of the new tail was completed we came across another issue with the 2.0 model. The issue this time instead of being around the tail was the on the body/fuselogde of the model. This model includes the use of neodynimum magnets inorder to keep the clam shell design closed during however, it was discovered that the smaller magnets were not strong enough to hold the shell closed under minor turbulance. 
+
+### Table 2 
+Solution | How it would fix the problem | Why we went with it or not | Was it the final solution we picked? |
+|:----:|:---------------------------------------------------------------|:--------------------------------------------------------------------------|:---------:|
+| Velcro| The Velcro would be able to hold the two halfs closed during flight| We chose not to go with this soultion as there was not enough surface area for the velcro to be affective. | No |
+| Zip Ties | Zip Ties is somthing we chose to use as a short term solution in order to close the clam shell | long term the soultion this is not sustanble as the zip ties would have to be cut and a new one to replace them each time we wanted access to the electronics | No |
+| 3D Printed Part | A 3D printed part would be more of an insert piece that would screwed together in order to keep the two halfs closed | This was our chosen soultion as it would not add a lot to the system and would a good fit for the part | Yes |
+
