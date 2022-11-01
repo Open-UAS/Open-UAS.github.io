@@ -28,8 +28,10 @@ P-01-03   :  the part is made of PLA is the first major part to appear and there
 This breakdown allows for the part number to also tell anyone looking at the parts a lot about the part. This helps to remove the guessing game that sometime arises 
 from the transtion of CAD/Design process to the manufacturing and testing process. 
 
+
+### Table 1 Material Naming 
 | Material | Letter | 
-| ---| --------|
+| --- | --------|
 | PLA | P |
 | ABS | A |
 | Poster board/Foam board| F |
@@ -43,16 +45,16 @@ Items to Change from OpenUAS 1.0/2.0
 
 > *1.0*
 
--Better access to electronics
--Better flight characteristics
--Better reparability
--Tailwheel configuration is harder to control
--Better Manufacturability
--Better transportability (multiple piece wing)
+- Better access to electronics
+- Better flight characteristics
+- Better reparability
+- Tailwheel configuration is harder to control
+- Better Manufacturability
+- Better transportability (multiple piece wing)
 - Better corrective action for left turning tendencies
 
 
 > *2.0* 
 
--More room for electronics / better mounting surfaces / better planning for electronics integration
--Higher stability 
+- More room for electronics / better mounting surfaces / better planning for electronics integration
+- Higher stability 
