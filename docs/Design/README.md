@@ -40,7 +40,8 @@ from the transtion of CAD/Design process to the manufacturing and testing proces
 
 ## General notes for goals 
 Items to Change from OpenUAS 1.0/2.0 
-*1.0*
+
+> *1.0*
 -Better access to electronics
 -Better flight characteristics
 -Better reparability
@@ -48,6 +49,6 @@ Items to Change from OpenUAS 1.0/2.0
 -Better Manufacturability
 -Better transportability (multiple piece wing)
 B-etter corect for left turning tendencies
-*2.0* 
+> *2.0* 
 -More room for electronics / better mounting surfaces / better planning for electronics integration
 -Higher stability 
