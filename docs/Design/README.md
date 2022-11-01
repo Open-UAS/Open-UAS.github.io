@@ -8,7 +8,7 @@ last updated 4/18/2022
 * The preferred thickness for material (around holes, etc.) is 0.1’’ Minimum
 * Hole tolerances at least 0.02’’ increase in diameter
 * Max Print Size: 11” x 11’’
-* 
+
 ## OpenUAS part naming 
 # Introduction 
 The purpose of this section is to set a naming scheme for the use of the team that is both functional and pratical for current and future memeber of the team as well as those that chose to use the design later on. 
