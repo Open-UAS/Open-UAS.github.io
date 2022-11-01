@@ -38,7 +38,7 @@ from the transtion of CAD/Design process to the manufacturing and testing proces
 
 
 
-#General notes for goals 
+## General notes for goals 
 Items to Change from OpenUAS 1.0/2.0 
 *1.0*
 -Better access to electronics
