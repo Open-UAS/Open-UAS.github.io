@@ -8,6 +8,7 @@ last updated 4/18/2022
 * The preferred thickness for material (around holes, etc.) is 0.1’’ Minimum
 * Hole tolerances at least 0.02’’ increase in diameter
 * Max Print Size: 11” x 11’’
+* Square holes are prefered to circular ones in manufactured pieces (posterboard, wood, etc) for ease of manufacturing.
 
 ## OpenUAS part naming 
 # Introduction 
