@@ -22,7 +22,7 @@ The following are the settings that we found successful when printing various pa
 - Part Removal Temp: 90&deg;C
 - Print Speed: 45mm/s
 
-## PolyDissolve (polymaker 2.85mm)
+## PolyDissolve S1 (polymaker 2.85mm)
 - Printing Temp: 215-225&deg;C
 - Build plate Temp: 25-60&deg;C
 - Probe Temp: 190&deg;C
