@@ -22,6 +22,14 @@ The following are the settings that we found successful when printing various pa
 - Part Removal Temp: 90&deg;C
 - Print Speed: 45mm/s
 
+## PolyDissolve (polymaker 2.85mm)
+- Printing Temp: 215-225&deg;C
+- Build plate Temp: 25-60&deg;C
+- Probe Temp: 190&deg;C
+- Soften Temp: 190&deg;C
+- Printing Speed: 30-40mm/s
+- SUPER IMPORTANT DO NOT USE WITH ABS 
+- Compatable material types include : PLA, TPU, PVB, and Nylon
 
 ## The Use of Settings to improve the quailty of a print
 3D printers have a variety of applications that can be useful for several reasons. This document will cover some basic and helpful settings for 
