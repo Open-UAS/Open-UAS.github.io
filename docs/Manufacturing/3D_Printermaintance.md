@@ -5,7 +5,7 @@ Summary table For quick refernce
 | :---: | :---: | :---: | 
 | Rods | Before every print | Wipe with a clean paper towel. DO NOT USE A CLEANER OF ANY KIND!!!!!| 
 | Printing bed | Before every print | Wipe with a wet paper towel. Only use soap and water on a towel if glue was previously used on the bed and remains on the surface. |
-| Flash Drive | Every Semester (approx 16-20 weeks) | Plus into the USB port on the laptop from here there are two methods. 1. Manually remove the files from the files tab 2. Right click the device in the files tab and select format, then quick format to remove everything on the flashdrive. \* For mac please look up instructions|
+| Flash Drive | Every Semester (approx 16-20 weeks) | Plus into the USB port on the laptop from here there are two methods. Manually remove the files from the files tab or Right click the device in the files tab and select format, then quick format to remove everything on the flashdrive. \* For mac please look up instructions|
 | Environment | Monthly | Move the printer to a different location and wipe down the counter and dust surrounding the area. Replace printer to location. \*Remember to unplug the printer when moving it |
 
 
