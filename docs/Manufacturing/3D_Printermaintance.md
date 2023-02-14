@@ -17,4 +17,3 @@ With this in mind, the first maintenance step before each print is to take a cle
 
 For the printing bed, the prep is a little different. Depending on what material you are printing with, it will depend on how you prep it, but the most common way is to wipe the bed down with a wet paper towel to remove any dirt on the bed. If the last print you did needs to be glued onto the bed, it is recommended to wipe the bed down with a soapy paper towel until the glue is completely removed, then dry the bed afterward. Depending on the material you are printing with, it might change, but currently, for the materials in the lab, you then wipe the bed down with a 93% alcohol solution that can be applied with a paper towel (not the one you cleaned it with).   
 
-"Evelyn trying things out"
