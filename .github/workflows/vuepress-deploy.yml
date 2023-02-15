@@ -16,7 +16,14 @@ jobs:
     - name: vuepress-build-and-deploy
       uses: intergiro/vuepress-deploy@fix_git_repo # temporary work around until jenkey2011/vuepress-deploy@master is updated. See https://github.com/jenkey2011/vuepress-deploy/pull/29
       env:
-        #TODO this access token will expire and need to be updated, created from Colton Glick's account
+        # The access token will eventually expire and need to be updated. 
+        # When the token expires the following error will occur during deployment:
+        #   remote: Invalid username or password.
+        #   fatal: Authentication failed for '***github.com/Open-UAS/Open-UAS.github.io.git/'
+        #
+        # See the readme for jenkey2011/vuepress for instructions on how to create a new access token and add it to the Open-UAS/Open-UAS.github.io repo.
+        # https://github.com/jenkey2011/vuepress-deploy#create-a-personal-access-token
+        # NOTE: To add an access token you must be an Owner of the repo.
         ACCESS_TOKEN: ${{ secrets.COLTON_ACCESS_TOKEN }}
         TARGET_REPO: Open-UAS/Open-UAS.github.io
         TARGET_BRANCH: gh-pages
