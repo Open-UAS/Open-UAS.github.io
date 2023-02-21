@@ -20,4 +20,4 @@ For the printing bed, the prep is a little different. Depending on what material
 
 ## Caibration 
 
-Every so often there is the possiblity of the cailbration being a bit off on the printer espically if the printer is being fequently in a short time span. There are a few different ways to go about this depending on the needs of the printer. If it is just a small issue the printer has it own cailbration setting under the menu tab in advance settings. 
+Every so often there is the possiblity of the cailbration being a bit off on the printer espically if the printer is being fequently in a short time span. There are a few different ways to go about this depending on the needs of the printer. If it is just a small issue the printer has it own cailbration setting under the menu tab in advance settings 
