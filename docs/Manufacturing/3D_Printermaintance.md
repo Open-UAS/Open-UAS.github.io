@@ -7,6 +7,7 @@ Summary table for quick refernce :
 | Printing bed | Before every print | Wipe with a wet paper towel. Only use soap and water on a towel if glue was previously used on the bed and remains on the surface. |
 | Flash Drive | Every Semester (approx 16-20 weeks) | Plug into the USB port on the laptop from here there are two methods. 1. Manually remove the files from the files tab 2. Right click the device in the files tab and select format, then quick format to remove everything on the flashdrive. \* For mac please look up instructions|
 | Environment | Monthly | Move the printer to a different location and wipe down the counter and dust surrounding the area. Replace printer to location. \*Remember to unplug the printer when moving it |
+| Calibration of Printer head | Once to twice a year or as needed if issues arise | First step to go directly to the printer settings, Select advance settings, Select Nozzle offset, Select AutoMeasure. Make sure there isn't anything that would get in the way of the printer head and let it do it's thing. In some case it make take more than one try to correctly calibrate the printer head. | 
 
 
 ## General use 
