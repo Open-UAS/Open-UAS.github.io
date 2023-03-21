@@ -53,3 +53,8 @@ Solution | How it would fix the problem | Why we went with it or not | Was it th
 | Zip Ties | Zip Ties is somthing we chose to use as a short term solution in order to close the clam shell | long term the soultion this is not sustanble as the zip ties would have to be cut and a new one to replace them each time we wanted access to the electronics | No |
 | 3D Printed Part | A 3D printed part would be more of an insert piece that would screwed together in order to keep the two halfs closed | This was our chosen soultion as it would not add a lot to the system and would a good fit for the part | Yes |
 
+# Spring 2023 Changes 
+
+## Motor Mount Adjustment
+
+After some observions of other air crafts we noticed that the motors for the propeller may benfit from an angled motor instead of a completly straight faceing. We angled our motor to the right and directed down of the model. In order to do this we added nuts to the motor bolts to create the spacing for the angle. This inculded four mounting points and a total of 7 nuts. Two of the nuts were placed on the upper right corner and three on the upper left corner. 
