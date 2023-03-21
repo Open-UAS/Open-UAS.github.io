@@ -55,6 +55,8 @@ Solution | How it would fix the problem | Why we went with it or not | Was it th
 
 # Spring 2023 Changes 
 
+The changes made during this round were needed for fine tuning of components for the function of the model instead of fixing dramic issues with model like previous changes.  
+
 ## Motor Mount Adjustment
 
 After some observions of other air crafts we noticed that the motors for the propeller may benfit from an angled motor instead of a completly straight faceing. We angled our motor to the right and directed down of the model. In order to do this we added nuts to the motor bolts to create the spacing for the angle. This inculded four mounting points and a total of 7 nuts. Two of the nuts were placed on the upper right corner and three on the upper left corner. 
