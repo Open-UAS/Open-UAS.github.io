@@ -2,7 +2,7 @@
 # Summary  
 The OpenUAS 2.0 model has a major foucs on the use of 3D printed parts to create a framework that can be easily modfided and printed to meet the needs anyone wanting to use the model. 
 
-[OpenUAS 2.0 Completed](./openuas-0221231729.png)
+[OpenUAS 2.0 Completed](./0221231729.png)
 
 # Spring 2022 Design Changes
 
