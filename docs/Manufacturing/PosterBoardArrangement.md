@@ -1,10 +1,10 @@
 # Poster Board Arrangement Settings  
 Poster boards can be used to manufacture some parts of the fuselage and wing. It's important to find the best arrangement of these parts to reduce material waste. This problem is generally referred to as the bin packing problem. Several algorithms have been developed to solve this problem before with JS, MATLAB, and C++. Based on our research, the libnest2d library is the easiest, most effective algorithm for finding the best arrangement to cut parts on the poster board. To ease the process, PrusaSlicer 2.5.0 can be downloaded since the libnest2d library is already integrated within this open-source 3D printing software.  
  
-References: 
-Bin Packing Problem: https://en.wikipedia.org/wiki/Bin_packing_problem 
-Libnest2d Library: https://github.com/tamasmeszaros/libnest2d 
-PrusaSlicer Download: https://www.prusa3d.com/page/prusaslicer_424/ 
+References:<br> 
+[Bin Packing Problem](https://en.wikipedia.org/wiki/Bin_packing_problem)<br>
+[Libnest2d Library](https://github.com/tamasmeszaros/libnest2d)<br>
+[PrusaSlicer Download](https://www.prusa3d.com/page/prusaslicer_424/)
  
 ## 1. Create STL Files 
 First, to use the PursaSlicer, you will need to create STL files of your parts using CAD software such as Fusion360 or SolidWorks. If you are using Fusion360, you can export the parts as STL files by right-clicking on the body and selecting 'Save as Mesh'. Even if your parts are designed in other units, you must choose the mm units from the 'Save as Mesh' options. If you are using SolidWorks, you can go to File -> Save As and select the document type as STL. Then, click on the 'Options' button and convert the units to mm. PrusaSlicer software doesn't have the option to change the global units. If STL files are exported with inch units, you can scale the parts by 2540%. It's important to note that the thickness of your parts must be the same as the thickness of the material that will be used.  
@@ -34,7 +34,9 @@ You can mark these locations on the posterboard and connect the dots to create t
 
 Here is the poster board arrangement (22x28-in) we created following the procedures above.
 
-![PosterBoard](posterboard.png)
+
+![Poster Board](docs/Manufacturing/posterboard.png)
+
 
 | #        | x-axis   | y-axis   | #        | x-axis   | y-axis   | #        | x-axis   | y-axis   | #         | x-axis    | y-axis    |
 |----------|----------|----------|----------|----------|----------|----------|----------|----------|-----------|-----------|-----------|
