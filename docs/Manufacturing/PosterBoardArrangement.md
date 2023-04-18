@@ -34,8 +34,7 @@ You can mark these locations on the posterboard and connect the dots to create t
 
 Here is the poster board arrangement (22x28-in) we created following the procedures above.
 
-
-![Poster Board](docs/Manufacturing/posterboard.png)
+![Poster Board](./posterboard.png)
 
 
 | #        | x-axis   | y-axis   | #        | x-axis   | y-axis   | #        | x-axis   | y-axis   | #         | x-axis    | y-axis    |
