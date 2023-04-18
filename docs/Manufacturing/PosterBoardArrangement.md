@@ -26,7 +26,7 @@ If your machine works with G-code, you can easily export the G-code with Ctrl + 
 After exporting the plate as an STL file, open it via Fusion360. Go to  
 Design Workspace -> Mesh -> Modify -> Convert Mesh and select all the meshes to convert them to bodies. Now, you can see the coordinates of your parts on the bottom right of the window by clicking on the corner points of the parts. If the origin is not the same as the bed origin in PrusaSlicer, go to Manufacture Workspace -> Fabrication -> Setup. Set operation type as cutting and orientation as select X & Y axes. Select the X and Y axis from the corner of the reference region manually (Red: x-axis / Green: y-axis) and then set the origin setting to the selected point. 
  
-<u>1. via SolidWorks</u>
+<u>2. via SolidWorks</u>
 
 Go to File -> Open and select the STL file. Then, click on the 'Options' button and select the surface body from the 'import as' option. You can see the coordinates of your parts on the bottom right of the window by clicking on the corner points of the parts.  
  
