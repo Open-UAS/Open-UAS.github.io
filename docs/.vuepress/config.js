@@ -30,6 +30,7 @@ module.exports = {
             ] 
           },
           {text: 'Lab Docs',    link: '/Lab_Docs/'},
+          {text: 'License',     link: '/License/' },
           {text: 'Archive',     link: 'https://open-uas.github.io/Archive/'}
         ],
 
