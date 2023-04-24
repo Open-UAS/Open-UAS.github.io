@@ -34,23 +34,23 @@
 - https://shop.holybro.com/transceiver-telemetry-radio-set-v3_p1103.html?
 
 ### ESC: BadAss Renegade 85A ESC
-- Dimensions: 86mm x 33mm x 16mm (3.39 x 1.30 x 0.63 inches)
-- Weight: 91.6 grams (3.23 oz)
+- Dimensions: 86mm x 33mm x 16 mm
+- Weight: 91.6 grams
 - https://badasspower.com/badass-renegade-series-brushless-esc-85a.html
 
 ### Motor: BadAss 2826-690Kv brushless motor
 - Dimensions: (see below)
-- Weight: 180 grams (6.35 oz.)
+- Weight: 180 grams
 - https://badasspower.com/badass-2826-690kv-brushless-motor.html
 
 ### Propellor: APC 14x12 E
 - Dimensions: 355.6 mm long, 28.702 mm diameter round part, 17.018 mm thickness
-- Weight: 64.35341749 grams (2.27 oz) 
+- Weight: 64.35341749 grams
 - https://www.apcprop.com/product/14x12/
 
 ### Battery: Ovonic 5000mAh 11.1V 3S 50C 3 Cell LiPo
 - Dimensions: 155 mm x 43 mm x 25 mm
-- Weight: 343 grams (12.099 oz)
+- Weight: 343 grams
 - https://www.amazon.com/5000mAh-Battery-Traxxas-Brushless-Spartan/dp/B07L6C7BX9
 
 ### Distance sensor (laser range finder): Lightware SF11/C 
