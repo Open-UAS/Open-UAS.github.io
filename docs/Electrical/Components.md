@@ -66,9 +66,6 @@
 
 ## Weights
 
-<p float="left">
-  <img src="weights_of_electronics.png"/>
-</p>
-
+![Weights of Electronics](./weights_of_electronics.png)
 
 
