@@ -19,7 +19,7 @@ below.
 |Project Leader      |      John Edgren   |     edgrenj@iastate.edu    |
 |Electrical/Software Team Leader  | Colton Glick  |  crglick@iastate.edu   |
 |Design Team Leader    |    Andres Batista Diaz   |     andresb@iastate.edu      |
-|Manufacturing Team Leader   |     Taylor Roquet    |   troquet@iastate.edu       |
+|Manufacturing Team Leader   |     Evelyn Moyer    |   elmoyer@iastate.edu       |
 
 ## First Steps - Checklist
 
