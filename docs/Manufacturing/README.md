@@ -1,5 +1,14 @@
 # Manufacturing
 
-Here you will find documentation on manufacturing of the OpenUAS vehicle.
+Tools Required:
+- Dremel
 
-This includes instructions for building and assembling the current vehicle. 
+Building Materials:
+
+
+Adhesives and Fasteners:
+
+
+Other Hardware:
+Landing Gear
+
