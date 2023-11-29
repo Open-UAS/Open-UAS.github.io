@@ -12,7 +12,7 @@ The OpenUAS 3.0 is designed to be an easy build for those with minimum manufactu
 
 
 
-# Tools Required:
+## Tools Required:
 - Dremel
   - Dremel Rotary Tool Accessory Kit- 710-08-160
     - Carving/Engraving 191
@@ -27,18 +27,18 @@ The OpenUAS 3.0 is designed to be an easy build for those with minimum manufactu
   - 3/16" bit
 - 3D Printer
 
-Building Materials:
+## Building Materials:
 - PLA Polylite
 - Poasterboard (qt 5, 22"x28")
 - 1/8" Rods
 
-Adhesives and Fasteners:
+## Adhesives and Fasteners:
 - Hot Glue
 - Super Glue
 - Packing Tape
 - 2 Part Epoxy
 
-Airplane Hardware:
+## Airplane Hardware:
 - Du-Bro Super Strength Landing Gear
 - Du-Bro Steerable Nose Gear (Straight)
 - Du-Bro Super Slim Lite Wheels (3")
