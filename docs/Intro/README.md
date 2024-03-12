@@ -18,7 +18,7 @@ below.
 |-------------------|------------------------|-------------------------------|
 |Electrical/Software Team Leader  | Varad Kulkarni  |  varadk@iastate.edu   |
 |Design Team Leader    |   Allison Howard   |     alhoward@iastate.edu      |
-|Manufacturing Team Leader   |     Sydney Turner    |   sydtur29@iastate.edu       |
+|Manufacturing Team Leader   |     Sydney Turner    |   sydtur9@iastate.edu       |
 
 ## First Steps - Checklist
 
