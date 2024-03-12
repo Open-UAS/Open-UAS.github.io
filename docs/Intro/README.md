@@ -16,10 +16,9 @@ below.
 
 | **Role**          |        **Name**        |     **Email**                 |
 |-------------------|------------------------|-------------------------------|
-|Project Leader      |      Ellie Dierson   |     edierson@iastate.edu    |
-|Electrical/Software Team Leader  | Colton Glick  |  crglick@iastate.edu   |
-|Design Team Leader    |    Andres Batista Diaz   |     andresb@iastate.edu      |
-|Manufacturing Team Leader   |     Evelyn Moyer    |   elmoyer@iastate.edu       |
+|Electrical/Software Team Leader  | Varad Kulkarni  |  varadk@iastate.edu   |
+|Design Team Leader    |   Allison Howard   |     alhoward@iastate.edu      |
+|Manufacturing Team Leader   |     Sydney Turner    |   sydtur29@iastate.edu       |
 
 ## First Steps - Checklist
 
@@ -30,6 +29,8 @@ communication channels and documentation repositories.\
 the Github repositiory
 
 the Google Drive folder
+
+the ISU Network Drive folder
 
 the emailing list
 
