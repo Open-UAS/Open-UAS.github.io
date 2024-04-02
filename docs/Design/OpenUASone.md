@@ -14,7 +14,7 @@ Requirements include:
 6. Can be manufactured by hobbyist
 7. Can withstand a crash landing
 
-Development for design goals began in 2019. More information can be found [here](docs/Legacy/Archive/Design/Design_1.pdf).
+Development for design goals began in 2019. More information can be found [here](../../docs/Legacy/Archive/Design/Design_1.pdf).
 
 
 Lessons Learned:
