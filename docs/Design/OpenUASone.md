@@ -3,10 +3,11 @@
 A carbon fiber edtion of the OpenUAS project, built in 2020.\
 #
 <img src="./2021-10-17_11-44_1.jpg" alt="OpenUAS1.0 Full Design" style="width:500px;"/>
-\
+
+
 ### Requirements include:
-\
-1. Configurable: Wings can be changed\
+
+1. Configurable: Wings can be changed\ 
     - More information about [wing structure](../../docs/Legacy/Archive/Structures/wingconstruction.pdf) found.\
 2. Can break down and moved easily\
 3. Simple assembly\
