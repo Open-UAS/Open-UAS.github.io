@@ -1,7 +1,8 @@
 # Open UAS 1.0 
 
-A carbon fiber edtion of the OpenUAS project, built in 2020. 
-![OpenUAS1.0 Full Design](./2021-10-17_11-44_1.jpg)
+A carbon fiber edtion of the OpenUAS project, built in 2020.
+#
+![OpenUAS1.0 Full Design](./2021-10-17_11-44_1.jpg =20x20)
 
 Requirements include:
 1. Configurable: Wings can be changed
@@ -15,7 +16,7 @@ Requirements include:
 Development for design goals began in 2019. More information can be found [here](../../docs/Legacy/Archive/Design/Design_1.pdf).
 Overall weight: 4.138 lbs
 
-![OpenUAS 1.0 Completed](./OpenUAS1.jpeg)
+![OpenUAS 1.0 Completed](./OpenUAS1.jpeg =20x20)
 Lessons Learned:
 The next iteration must have the following capabilities.
 - Better access to electronics
@@ -27,4 +28,4 @@ The next iteration must have the following capabilities.
 - Better corrective action for left turning tendencies
 
 Team Members from left to right: Will Burken, John Edgrin, Ellie Diersen, John Levindowski, Colton Glick
-![OpenUAS1.0_Team](./IMG1455694518271186034.jpg)
+![OpenUAS1.0_Team](./IMG1455694518271186034.jpg =20x20)
