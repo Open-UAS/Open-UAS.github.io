@@ -7,7 +7,7 @@ A carbon fiber edtion of the OpenUAS project, built in 2020.
 
 Requirements include:
 1. Configurable: Wings can be changed
-  - More information about [wing structure](docs/Legacy/Archive/Structures/wingconstruction.pdf)
+  - More information about [wing structure](Open-UAS.github.io/docs/Legacy/Archive/Structures/wingconstruction.pdf)
 3. Can break down and moved easily
 4. Simple assembly
 5. Does not require a runway
