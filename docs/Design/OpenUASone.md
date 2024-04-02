@@ -2,7 +2,8 @@
 
 A carbon fiber edtion of the OpenUAS project, built in 2020.
 #
-![OpenUAS1.0 Full Design](./2021-10-17_11-44_1.jpg =20x20)
+![]()
+<img src="./2021-10-17_11-44_1.jpg" alt="OpenUAS1.0 Full Design" style="width:200px;"/>
 
 Requirements include:
 1. Configurable: Wings can be changed
