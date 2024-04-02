@@ -1,6 +1,7 @@
 # Open UAS 1.0 
 
 A carbon fiber edtion of the OpenUAS project, built in 2020.
+#
 <img src="./2021-10-17_11-44_1.jpg" alt="OpenUAS1.0 Full Design" style="width:500px;"/>
 
 ### Requirements include:
@@ -29,5 +30,6 @@ The next iteration must have the following capabilities.
 
 ### Team 
 Team Members from left to right: Will Burken, John Edgrin, Ellie Diersen, John Levindowski, Colton Glick
+#
 <img src="./IMG1455694518271186034.jpg" alt="OpenUAS 1.0 Team" style="width:500px;"/>
 
