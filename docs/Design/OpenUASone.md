@@ -4,11 +4,10 @@ A carbon fiber edtion of the OpenUAS project, built in 2020.
 #
 <img src="./2021-10-17_11-44_1.jpg" alt="OpenUAS1.0 Full Design" style="width:600px;"/>
 
-
+More information can be found on the [Laboratory for Temporal Logic Youtube Page](https://www.youtube.com/watch?v=xZF81fSSzbI).
 ### Requirements include:
 
 1. Configurable: Wings can be changed
-    - More information about [wing structure](../../docs/Legacy/Archive/Structures/wingconstruction.pdf) found.
 2. Can break down and moved easily
 3. Simple assembly
 4. Does not require a runway
@@ -16,7 +15,8 @@ A carbon fiber edtion of the OpenUAS project, built in 2020.
 6. Can withstand a crash landing
 
 ### Design Goals
-Development for design goals began in 2019. More information can be found [here](../../docs/Legacy/Archive/Design/Design_1.pdf).
+Development for design goals began in 2019.
+
 Overall weight: 4.138 lbs
 
 ### Lessons Learned
