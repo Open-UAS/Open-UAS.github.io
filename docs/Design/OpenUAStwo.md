@@ -4,6 +4,9 @@ The OpenUAS 2.0 model has a major focus on the use of 3D printed parts to create
 
 ![OpenUAS 2.0 Completed](./0221231729.png)
 
+## Test Flight
+![OpenUAS 2.0 Flight Test](./0323231752.jpg)
+
 ## Spring 2022 Design Changes
 
 There were a few issues that arose with the construction of the 2nd iteration of the OpenUAS project. These were mostly forecasted issues the team had planned mitigation methods for, but  that ended up not working the intended way. There were a few issues that arose that were not foreseen but directly related to the predicted issues. 
