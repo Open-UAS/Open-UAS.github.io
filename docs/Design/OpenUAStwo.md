@@ -2,10 +2,10 @@
 ## Summary  
 The OpenUAS 2.0 model has a major focus on the use of 3D printed parts to create a framework that can be easily modfided and printed to meet the needs for anyone wanting to use the model. It has an overall weight of 4.07 lbs, keeping it lightweight. It is also adaptable to store more electronics than OpenUAS 1.0 and other UAVs. 
 
-![OpenUAS 2.0 Completed](./0221231729.png)
+## Solidworks Assembly
+![solidworks complete](./Screenshot 2024-04-03 135805.png)
 
-## Test Flight
-![OpenUAS 2.0 Flight Test](./0323231752.jpg)
+![OpenUAS 2.0 Completed](./0221231729.png)
 
 ## Spring 2022 Design Changes
 
@@ -65,3 +65,5 @@ The changes made during this round were needed for fine tuning of components for
 
 After some observions of other air crafts we noticed that the motors for the propeller may benfit from an angled motor instead of a completly straight faceing. We angled our motor to the right and directed down of the model. In order to do this we added nuts to the motor bolts to create the spacing for the angle. This inculded four mounting points and a total of 5 nuts. Two of the nuts were placed on the upper right corner and the upper left corner. 
 
+## Test Flight
+![OpenUAS 2.0 Flight Test](./0323231752.jpg)
