@@ -31,7 +31,7 @@ The next iteration must have the following capabilities:
 - Better corrective action for left turning tendencies
 
 ### Team 
-Team Members from left to right: Will Burken, John Edgren, Ellie Diersen, Marcella Anderson, Colton Glick, John Levindowski (not pictured), Christopher Johannsen (not pictured), Stephanie Jou (not pictured)
+Team Members from left to right: Will Burken, John Edgren, Ellie Diersen, Marcella Anderson, Colton Glick, John Levandowski (not pictured), Christopher Johannsen (not pictured), Stephanie Jou (not pictured)
 #
 <img src="./IMG1455694518271186034.jpg" alt="OpenUAS 1.0 Team" style="width:400px;"/>
 
