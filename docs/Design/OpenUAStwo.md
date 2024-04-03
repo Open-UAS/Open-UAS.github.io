@@ -1,10 +1,10 @@
-#Open UAS 2.0 
-# Summary  
-The OpenUAS 2.0 model has a major foucs on the use of 3D printed parts to create a framework that can be easily modfided and printed to meet the needs anyone wanting to use the model. 
+# Open UAS 2.0 
+## Summary  
+The OpenUAS 2.0 model has a major focus on the use of 3D printed parts to create a framework that can be easily modfided and printed to meet the needs for anyone wanting to use the model. It has an overall weight of 4.07 lbs, keeping it lightweight. It is also adaptable to store more electronics than OpenUAS 1.0 and other UAVs. 
 
 ![OpenUAS 2.0 Completed](./0221231729.png)
 
-# Spring 2022 Design Changes
+## Spring 2022 Design Changes
 
 There were a few issues that arose with the construction of the 2nd iteration of the OpenUAS project. These were mostly forecasted issues the team had planned mitigation methods for, but  that ended up not working the intended way. There were a few issues that arose that were not foreseen but directly related to the predicted issues. 
 
