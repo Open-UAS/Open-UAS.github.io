@@ -4,7 +4,7 @@ The OpenUAS 2.0 model has a major focus on the use of 3D printed parts to create
 
 ## Solidworks Assembly
 <img src="./OpenUAS2.0_Solidworks.png" alt="Solidworks complete" style="width:600px;"/>
-#
+
 <img src="./0221231729.png" alt="OpenUAS 2.0 Completed" style="width:600px;"/>
 
 ## Spring 2022 Design Changes
@@ -66,4 +66,4 @@ The changes made during this round were needed for fine tuning of components for
 After some observions of other air crafts we noticed that the motors for the propeller may benfit from an angled motor instead of a completly straight faceing. We angled our motor to the right and directed down of the model. In order to do this we added nuts to the motor bolts to create the spacing for the angle. This inculded four mounting points and a total of 5 nuts. Two of the nuts were placed on the upper right corner and the upper left corner. 
 
 ## Test Flight
-<img src="./0323231752.jpg" alt="OpenUAS 2.0 Flight Test" style="width:500px;"/>
+<img src="./0323231752.jpg" alt="OpenUAS 2.0 Flight Test" style="width:600px;"/>
