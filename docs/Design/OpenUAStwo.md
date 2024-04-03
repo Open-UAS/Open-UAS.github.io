@@ -4,7 +4,7 @@ The OpenUAS 2.0 model has a major focus on the use of 3D printed parts to create
 
 ## Solidworks Assembly
 ![Solidworks complete](./Screenshot 2024-04-03 135805.png)
-
+#
 ![OpenUAS 2.0 Completed](./0221231729.png)
 
 ## Spring 2022 Design Changes
