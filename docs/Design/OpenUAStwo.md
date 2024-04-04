@@ -11,8 +11,10 @@ The OpenUAS 2.0 model has a major focus on the use of 3D printed parts to create
 
 ## Solidworks Assembly
 <img src="./OpenUAS2.0_Solidworks.png" alt="Solidworks complete" style="width:600px;"/>
+
 ## Model
 <img src="./0221231729.png" alt="OpenUAS 2.0 Completed" style="width:600px;"/>
+
 
 We will go through some design changes made from Jan 2022-May 2023.
 
