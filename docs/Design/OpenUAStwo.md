@@ -2,10 +2,19 @@
 ## Summary  
 The OpenUAS 2.0 model has a major focus on the use of 3D printed parts to create a framework that can be easily modfided and printed to meet the needs for anyone wanting to use the model. It has an overall weight of 4.07 lbs, keeping it lightweight. It is also adaptable to store more electronics than OpenUAS 1.0 and other UAVs. 
 
+## Requirements: 
+- Lightweight
+- Cost-effective
+- Easy to manufacture
+- Optimized for electronics
+- Stable during flight
+
 ## Solidworks Assembly
 <img src="./OpenUAS2.0_Solidworks.png" alt="Solidworks complete" style="width:600px;"/>
-
+## Model
 <img src="./0221231729.png" alt="OpenUAS 2.0 Completed" style="width:600px;"/>
+
+We will go through some design changes made from Jan 2022-May 2023.
 
 ## Spring 2022 Design Changes
 
