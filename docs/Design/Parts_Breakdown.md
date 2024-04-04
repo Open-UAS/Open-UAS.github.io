@@ -1,5 +1,5 @@
 # OpenUAS 3.0 Parts Breakdown #
-Last Updated: 11/11/2022
+
 ## 3D Printed Parts ##
 ### Fuselage ###
 - (1x) - Fuselage-Tail Joiner (P-02)
@@ -70,7 +70,6 @@ Last Updated: 11/11/2022
 - (2x) - Nosewheel Bracket				{Purchased}
 - (1x) - Nosewheel Rod      {Purchased}
 - (1x) - Nosewheel Horn     {Purchased}
-- 
 ## Electronics ##
 - (4x) - Wing Servo {Thin Metal}
 - (1x) - Pitot Tube 
