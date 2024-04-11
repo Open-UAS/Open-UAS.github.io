@@ -16,4 +16,6 @@ The PID controller has gains, or constant multipliers, corresponding to three ca
 
 *Derivative*: This gain is proportional to the derivative of the error. It contributes to a signal that is proportional to the instantaneous rate of change of error which it finds as the difference between the current and previous error.
 
+## Pitch tuning process
 
+For a fixed wing aircraft, tuning the pitch (nose up and down) might be the simplest because it is 
