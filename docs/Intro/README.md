@@ -16,9 +16,10 @@ below.
 
 | **Role**          |        **Name**        |     **Email**                 |
 |-------------------|------------------------|-------------------------------|
-|Electrical/Software Team Leader  | Varad Kulkarni  |  varadk@iastate.edu   |
-|Design Team Leader    |   Allison Howard   |     alhoward@iastate.edu      |
-|Manufacturing Team Leader   |     Sydney Turner    |   sydtur9@iastate.edu       |
+|Student Team Leader  | Karanvir Singh  |  skaran28@iastate.edu   |
+|Electrical/Software Team Leader  | Nisha Raj  |  nisharaj@iastate.edu   |
+|Design Team Leader    |   Andrew Williams   |     andreww2@iastate.edu      |
+|Manufacturing Team Leader   |     Dana Love    |   dalove@iastate.edu       |
 
 ## First Steps - Checklist
 
@@ -26,17 +27,15 @@ After officially becoming a member of the team, you will be added to our
 communication channels and documentation repositories.\
 **Please verify that you are added to\...**
 
-the Github repositiory
+The Github repositiory
 
-the Google Drive folder
+The OneDrive folder
 
-the ISU Network Drive folder
+The ISU Network Drive folder
 
-the emailing list
+The Emailing list
 
-the main Groupme chat
-
-your team Groupme chat
+The Teams channel
 
 Reach out to the Project Leader if you do not have access to any of the
 above items.
@@ -73,10 +72,10 @@ progress reports as soon as you start receiving credit for the research,
 so these are helpful to look at to know what is expected. For
 information on creating these items, see Section 4 below.
 
-### Google Drive
+### OneDrive
 
 
-The OpenUAS Google Drive folder contains more of the team's informal
+The OpenUAS OneDrive folder contains more of the team's informal
 documentation and work. In this folder, you can find everything from
 performance calculations spreadsheets to possible design configurations.
 There isn't one area that you should look at right away, but as you have
