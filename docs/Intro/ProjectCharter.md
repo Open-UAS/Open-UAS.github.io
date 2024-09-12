@@ -7,18 +7,26 @@ OpenUAS
 Dr. Kristin Y. Rozier
 
 ## Project Team
-- Abby Gries 
-- Alex Vande Loo
-- Ashton Corpuz
-- Chris Johannsen
-- Ellie Diersen
-- Hazel Ambort
-- John Botsford
-- John Edgren
-- John Levandowski
-- Nick Hendrickson
-- Stephanie Jou
-- Will Burken
+- Andrew Williams
+- Artur Nunes
+- Mukul Kulkarni
+- Broderick Urbanz
+- Grant Goebel
+- Jack Newton
+- Adam Goelitz
+- Sarthak Satpathy
+- Jonak Bhagawati
+- Dana Love
+- Sydney Turner
+- Gustavo Luzzi
+- Sushant Chiramana
+- Sam McClure
+- Grace Gilsdorf
+- Aidan Sippel
+- Nisha Raj
+- Karanvir Singh
+- Akwasi Quarcoo
+- Maheeka Devarakonda
 
 ## Revisions
 * **Revision:** E
