@@ -7,30 +7,22 @@ OpenUAS
 Dr. Kristin Y. Rozier
 
 ## Project Team
-- Andrew Williams
 - Artur Nunes
 - Mukul Kulkarni
 - Broderick Urbanz
 - Grant Goebel
-- Jack Newton
-- Adam Goelitz
-- Sarthak Satpathy
-- Jonak Bhagawati
-- Dana Love
-- Sydney Turner
+- Tyler Kazmarski
 - Gustavo Luzzi
-- Sushant Chiramana
 - Sam McClure
 - Grace Gilsdorf
 - Aidan Sippel
-- Nisha Raj
 - Karanvir Singh
 - Akwasi Quarcoo
-- Maheeka Devarakonda
+- Saira Farooz
 
 ## Revisions
 * **Revision:** E
-* **Rev Date:** 04/22/2020
+* **Rev Date:** 05/26/2025
 * **Originally Dated:** 09/20/2017
 
 ## Background
