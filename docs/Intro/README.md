@@ -17,9 +17,9 @@ below.
 | **Role**          |        **Name**        |     **Email**                 |
 |-------------------|------------------------|-------------------------------|
 |Student Team Leader  | Karanvir Singh  |  skaran28@iastate.edu   |
-|Electrical/Software Team Leader  | Nisha Raj  |  nisharaj@iastate.edu   |
-|Design Team Leader    |   Andrew Williams   |     andreww2@iastate.edu      |
-|Manufacturing Team Leader   |     Dana Love    |   dalove@iastate.edu       |
+|Electrical/Software Team Leader  | Akwasi Quarcoo  |  aquarcoo@iastate.edu   |
+|Design Team Leader    |   Artur Nunes    |     abnunes@iastate.edu      |
+|Manufacturing Team Leader   |     Gustavo Luzzi    |   gustavoa@iastate.edu       |
 
 ## First Steps - Checklist
 
