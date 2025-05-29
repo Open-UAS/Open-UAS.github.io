@@ -11,7 +11,7 @@ The main objective of the OpenUAS 5.0 model is to be affordable and simplistic i
 
 ## Project Progress:
 ## CFD Analysis
-<img src="./5_0 CFD.png" alt="OpenUAS 5.0 initial CFD" style="width:600px;"/>
+<img src="./5_0 CFD.png" alt="OpenUAS 5.0 initial CFD" style="width:600px;"/> 
 
 
 
