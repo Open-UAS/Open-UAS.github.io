@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[32],{472:function(t,e,s){"use strict";s.r(e);var n=s(64),r=Object(n.a)({},(function(){var t=this.$createElement,e=this._self._c||t;return e("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[e("p",[this._v("Solidworks Files for the X8R transceiver")])])}),[],!1,null,null,null);e.default=r.exports}}]);
