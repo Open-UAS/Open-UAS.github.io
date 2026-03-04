@@ -7,7 +7,7 @@ Here, you will find details on the electrical system on the current OpenUAS vehi
 ![Wiring Diagram](./PLUMA-Pinout.png)
 
 ## Apprentice and 3.0 Wiring Diagram
-![Wiring Diagram Old](./openuas-electronics.png)
+![Wiring Diagram Old](./openuas-electronics-2.png)
 
 ## Pixhawk 4 Pinout
 [Pixhawk 4 Pinout](/Pixhawk4-Pinouts.pdf)
