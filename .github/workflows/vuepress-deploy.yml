@@ -1,36 +1,50 @@
 name: Build and Deploy
-on:   
+
+on:
   workflow_dispatch:
   push:
-    branch: main
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout
-      uses: actions/checkout@v6
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Setup Node
-      uses: actions/setup-node@v6
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
 
-    - name: Install dependencies
-      run: npm install
-    
-    - name: Build website
-      run: npm run build
-    
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v4
-      with:
-        name: dist
-        path: docs/.vuepress/dist
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build website
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vuepress/dist
 
   deploy-github-pages:
-    if: ${{ github.ref == 'refs/heads/main' }}
     name: Deploy to GitHub Pages
-    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
     needs: build
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
     environment:
-      name: Production
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
