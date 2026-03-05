@@ -11,4 +11,3 @@ Here, you will find details on the electrical system on the current OpenUAS vehi
 
 ## Pixhawk 4 Pinout
 [Pixhawk 4 Pinout](/Pixhawk4-Pinouts.pdf)
-## testing
