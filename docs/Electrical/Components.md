@@ -25,6 +25,8 @@
 - Weight: 16.8 grams
 - https://hobbyking.com/en_us/frsky-x8r-8-16ch-s-bus-accst-telemetry-receiver-w-smart-port-no-antenna-cover.html
 
+### Radiomaster TX16S
+
 ### RC Controller: FrSky Taranis X9D plus
 - (EXTERNAL TO UAS)
 
