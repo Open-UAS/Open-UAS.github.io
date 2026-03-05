@@ -61,8 +61,7 @@
 ### Corona DS-239HV Digital Slim Wing Servo (Metal Gear)
 - Dimensions: (see below)
 - Weight: 22 grams
-- https://hobbyking.com/en_us/corona-ds-239hv-digital-slim-wing-servo-metal-gear-4-6kg-0-13sec-22g.html?wrh_pdp=2&utm_source=google&utm_medium=cpc&utm_campaign=google_us_shopping&countrycode=US&gclid=CjwKCAjw9LSSBhBsEiwAKtf0n35Uvf30IQGUqrNItFsiKAyhuMXt65QkxqWKiIHLzyG5t3DQtI5aUxoCoyMQAvD_BwE&gclid=CjwKCAjw9LSSBhBsEiwAKtf0n35Uvf30IQGUqrNItFsiKAyhuMXt65QkxqWKiIHLzyG5t3DQtI5aUxoCoyMQAvD_BwE
-
+- - [Corona DS-239HV Digital Slim Wing Servo (Metal Gear)](https://hobbyking.com/en_us/corona-ds-239hv-digital-slim-wing-servo-metal-gear-4-6kg-0-13sec-22g.html)
 
 ## Weights
 
