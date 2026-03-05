@@ -8,7 +8,7 @@
 ### GPS: Holybro Pixhawk 4 Neo-M8N GPS
 - Dimensions: 25 x 25 x 4 mm 
 - Weight: 32 grams
-- http://www.holybro.com/product/pixhawk-4-gps-module/
+- [GPS: Holybro Pixhawk 4 Neo-M8N GPS](http://www.holybro.com/product/pixhawk-4-gps-module/)
 
 ### Power Module: Holybro APM Power Module 12S - PM02 V3
 - Dimensions: 18 x 23 mm
