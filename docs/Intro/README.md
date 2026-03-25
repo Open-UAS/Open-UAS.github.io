@@ -16,8 +16,8 @@ below.
 
 | **Role**          |        **Name**        |     **Email**                 |
 |-------------------|------------------------|-------------------------------|
-|Student Team Leader  | Karanvir Singh  |  skaran28@iastate.edu   |
-|Electrical/Software Team Leader  | Akwasi Quarcoo  |  aquarcoo@iastate.edu   |
+|Student Team Leader  | Samuel McClure |  sjm0620@iastate.edu  |
+|Electrical/Software Team Leader  | Akwasi Quarcoo |  aquarcoo@iastate.edu   |
 |Design Team Leader    |   Artur Nunes    |     abnunes@iastate.edu      |
 |Manufacturing Team Leader   |     Gustavo Luzzi    |   gustavoa@iastate.edu       |
 
