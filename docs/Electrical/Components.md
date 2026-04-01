@@ -1,4 +1,4 @@
-# Hardware Components
+## Hardware Components
 
 ### Flight Controller: Holybro Pixhawk 4
 - Dimensions: 44 x 84 x 12 mm
@@ -66,5 +66,7 @@
 ## Weights
 
 ![Weights of Electronics](./weights_of_electronics.png)
+
+## Wiring Diagram 
 
 
