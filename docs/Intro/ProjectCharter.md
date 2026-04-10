@@ -19,6 +19,12 @@ Dr. Kristin Y. Rozier
 - Karanvir Singh
 - Akwasi Quarcoo
 - Saira Farooz
+- Anderson Keough
+- Abhigyaan Deep 
+- Maria Zambrano Sanchez
+- Fionna Schaack
+- Shersta Anupindi
+
 
 ## Revisions
 * **Revision:** E
@@ -26,7 +32,7 @@ Dr. Kristin Y. Rozier
 * **Originally Dated:** 09/20/2017
 
 ## Background
-No open source UAS options exist that are fixed-wing and accessible (conceptually) to the general public. Some similar, available UAS’ are the Albatross (created and sold commercially by Applied Aeronautics) and Razor (created a UVA). Open source software options already available include ArduPilot and PX4.
+No open-source UAS options exist that are fixed-wing and accessible (conceptually) to the general public. Some similar, available UAS’ are the Albatross (created and sold commercially by Applied Aeronautics) and Razor (created a UVA). Open source software options already available include ArduPilot and PX4.
 
 ## Project Scope
 We are producing an open-source, COTS UAS that can be used for education and research purposes; the UAS shall only consist of components available to the general public. 
