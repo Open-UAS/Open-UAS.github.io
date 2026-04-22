@@ -23,12 +23,8 @@ module.exports = {
           {text: 'Meta Docs',   link: '/Meta_Docs/'},
           {text: 'Design',      link: '/Design/' },
           {text: 'Manufacturing',      link: '/Manufacturing/' },
-          {text: 'Software/Electrical',  link: '/Software_Electrical/',
-            items:[
-              {text: 'Software', link: '/Software/'},
-              {text: 'Electrical', link: '/Electrical/'}
-            ] 
-          },
+          {text: 'Software',      link: '/Software/' },
+          {text: 'Electrical',      link: '/Electrical/' },
           {text: 'Lab Docs',    link: '/Lab_Docs/'},
           {text: 'License',     link: '/License/' },
           {text: 'Archive',     link: 'https://open-uas.github.io/Archive/'}
