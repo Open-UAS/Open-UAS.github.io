@@ -1,9 +1,19 @@
 ## Hardware Components
 
+### Flight Controller: Holybro Pixhawk 6
+- Dimensions: 44 x 84 x 12 mm
+- Weight (plastic case): 34.6 grams
+- https://holybro.com/products/pixhawk-6c
+
 ### Flight Controller: Holybro Pixhawk 4
 - Dimensions: 44 x 84 x 12 mm
 - Weight (plastic case): 33.3 grams
-- https://shop.holybro.com/pixhawk-4_p1089.html
+- https://holybro.com/products/pixhawk-4
+
+### GPS: Holybro M9N Version 1
+- Dimensions: diameter 55 x 14.4 mm
+- Weight: 32 grams
+- https://holybro.com/products/m9n-gps
 
 ### GPS: Holybro Pixhawk 4 Neo-M8N GPS
 - Dimensions: 25 x 25 x 4 mm 
