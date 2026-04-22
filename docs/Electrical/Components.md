@@ -76,4 +76,6 @@ We prefer using the more modern Holybro Pixhawk 6c.
 
 ![Weights of Electronics](./weights_of_electronics.png)
 
-## Wiring Diagram
+## Wiring Diagram 
+
+![Wiring Diagram Current](./Wiring-openuas5.png) 
