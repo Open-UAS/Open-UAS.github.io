@@ -5,24 +5,24 @@
 - Dimensions: 84.8 x 44 x 12.4 mm
 - Weight (plastic case): 34.6g
 
-### [Flight Controller: Holybro Pixhawk 4](https://shop.holybro.com/pixhawk-4_p1089.html)
+### [Flight Controller: Holybro Pixhawk 4](https://holybro.com/products/pixhawk-4)
 
 We prefer using the more modern Holybro Pixhawk 6c.
 
 - Dimensions: 44 x 84 x 12 mm
 - Weight (plastic case): 33.3 grams
 
-### [GPS: Holybro Pixhawk 4 Neo-M8N GPS](http://www.holybro.com/product/pixhawk-4-gps-module/)
+### [GPS: Holybro Pixhawk 4 Neo-M8N GPS](https://holybro.com/products/m8n-gps)
 
 - Dimensions: 25 x 25 x 4 mm
 - Weight: 32 grams
 
-### [Power Module: Holybro APM Power Module 12S - PM02 V3](http://www.holybro.com/product/power-modulepm02-v3/)
+### [Power Module: Holybro APM Power Module 12S - PM02 V3](https://holybro.com/products/pm02-v3-12s-power-module)
 
 - Dimensions: 18 x 23 mm
 - Weight: 20 grams
 
-### [Airspeed Sensor: Holybro Digital Air Speed Sensor](https://shop.holybro.com/digital-air-speed-sensor_p1029.html)
+### [Airspeed Sensor: Holybro Digital Air Speed Sensor](https://holybro.com/products/digital-air-speed-sensor-standard)
 
 - Dimensions: (see below)
 - Weight: 11.3398 grams
@@ -70,7 +70,7 @@ We prefer using the more modern Holybro Pixhawk 6c.
 
 - Dimensions: (see below)
 - Weight: 22 grams
-- - [Corona DS-239HV Digital Slim Wing Servo (Metal Gear)](https://hobbyking.com/en_us/corona-ds-239hv-digital-slim-wing-servo-metal-gear-4-6kg-0-13sec-22g.html)
+- [Corona DS-239HV Digital Slim Wing Servo (Metal Gear)](https://hobbyking.com/en_us/corona-ds-239hv-digital-slim-wing-servo-metal-gear-4-6kg-0-13sec-22g.html)
 
 ## Weights
 
