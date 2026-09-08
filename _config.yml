@@ -9,6 +9,4 @@ url: "https://open-uas.github.io"
 
 github_username: Open-UAS
 
-theme: minima
-plugins:
-  - jekyll-feed
+theme: just-the-docs
