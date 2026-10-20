@@ -1,8 +1,8 @@
 ---
 title: LRUs
 layout: default
-parent: Fabrication
-nav_order: 3
+parent: Avionics
+nav_order: 2
 ---
 
 # LRUs
