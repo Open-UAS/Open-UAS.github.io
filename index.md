@@ -10,7 +10,7 @@ nav_order: 1
 
 Unmanned Aircraft System (UAS) for researchers and educators. Free, open-source, affordable, easy to use, fun to make, and quick to deploy.
 
-[Get started](/bill-of-materials/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Get started](/getting-started/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [Meet the team](/meet-the-team){: .btn }
 
 ![](https://delair.aero/wp-content/uploads/2025/07/Vol-Detour-ombre.png)
