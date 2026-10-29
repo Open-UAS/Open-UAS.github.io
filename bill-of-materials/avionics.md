@@ -19,3 +19,4 @@ Prices last updated on October 22<sup>nd</sup>, 2022.
 | FrSky RX8R                         | Receiver                           | 1        | $50        |
 | PWM EXT Board                      | Control rail for servos and motors | 1        | $5         |
 | HS-125MG                           | Servos for control surfaces        | 4        | $41        |
+| BadAss 3515-710Kv                  | Motors for propellers              | 2        | $73        |
