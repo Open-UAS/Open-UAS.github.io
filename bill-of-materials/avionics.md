@@ -15,3 +15,4 @@ Prices last updated on October 22<sup>nd</sup>, 2022.
 | PM02 V3 Power Module               | Regulated 5.2V battery eliminator | 2        | $19        |
 | Castle Creations Phoenix Edge 100  | 100A electronic speed controller  | 2        | $155       |
 | Pixhawk 6C                         | Flight controller                 | 1        | $209       |
+| M10 GPS                            | GPS module                        | 1        | $44        |
