@@ -17,3 +17,4 @@ Prices last updated on October 22<sup>nd</sup>, 2022.
 | Pixhawk 6C                         | Flight controller                  | 1        | $209       |
 | M10 GPS                            | GPS module                         | 1        | $44        |
 | PWM EXT Board                      | Control rail for servos and motors | 1        | $5         |
+| FrSky RX8R                         | Receiver                           | 1        | $50        |
