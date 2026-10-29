@@ -9,10 +9,8 @@ nav_order: 3
 
 Prices last updated on October 22<sup>nd</sup>, 2022.
 
-| Item                              | Description                       | Quantity | Unit Price |
-| --------------------------------- | --------------------------------- | -------- | ---------- |
-| PM02 V3 Power Module              | Regulated 5.2V battery eliminator | 2        | $19        |
-| Castle Creations Phoenix Edge 100 | 100A electronics speed controller | 2        | $155       |
-
-<!-- TODO: -->
-<!-- ovonic 5000mah -->
+| Item                               | Description                       | Quantity | Unit Price |
+| ---------------------------------- | --------------------------------- | -------- | ---------- |
+| PM02 V3 Power Module               | Regulated 5.2V battery eliminator | 2        | $19        |
+| Castle Creations Phoenix Edge 100  | 100A electronics speed controller | 2        | $155       |
+| OVONIC 5000mAh 3S 50C LiPo Battery | Battery                           | 1        | $33        |
