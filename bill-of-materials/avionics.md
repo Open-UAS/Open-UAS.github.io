@@ -9,10 +9,11 @@ nav_order: 3
 
 Prices last updated on October 22<sup>nd</sup>, 2022.
 
-| Item                               | Description                       | Quantity | Unit Price |
-| ---------------------------------- | --------------------------------- | -------- | ---------- |
-| OVONIC 5000mAh 3S 50C LiPo Battery | Battery                           | 1        | $33        |
-| PM02 V3 Power Module               | Regulated 5.2V battery eliminator | 2        | $19        |
-| Castle Creations Phoenix Edge 100  | 100A electronic speed controller  | 2        | $155       |
-| Pixhawk 6C                         | Flight controller                 | 1        | $209       |
-| M10 GPS                            | GPS module                        | 1        | $44        |
+| Item                               | Description                        | Quantity | Unit Price |
+| ---------------------------------- | ---------------------------------- | -------- | ---------- |
+| OVONIC 5000mAh 3S 50C LiPo Battery | Battery                            | 1        | $33        |
+| PM02 V3 Power Module               | Regulated 5.2V battery eliminator  | 2        | $19        |
+| Castle Creations Phoenix Edge 100  | 100A electronic speed controller   | 2        | $155       |
+| Pixhawk 6C                         | Flight controller                  | 1        | $209       |
+| M10 GPS                            | GPS module                         | 1        | $44        |
+| PWM EXT Board                      | Control rail for servos and motors | 1        | $5         |
