@@ -7,4 +7,6 @@ nav_order: 4
 
 # Software
 
-TODO
+| Software       | Description                                                  |
+| -------------- | ------------------------------------------------------------ |
+| QGroundControl | Flight path planning, calibration, and updating the firmware |
