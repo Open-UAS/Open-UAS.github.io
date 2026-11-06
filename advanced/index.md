@@ -1,9 +1,9 @@
 ---
 title: Advanced
 layout: default
-nav_order: 8
+nav_order: 7
 ---
 
 # Advanced
 
-There are a set of advanced features you can append to your OpenUAS. These are optional, and you can skip them if you don't need them. 
+There are a set of advanced features you can append to your OpenUAS. These are optional, and you can skip them if you don't need them.
