@@ -1,7 +1,7 @@
 ---
 title: Meet The Team
 layout: default
-nav_order: 7
+nav_order: 8
 ---
 
 # Meet The Team
@@ -10,7 +10,7 @@ OpenUAS is an undergraduate research project at Iowa State University, led by a 
 
 ## Principal Investigator
 
-**Name**
+
 **Dr. Kristin Y. Rozier**
 Professor, Aerospace Engineering, Iowa State University
 

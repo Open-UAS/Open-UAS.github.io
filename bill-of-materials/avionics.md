@@ -7,8 +7,16 @@ nav_order: 3
 
 # Avionics
 
-Prices up-to-date as of October 22, 2022.
+Prices last updated on October 22<sup>nd</sup>, 2022.
 
-| Item                              | Description                       | Quantity | Unit Price |
-| --------------------------------- | --------------------------------- | -------- | ---------- |
-| Castle Creations Phoenix Edge 100 | 100A electronics speed controller | 2        | $155       |
+| Item                               | Description                        | Quantity | Unit Price |
+| ---------------------------------- | ---------------------------------- | -------- | ---------- |
+| OVONIC 5000mAh 3S 50C LiPo Battery | Battery                            | 1        | $33        |
+| PM02 V3 Power Module               | Regulated 5.2V battery eliminator  | 2        | $19        |
+| Castle Creations Phoenix Edge 100  | 100A electronic speed controller   | 2        | $155       |
+| Pixhawk 6C                         | Flight controller                  | 1        | $209       |
+| M10 GPS                            | GPS module                         | 1        | $44        |
+| FrSky RX8R                         | Receiver                           | 1        | $50        |
+| PWM EXT Board                      | Control rail for servos and motors | 1        | $5         |
+| HS-125MG                           | Servos for control surfaces        | 4        | $41        |
+| BadAss 3515-710Kv                  | Motors for propellers              | 2        | $73        |
