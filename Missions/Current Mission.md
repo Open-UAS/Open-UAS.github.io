@@ -1,5 +1,6 @@
 ---
 title: Current Mission
+layout: default
 parent: Missions
 nav_order: 1
 ---

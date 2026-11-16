@@ -1,5 +1,6 @@
 ---
 title: Propose a Mission
+layout: default
 parent: Missions
 nav_order: 2
 ---
