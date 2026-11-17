@@ -13,6 +13,6 @@ Unmanned Aircraft System (UAS) for researchers and educators. Free, open-source,
 [Get started](/getting-started/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [Meet the team](/meet-the-team){: .btn }
 
-![](https://delair.aero/wp-content/uploads/2025/07/Vol-Detour-ombre.png)
+![](/images/hero.png)
 
 TODO: sweet render of the drone with transparent background and soft shadows so it looks like it's a direct part of the page
