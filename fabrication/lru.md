@@ -13,7 +13,8 @@ An LRU (line-replaceable unit) houses a complete suite of hardware for a specifi
 
 TODO: image of the tub
 
-Download [the STEP file](/downloads/lru/tub.step) for the tub of the LRU. Then, slice the tub with
+1. Download [the STEP file](/downloads/lru/tub.step) for the tub of the LRU.
+2. Then, slice the tub with
 
 ## Printing The Cap
 
